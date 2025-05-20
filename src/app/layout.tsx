@@ -1,18 +1,30 @@
 import type { Metadata } from "next";
-import { Inter, Crimson_Pro } from "next/font/google";
+import { PT_Serif, DM_Sans, Anton } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const ptSerif = PT_Serif({
+  variable: "--font-pt-serif",
+  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
-});
+  style: ["normal"],
+})
 
-const CrimsonPro = Crimson_Pro({
-  variable: "--font-crimson-pro",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  weight: ["400"],
   subsets: ["latin"],
   display: "swap",
-});
+  style: ["normal"],
+})
+
+const anton = Anton({
+  variable: "--font-anton",
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  style: ["normal"],
+})
 
 export const metadata: Metadata = {
   title: "Leticia Martins",
@@ -26,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${CrimsonPro.variable} ${inter.variable} antialiased`}>
+      <body className={`${anton.variable} ${ptSerif.variable} ${dmSans.className} antialiased scroll-smooth`}>
         {children}
       </body>
     </html>
