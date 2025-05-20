@@ -3,14 +3,22 @@
 :root {
   --background: #eae8e1;
   --foreground: #252423;
+  --main-color: #401952;
 }
 
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-purple-1000: #401952;
+
+  /* Fonts */
   --font-anton: var(--font-anton);
   --font-ptSerif: var(--font-pt-serif);
-  --font-dmSans: var(--font-dm-sans)
+  --font-dmSans: var(--font-dm-sans);
+
+  /* Height */
+  --height-120: calc(var(--spacing) * 120)
 }
 
 @media (prefers-color-scheme: dark) {
