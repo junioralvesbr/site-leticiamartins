@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 
 export default function Home() {
   return (
@@ -19,21 +21,45 @@ export default function Home() {
           </div>
 
 
-          <div className="flex flex-nowrap gap-20 min-h-52">
+          <div className="flex flex-nowrap gap-20 min-h-68">
             <div className="flex flex-col flex-wrap shrink-0 gap-2 justify-start">
               <p className="text-lg font-ptSerif text-secondary">
                 Personal Organizer
               </p>
 
-              <h1 className="font-anton text-9xl text-primary whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold">
+              <h1 className="font-anton text-clamp text-primary whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-9xl">
                 Leticia Martins
               </h1>
             </div>
 
-            <div className="flex flex-col flex-wrap shrink gap-2 justify-end items-end-safe">
+            <div className="flex flex-col flex-wrap shrink gap-8 justify-end max-w-sm">
               <p className="text-lg font-ptSerif text-secondary">
-                Sou especialista em organização de ambientes e pós-mudança. Meu trabalho é transformar espaços, unindo praticidade e harmonia para o dia a dia.
+                Leticia Martins, uma personal apaixonada por organização que transforma espaços unindo praticidade e harmonia no seu dia dia.
               </p>
+
+              <ul className="flex gap-4">
+                <Link
+                  href="https://www.instagram.com/leticiamartins.organizer/"
+                  className="group"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="text-lg font-ptSerif bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all">
+                    <FaInstagram className="text-zinc-600 text-2xl group-hover:text-white transition-all" />
+                  </li>
+                </Link>
+
+                <Link
+                  href="https://wa.me/5511999999999"
+                  className="group"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <li className="text-lg font-ptSerif bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all">
+                    <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all" />
+                  </li>
+                </Link>
+              </ul>
             </div>
 
           </div>
