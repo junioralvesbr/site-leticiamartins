@@ -4,9 +4,9 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 
 export default function Home() {
   return (
-    <div className="min-h-dvh max-w-screen">
+    <div className="min-h-dvh max-w-screen px-2">
       <header>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl w-lg mx-auto lg:w-auto">
 
           <div className="flex justify-end-safe">
             <figure className="relative w-full max-w-3xl aspect-video overflow-hidden rounded-xl">
@@ -21,7 +21,7 @@ export default function Home() {
           </div>
 
 
-          <div className="flex flex-nowrap gap-20 min-h-68">
+          <div className="flex flex-col flex-nowrap gap-20 min-h-68 lg:flex-row">
             <div className="flex flex-col flex-wrap shrink-0 gap-2 justify-start">
               <p className="text-lg font-ptSerif text-secondary">
                 Personal Organizer
