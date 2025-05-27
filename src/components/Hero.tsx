@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 
-export default function Header() {
+export default function Hero() {
   return (
-    <header>
+    <div>
       <div className="flex justify-end-safe mt-4">
         <figure className="relative w-full max-w-3xl aspect-video overflow-hidden rounded-xl">
           <Image
@@ -18,7 +18,7 @@ export default function Header() {
       </div>
 
 
-      <section className="flex flex-col flex-nowrap gap-20 min-h-68 lg:flex-row">
+      <section className="flex flex-nowrap gap-20 min-h-68 mt-10">
         <div className="flex flex-col flex-wrap shrink-0 gap-2 justify-start">
           <p className="text-lg font-ptSerif text-secondary">
             Personal Organizer
@@ -59,6 +59,6 @@ export default function Header() {
           </ul>
         </div>
       </section>
-    </header>
+    </div>
   )
 }

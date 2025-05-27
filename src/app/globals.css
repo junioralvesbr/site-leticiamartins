@@ -24,6 +24,9 @@
 
   /* Font-Size */
   --text-clamp: clamp(3rem, 10vw, 8rem);
+
+  /* Spacing */
+  --radius-12xl: 8rem
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +45,16 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
 }
+
+.bg-degrade {
+  background: radial-gradient(75% 75% at 91.7% 6.8%,
+      rgba(190, 135, 222, 0.6) 0%,
+      rgba(245, 236, 251) 100%);
+  ;
+}
+
+
+/* Configuração do Scrollbar */
 
 * {
   scrollbar-width: thin;
