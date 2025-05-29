@@ -9,7 +9,7 @@
 
 @theme inline {
   /* Colors */
-  --color-background: var(--background);
+  --color-background: #ffffff;
   --color-foreground: var(--foreground);
   --color-primary: #401952;
   --color-secondary: #9F56C7;
@@ -31,14 +31,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--background);
+    --background: #ffffff;
     --foreground: var(--foreground);
   }
 }
 
 body {
   @apply font-ptSerif leading-relaxed;
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
   font-optical-sizing: auto;
   font-synthesis: none;
@@ -50,14 +50,12 @@ body {
   background: radial-gradient(75% 75% at 91.7% 6.8%,
       rgba(190, 135, 222, 0.6) 0%,
       rgba(245, 236, 251) 100%);
-  ;
 }
 
 /* Configuração do Scrollbar */
-
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-primary) var(--background);
+  scrollbar-color: #401952 #ffffff;
 }
 
 *::-webkit-scrollbar {
@@ -67,26 +65,26 @@ body {
 
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: var(--background);
+  background-color: #ffffff;
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: var(--background);
+  background-color: #ffffff;
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: var(--background);
+  background-color: #ffffff;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: var(--color-primary);
+  background-color: #401952;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-primary);
+  background-color: #401952;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: var(--color-primary);
+  background-color: #401952;
 }
