@@ -4,7 +4,7 @@ import Services from "@/components/Sevices";
 
 export default function Home() {
   return (
-    <div className="min-h-dvh max-w-screen">
+    <div className="min-h-dvh max-w-screen bg-white">
 
       <nav className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-[rgba(255,255,255,0.7)]">
         <div className="max-w-6xl mx-auto">
@@ -21,11 +21,14 @@ export default function Home() {
       </header>
 
       <main>
-        <div className="bg-white">
-          <section className="bg-degrade rounded-tr-12xl pt-20">
+        <section
+          data-name="nossos-servicos"
+          className="bg-degrade rounded-tr-12xl pt-20 h-screen">
+          <div className="max-w-6xl mx-auto px-4">
             <Services />
-          </section>
-        </div>
+          </div>
+        </section>
+
       </main>
 
     </div>
