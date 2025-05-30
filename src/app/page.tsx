@@ -21,12 +21,8 @@ export default function Home() {
       </header>
 
       <main>
-        <section
-          data-name="nossos-servicos"
-          className="bg-degrade rounded-tr-12xl pt-20 h-screen">
-          <div className="max-w-6xl mx-auto px-4">
-            <Services />
-          </div>
+        <section data-name="nossos-servicos" className="bg-degrade rounded-tr-12xl pt-20">
+          <Services />
         </section>
 
       </main>
