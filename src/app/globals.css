@@ -23,7 +23,7 @@
   --height-120: calc(var(--spacing) * 120);
 
   /* Font-Size */
-  --text-clamp: clamp(3rem, 10vw, 8rem);
+  --text-clamp: clamp(3rem, 15vw, 8rem);
 
   /* Spacing */
   --radius-12xl: 8rem

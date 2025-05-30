@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
 
 
-      <section className="flex flex-nowrap gap-20 min-h-68 mt-10">
+      <section className="flex flex-col flex-nowrap gap-5 min-h-68 mt-10 xl:flex-row xl:gap-20">
         <div className="flex flex-col flex-wrap shrink-0 gap-2 justify-start">
           <p className="text-lg font-ptSerif text-secondary">
             Personal Organizer
@@ -29,8 +29,8 @@ export default function Hero() {
           </h1>
         </div>
 
-        <div className="flex flex-col flex-wrap shrink gap-8 justify-end max-w-sm">
-          <p className="text-lg font-ptSerif text-secondary">
+        <div className="flex flex-col flex-wrap shrink gap-8 max-w-sm lg:self-end">
+          <p className="text-lg font-ptSerif text-secondary text-balance">
             Leticia Martins, uma personal apaixonada por organização que transforma espaços unindo praticidade e harmonia no seu dia dia.
           </p>
 
