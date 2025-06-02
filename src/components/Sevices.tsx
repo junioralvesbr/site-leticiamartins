@@ -1,4 +1,5 @@
 import Image from "next/image";
+import * as motion from "motion/react-client"
 import SubTitleH2 from "@/components/SubTitleH2";
 
 const data = [
@@ -31,7 +32,13 @@ export default function Services() {
         <SubTitleH2>Nossos Serviços</SubTitleH2>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-12">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-12"
+        initial={{ opacity: 0, transform: "translateY(100px)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+        transition={{
+          duration: 1,
+        }}>
         {data.map((item, index) => (
           <article key={index} className="flex flex-col gap-4">
             <Image
@@ -50,7 +57,7 @@ export default function Services() {
             </h3>
           </article>
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }

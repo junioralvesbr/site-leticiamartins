@@ -27,7 +27,9 @@ const SubTitleH2 = ({ children }: SubTitleH2Props) => {
             className="font-anton font-bold text-6xl text-primary inline-block"
             style={{ perspective: "1000px" }}
             initial={{ opacity: 0, scale: 0, rotateY: -180 }}
-            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+            // animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+            whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{
               duration: 0.2,
               scale: { type: "spring", visualDuration: 0.2, bounce: 0.5 },

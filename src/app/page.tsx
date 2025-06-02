@@ -24,9 +24,7 @@ export default function Home() {
         <section data-name="nossos-servicos" className="bg-degrade rounded-tr-12xl pt-20">
           <Services />
         </section>
-
       </main>
-
     </div>
   );
 }

@@ -1,12 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import * as motion from "motion/react-client"
+
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 
 export default function Hero() {
   return (
     <div>
-      <div className="flex justify-end-safe mt-4">
-        <figure className="relative w-full max-w-3xl aspect-video overflow-hidden rounded-xl">
+      <div
+        className="flex justify-end-safe mt-4">
+        <motion.figure
+          className="relative w-full max-w-3xl aspect-video overflow-hidden rounded-xl"
+          initial={{ opacity: 0, transform: "translateY(100px)" }}
+          animate={{ opacity: 1, transform: "translateY(0px)" }}
+          transition={{
+            duration: 1,
+          }}
+        >
           <Image
             src="/images/leticia-martins.png"
             alt="Leticia Martins"
@@ -14,12 +24,20 @@ export default function Hero() {
             className="object-cover object-[25%_25%]"
             sizes="(max-width: 768px) 100vw, 1200px"
           />
-        </figure>
+        </motion.figure>
       </div>
 
 
       <section className="flex flex-col flex-nowrap gap-5 min-h-68 mt-10 xl:flex-row xl:gap-20">
-        <div className="flex flex-col flex-wrap shrink-0 gap-2 justify-start">
+        <motion.div
+          className="flex flex-col flex-wrap shrink-0 gap-2 justify-start"
+          initial={{ opacity: 0, transform: "translateY(100px)" }}
+          animate={{ opacity: 1, transform: "translateY(0px)" }}
+          transition={{
+            duration: 2,
+            delay: 0.5
+          }}
+        >
           <p className="text-lg font-ptSerif text-secondary">
             Personal Organizer
           </p>
@@ -27,11 +45,19 @@ export default function Hero() {
           <h1 className="font-anton text-clamp text-primary whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-8xl">
             Leticia Martins
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col flex-wrap shrink gap-8 max-w-sm lg:self-end">
+        <motion.div
+          className="flex flex-col flex-wrap shrink gap-8 max-w-sm lg:self-end"
+          initial={{ opacity: 0, transform: "translateY(100px)" }}
+          animate={{ opacity: 1, transform: "translateY(0px)" }}
+          transition={{
+            duration: 1.5,
+            delay: 1
+          }}
+        >
           <p className="text-lg font-ptSerif text-secondary text-balance">
-            Leticia Martins, uma personal apaixonada por organização que transforma espaços unindo praticidade e harmonia no seu dia dia.
+            Leticia Martins, uma personal apaixonada por organização que transforma espaços em harmonia e praticidade no seu dia dia.
           </p>
 
           <ul className="flex gap-4">
@@ -57,7 +83,7 @@ export default function Hero() {
               </li>
             </Link>
           </ul>
-        </div>
+        </motion.div>
       </section>
     </div>
   )
