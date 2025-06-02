@@ -24,7 +24,7 @@ export default function Hero() {
             Personal Organizer
           </p>
 
-          <h1 className="font-anton text-clamp text-primary whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-9xl">
+          <h1 className="font-anton text-clamp text-primary whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-8xl">
             Leticia Martins
           </h1>
         </div>
