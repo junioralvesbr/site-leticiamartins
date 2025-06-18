@@ -5,6 +5,7 @@
   --foreground: #252423;
   --primary: #401952;
   --secondary: #9F56C7;
+  --third: #f5ecfb;
 }
 
 @theme inline {
@@ -13,6 +14,7 @@
   --color-foreground: var(--foreground);
   --color-primary: #401952;
   --color-secondary: #9F56C7;
+  --color-third: #f5ecfb;
 
   /* Fonts */
   --font-anton: var(--font-anton);

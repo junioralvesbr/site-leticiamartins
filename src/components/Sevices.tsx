@@ -27,7 +27,7 @@ const data = [
 
 export default function Services() {
   return (
-    <div className="max-w-6xl mx-auto h-full px-5 lg:px-10">
+    <div>
       <h2 className="flex items-center justify-center">
         <SubTitleH2>Nossos Serviços</SubTitleH2>
       </h2>
