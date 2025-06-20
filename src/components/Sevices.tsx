@@ -33,7 +33,7 @@ export default function Services() {
       </h2>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 gap-12 p-4 mt-12"
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20"
         initial={{ opacity: 0, transform: "translateY(100px)" }}
         whileInView={{ opacity: 1, transform: "translateY(0px)" }}
         transition={{
@@ -41,13 +41,15 @@ export default function Services() {
         }}>
         {data.map((item, index) => (
           <article key={index} className="flex flex-col gap-4">
-            <Image
-              src={item.image}
-              alt="Serviços"
-              width={500}
-              height={500}
-              className="w-full h-auto rounded-lg mb-4 hover:scale-105 transition-all duration-1000"
-            />
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src={item.image}
+                alt="Serviços"
+                width={500}
+                height={500}
+                className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300 ease-in-out"
+              />
+            </div>
             <p className="text-secondary font-ptSerif">
               {item.description}
             </p>
