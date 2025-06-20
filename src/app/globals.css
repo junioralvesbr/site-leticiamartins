@@ -9,9 +9,14 @@
   /* Colors */
   --color-background: #ffffff;
   --color-foreground: var(--foreground);
-  --color-primary: #401952;
-  --color-secondary: #9F56C7;
-  --color-third: #f4ebfa;
+
+  --color-deepViolet-100: #f4ebfa;
+  --color-deepViolet-200: #f5ecfb;
+  --color-deepViolet-300: #dec2f0;
+  --color-deepViolet-400: #b374d8;
+  --color-deepViolet-500: #9F56C7;
+  --color-deepViolet-600: #733b8e;
+  --color-deepViolet-700: #401952;
 
   /* Fonts */
   --font-anton: var(--font-anton);

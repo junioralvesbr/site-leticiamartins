@@ -15,7 +15,7 @@ const SubTitleH2 = ({ children }: SubTitleH2Props) => {
           return (
             <span
               key={index}
-              className="font-anton font-bold text-6xl text-primary inline-block">
+              className="font-anton font-bold text-6xl text-deepViolet-700 inline-block">
               {'\u00A0'}
             </span>
           )
@@ -24,7 +24,7 @@ const SubTitleH2 = ({ children }: SubTitleH2Props) => {
         return (
           <motion.span
             key={index}
-            className="font-anton font-bold text-6xl text-primary inline-block"
+            className="font-anton font-bold text-6xl text-deepViolet-700 inline-block"
             style={{ perspective: "1000px" }}
             initial={{ opacity: 0, scale: 0, rotateY: -180 }}
             // animate={{ opacity: 1, scale: 1, rotateY: 0 }}

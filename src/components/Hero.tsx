@@ -38,11 +38,11 @@ export default function Hero() {
             delay: 0.5
           }}
         >
-          <p className="text-lg font-ptSerif text-secondary">
+          <p className="text-lg font-ptSerif text-deepViolet-600">
             Personal Organizer
           </p>
 
-          <h1 className="font-anton text-clamp text-primary whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-8xl xl:text-9xl">
+          <h1 className="font-anton text-clamp text-deepViolet-700 whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-8xl xl:text-9xl">
             Leticia Martins
           </h1>
         </motion.div>
@@ -56,7 +56,7 @@ export default function Hero() {
             delay: 1
           }}
         >
-          <p className="text-lg font-ptSerif text-secondary text-balance">
+          <p className="text-lg font-ptSerif text-deepViolet-500 text-balance">
             Leticia Martins, uma personal apaixonada por organização que transforma espaços em harmonia e praticidade no seu dia dia.
           </p>
 

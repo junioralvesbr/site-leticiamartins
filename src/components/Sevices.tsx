@@ -50,11 +50,11 @@ export default function Services() {
                 className="w-full h-auto rounded-lg hover:scale-105 transition-all duration-300 ease-in-out"
               />
             </div>
-            <p className="text-secondary font-ptSerif">
+            <p className="text-deepViolet-600 font-ptSerif">
               {item.description}
             </p>
 
-            <h3 className="text-3xl font-ptSerif font-bold text-primary">
+            <h3 className="text-3xl font-ptSerif font-bold text-deepViolet-700">
               {item.title}
             </h3>
           </article>
