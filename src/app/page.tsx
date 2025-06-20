@@ -31,12 +31,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section data-name="expertises" className="bg-third h-screen">
+        <section data-name="expertises" className="bg-third">
           <div className="bg-white rounded-tr-12xl pt-20">
-            <div className="max-w-7xl mx-auto h-full px-5 lg:px-10">
+            <div className="max-w-7xl mx-auto px-5 lg:px-10">
               <Expertise />
             </div>
           </div>
+        </section>
+
+        <section className="h-screen bg-white">
+          <h2 className="text-3xl font-bold text-primary">Ultima seção</h2>
         </section>
       </main>
     </div>
