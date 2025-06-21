@@ -1,6 +1,6 @@
 import Image from "next/image";
 import * as motion from "motion/react-client"
-import { FlipText } from "./magicui/flip-text";
+import { FlipText } from "@/components/ui/flip-text";
 
 const data = [
   {

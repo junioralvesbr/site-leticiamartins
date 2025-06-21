@@ -1,4 +1,4 @@
-import { FlipText } from "@/components/magicui/flip-text";
+import { FlipText } from "@/components/ui/flip-text";
 import { FaRing } from "react-icons/fa6";
 
 export default function Expertise() {
