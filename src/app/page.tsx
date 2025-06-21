@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Sevices";
 import Expertise from "@/components/Expertise";
 import Fotos from "@/components/Fotos";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -43,6 +44,10 @@ export default function Home() {
           <Fotos />
         </section>
       </main>
+
+      <footer className="bg-deepViolet-700 h-screen mt-52">
+        <Footer />
+      </footer>
     </div>
   );
 }
