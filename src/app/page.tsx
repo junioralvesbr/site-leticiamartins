@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Sevices";
 import Expertise from "@/components/Expertise";
+import Fotos from "@/components/Fotos";
 
 export default function Home() {
   return (
@@ -38,8 +39,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="h-screen bg-white">
-          <h2 className="text-3xl font-bold text-deepViolet-700">Ultima seção</h2>
+        <section className="h-screen bg-white py-24">
+          <Fotos />
         </section>
       </main>
     </div>
