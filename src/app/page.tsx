@@ -24,15 +24,14 @@ export default function Home() {
       <main>
         <section
           data-name="nossos-servicos"
-          className="bg-degrade rounded-tr-12xl rounded-bl-12xl py-20"
-        >
+          className="bg-degrade rounded-tr-12xl rounded-bl-12xl py-20">
           <div className="max-w-7xl mx-auto h-full px-5">
             <Services />
           </div>
         </section>
 
-        <section data-name="expertises" className="bg-site-100">
-          <div className="bg-white rounded-tr-12xl pt-20">
+        <section data-name="expertises" className="bg-site-100 mt-12 sm:mt-20">
+          <div className="bg-white rounded-tr-12xl">
             <div className="max-w-7xl mx-auto px-5 lg:px-10">
               <Expertise />
             </div>

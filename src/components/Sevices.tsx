@@ -1,6 +1,6 @@
 import Image from "next/image";
 import * as motion from "motion/react-client"
-import SubTitleH2 from "@/components/SubTitleH2";
+import { FlipText } from "./magicui/flip-text";
 
 const data = [
   {
@@ -29,7 +29,7 @@ export default function Services() {
   return (
     <div>
       <h2 className="flex items-center justify-center">
-        <SubTitleH2>Nossos Serviços</SubTitleH2>
+        <FlipText>{`Nossos ${'\n'} Serviços`}</FlipText>
       </h2>
 
       <motion.div
