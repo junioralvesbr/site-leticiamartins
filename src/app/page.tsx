@@ -41,16 +41,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="h-screen bg-white py-24">
-          <Fotos />
-        </section>
-
-        <section className="h-screen bg-white py-24">
+        <section className="h-screen bg-white py-24 overflow-hidden">
           <DraggableCardDemo />
         </section>
       </main>
 
-      <footer className="bg-deepViolet-700 mt-52">
+      <footer className="bg-deepViolet-700">
         <Footer />
       </footer>
     </div>

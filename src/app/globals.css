@@ -28,8 +28,7 @@
   --text-clamp: clamp(3rem, 15vw, 8rem);
 
   /* Spacing */
-  --radius-12xl: 8rem
-;
+  --radius-12xl: 8rem;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -62,7 +61,8 @@
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px)}
+  --radius-xl: calc(var(--radius) + 4px)
+}
 
 body {
   @apply font-ptSerif leading-relaxed;
@@ -147,7 +147,8 @@ body {
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);}
+  --sidebar-ring: oklch(0.708 0 0);
+}
 
 .dark {
   --background: oklch(0.145 0 0);
@@ -180,10 +181,15 @@ body {
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);}
+  --sidebar-ring: oklch(0.556 0 0);
+}
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;}
+    @apply border-border outline-ring/50;
+  }
+
   body {
-    @apply bg-background text-foreground;}}
+    @apply bg-background text-foreground;
+  }
+}

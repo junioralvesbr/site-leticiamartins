@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="text-white p-24">
       <div className="flex flex-col gap-24 max-w-7xl mx-auto min-h-64">
-        <div className="flex gap-20">
+        <div className="flex flex-wrap gap-20">
           <div className="flex flex-col flex-2 gap-8">
             <h3 className="border-y-1 border-white uppercase font-anton text-lg py-5">
               Entre em contato
@@ -10,7 +10,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>Instagram</li>
               <li>WhatsApp</li>
-              <li>Curso</li>
+              <li>Organize a sua casa</li>
             </ul>
           </div>
 
