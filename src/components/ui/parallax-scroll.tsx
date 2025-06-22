@@ -1,7 +1,6 @@
 "use client";
-import { useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import { motion } from "motion/react";
+import { useScroll, useTransform, motion } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
@@ -12,7 +11,7 @@ export const ParallaxScroll = ({
   images: string[];
   className?: string;
 }) => {
-  const gridRef = useRef<any>(null);
+  const gridRef = useRef(null);
   const { scrollYProgress } = useScroll({
     container: gridRef, // remove this if your container is not fixed height
     offset: ["start start", "end start"], // remove this if your container is not fixed height

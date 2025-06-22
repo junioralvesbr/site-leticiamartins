@@ -1,4 +1,3 @@
-"use client";
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 import { FlipText } from "@/components/ui/flip-text";
 
