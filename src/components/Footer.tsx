@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="text-right border-t-1 border-white">
+        <p className="text-right border-t-1 border-white py-2">
           © 2025 Leticia Martins. Todos os direitos reservados.</p>
       </div>
     </footer>
