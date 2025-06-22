@@ -4,6 +4,8 @@ import * as motion from "motion/react-client"
 
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 
+import ImageHero from "@/assets/images/leticia-martins.png"
+
 export default function Hero() {
   return (
     <div>
@@ -18,7 +20,7 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/images/leticia-martins.png"
+            src={ImageHero}
             alt="Leticia Martins"
             fill
             className="object-cover object-[25%_25%] w-full h-full"
