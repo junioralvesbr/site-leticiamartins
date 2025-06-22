@@ -45,7 +45,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-deepViolet-700 h-screen mt-52">
+      <footer className="bg-deepViolet-700 mt-52">
         <Footer />
       </footer>
     </div>
