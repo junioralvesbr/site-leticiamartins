@@ -4,6 +4,7 @@ import Services from "@/components/Sevices";
 import Expertise from "@/components/Expertise";
 import Fotos from "@/components/Fotos";
 import Footer from "@/components/Footer";
+import DraggableCardDemo from "@/components/DraggableCardDemo";
 
 export default function Home() {
   return (
@@ -42,6 +43,10 @@ export default function Home() {
 
         <section className="h-screen bg-white py-24">
           <Fotos />
+        </section>
+
+        <section className="h-screen bg-white py-24">
+          <DraggableCardDemo />
         </section>
       </main>
 
