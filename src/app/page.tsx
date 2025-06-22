@@ -41,8 +41,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="h-screen bg-white py-24 overflow-hidden">
-          <DraggableCardDemo />
+        <section
+          data-name="draggable-cards"
+          className="h-screen bg-deepViolet-700 overflow-hidden mt-10">
+          <div className="bg-white rounded-bl-12xl">
+            <DraggableCardDemo />
+          </div>
         </section>
       </main>
 
