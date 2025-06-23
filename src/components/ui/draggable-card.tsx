@@ -14,9 +14,11 @@ import {
 export const DraggableCardBody = ({
   className,
   children,
+  finalPosition = { x: 0, y: 0 },
 }: {
   className?: string;
   children?: React.ReactNode;
+  finalPosition?: { x: number; y: number };
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -128,7 +130,7 @@ export const DraggableCardBody = ({
 
         const velocityMagnitude = Math.sqrt(
           currentVelocityX * currentVelocityX +
-            currentVelocityY * currentVelocityY,
+          currentVelocityY * currentVelocityY,
         );
         const bounce = Math.min(0.8, velocityMagnitude / 1000);
 
@@ -162,6 +164,10 @@ export const DraggableCardBody = ({
       whileHover={{ scale: 1.02 }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      initial={{ x: 0, y: 0 }}
+      whileInView={finalPosition}
+      transition={{ duration: 1, delay: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
       className={cn(
         "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d dark:bg-neutral-900",
         className,
