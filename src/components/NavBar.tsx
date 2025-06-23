@@ -1,6 +1,22 @@
+'use client';
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
+
 export default function NavBar() {
+  const { scrollYProgress } = useScroll();
+  const width = useTransform(scrollYProgress, [0, 0.01], ['100%', '30%'])
+
+  const smoothWidth = useSpring(width, {
+    stiffness: 100,
+    damping: 20,
+    mass: 0.5,
+  });
+
   return (
-    <ul className="flex justify-between items-center">
+    <motion.ul
+      className="flex justify-between items-center ml-auto"
+      style={{ width: smoothWidth }}
+      transition={{ duration: 5, ease: 'easeInOut' }}
+    >
       <li>
         <a href="#serviços" className="font-ptSerif text-zinc-600 hover:text-deepViolet-600 transition-all">
           Serviços
@@ -25,6 +41,6 @@ export default function NavBar() {
           </div>
         </a>
       </li>
-    </ul>
+    </motion.ul>
   )
 }
