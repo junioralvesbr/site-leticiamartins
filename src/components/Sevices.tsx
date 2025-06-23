@@ -2,29 +2,28 @@ import Image from "next/image";
 import * as motion from "motion/react-client"
 import { FlipText } from "@/components/ui/flip-text";
 
-import ResidencialImage from "@/assets/images/servicos/residencial.jpg"
-import PosMudanca from "@/assets/images/servicos/pos-mudanca.png"
-import Empresarial from "@/assets/images/servicos/empresarial.png"
-import MoveisPlanejados from "@/assets/images/servicos/moveis-planejados.png"
-
 const data = [
   {
-    image: ResidencialImage,
+    image: "/images/servicos/residencial.jpg",
+    alt: "Foto de organização residencial",
     title: 'Organização Residencial',
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia'
   },
   {
-    image: PosMudanca,
+    image: "/images/servicos/pos-mudanca.png",
+    alt: "Foto de pós mudança residencial",
     title: 'Pós Mudança Residencial',
     description: 'Mudança residencial'
   },
   {
-    image: Empresarial,
+    image: "/images/servicos/empresarial.png",
+    alt: "Foto de organização empresarial",
     title: 'Organização Empresarial',
     description: 'Organização de empresas'
   },
   {
-    image: MoveisPlanejados,
+    image: "/images/servicos/moveis-planejados.png",
+    alt: "Foto de consultoria em móveis planejados",
     title: 'Consultora em Móveis Planejados',
     description: 'Cursos e palestras de organização'
   },
@@ -49,7 +48,7 @@ export default function Services() {
             <div className="overflow-hidden rounded-lg">
               <Image
                 src={item.image}
-                alt="Serviços"
+                alt={item.alt}
                 width={500}
                 height={500}
                 className="w-full h-96 rounded-lg hover:scale-105 transition-all duration-300 ease-in-out"
