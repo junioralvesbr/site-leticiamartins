@@ -32,7 +32,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section data-name="expertises" className="bg-site-100 mt-12 sm:mt-20">
+        <section
+          id="expertises"
+          data-name="expertises"
+          className="bg-site-100 mt-12 sm:mt-20">
           <div className="bg-white rounded-tr-12xl">
             <div className="max-w-7xl mx-auto px-5 lg:px-10">
               <Expertise />

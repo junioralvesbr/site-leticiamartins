@@ -19,7 +19,7 @@ export default function Footer() {
               Explore
             </h3>
             <ul className="flex flex-col gap-4">
-              <li>Sobre nós</li>
+              <li>Sobre min</li>
               <li>Serviços</li>
               <li>Contato</li>
             </ul>
