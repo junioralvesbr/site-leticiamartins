@@ -45,7 +45,7 @@ export default function Home() {
 
         <section
           data-name="draggable-cards"
-          className="h-screen bg-deepViolet-700 overflow-hidden mt-10">
+          className="h-screen bg-deepViolet-700 overflow-hidden mt-20">
           <div className="bg-white rounded-bl-12xl">
             <Fotos />
           </div>
