@@ -4,7 +4,7 @@ import { FlipText } from "@/components/ui/flip-text";
 
 const data = [
   {
-    image: "/images/servicos/residencial.jpg",
+    image: "/images/servicos/residencial.png",
     alt: "Foto de organização residencial",
     title: 'Organização Residencial',
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia'
