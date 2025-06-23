@@ -4,7 +4,6 @@ import Services from "@/components/Sevices";
 import Expertise from "@/components/Expertise";
 import Fotos from "@/components/Fotos";
 import Footer from "@/components/Footer";
-import DraggableCardDemo from "@/components/DraggableCardDemo";
 
 export default function Home() {
   return (
@@ -45,7 +44,7 @@ export default function Home() {
           data-name="draggable-cards"
           className="h-screen bg-deepViolet-700 overflow-hidden mt-10">
           <div className="bg-white rounded-bl-12xl">
-            <DraggableCardDemo />
+            <Fotos />
           </div>
         </section>
       </main>
