@@ -18,7 +18,7 @@ export const DraggableCardBody = ({
 }: {
   className?: string;
   children?: React.ReactNode;
-  finalPosition?: { x: number; y: number };
+  finalPosition?: { x: string | number; y: number };
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
