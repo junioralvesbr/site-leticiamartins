@@ -5,7 +5,7 @@ import {
   DraggableCardContainer,
 } from "@/components/ui/draggable-card";
 
-export default function Fotos() {
+export default function Pictures() {
   const items = [
     {
       title: "Tyler Durden",
@@ -50,7 +50,11 @@ export default function Fotos() {
         Organize seu LAR para aproveitar os melhores momentos da VIDA.
       </p>
       {items.map((item, index) => (
-        <DraggableCardBody className={item.className} finalPosition={item.finalPosition} key={index}>
+        <DraggableCardBody
+          key={index}
+          className={item.className}
+          finalPosition={item.finalPosition}
+        >
           <Image
             src={item.image}
             alt={item.title}

@@ -15,10 +15,16 @@ export const DraggableCardBody = ({
   className,
   children,
   finalPosition = { x: 0, y: 0 },
+  duration = 1,
+  delay = 0.5,
+  amount = 0.5
 }: {
   className?: string;
   children?: React.ReactNode;
   finalPosition?: { x: string | number; y: number };
+  duration?: number;
+  delay?: number;
+  amount?: number;
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -166,8 +172,8 @@ export const DraggableCardBody = ({
       onMouseLeave={handleMouseLeave}
       initial={{ x: 0, y: 0 }}
       whileInView={finalPosition}
-      transition={{ duration: 1, delay: 1 }}
-      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration, delay }}
+      viewport={{ once: true, amount }}
       className={cn(
         "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d dark:bg-neutral-900",
         className,

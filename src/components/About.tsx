@@ -1,12 +1,12 @@
 import { FlipText } from "@/components/ui/flip-text";
 import { FaRing } from "react-icons/fa6";
 
-export default function Expertise() {
+export default function About() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
       <div className="sticky top-20 sm:top-36">
         <h2 className="sticky top-20 sm:top-36">
-          <FlipText>Expertise</FlipText>
+          <FlipText>{`Sobre ${'\n'} min`}</FlipText>
         </h2>
       </div>
 
