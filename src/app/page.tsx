@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Pictures from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import MenuMobile from "@/components/MenuMobile";
 
 export default function Home() {
   return (
@@ -13,8 +14,12 @@ export default function Home() {
         id="navbar"
         className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-[rgba(255,255,255,0.7)]"
       >
-        <div className="max-w-7xl mx-auto px-5 lg:px-10">
+        <div className="max-w-7xl mx-auto px-5 hidden md:block lg:px-10">
           <NavBar />
+        </div>
+
+        <div>
+          <MenuMobile />
         </div>
       </nav>
 
@@ -50,7 +55,7 @@ export default function Home() {
 
         <section
           id="pictures"
-          className="h-screen bg-deepViolet-700 overflow-hidden mt-20">
+          className="h-screen bg-deepViolet-700 overflow-hidden mt-20 hidden md:block">
           <div className="bg-white rounded-bl-12xl">
             <Pictures />
           </div>
