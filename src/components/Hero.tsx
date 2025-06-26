@@ -21,8 +21,9 @@ export default function Hero() {
             src="/images/leticia-martins.png"
             alt="Leticia Martins"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover object-[25%_25%] w-full h-full"
-            sizes="(max-width: 768px) 100vw, 1200px"
+            priority
           />
         </motion.figure>
       </div>
