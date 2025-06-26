@@ -12,7 +12,7 @@ export default function Home() {
 
       <nav
         id="navbar"
-        className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-[rgba(255,255,255,0.7)]"
+        className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70"
       >
         <div className="max-w-7xl mx-auto px-5 hidden lg:block lg:px-10">
           <NavBar />
