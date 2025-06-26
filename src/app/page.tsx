@@ -14,7 +14,7 @@ export default function Home() {
         id="navbar"
         className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-[rgba(255,255,255,0.7)]"
       >
-        <div className="max-w-7xl mx-auto px-5 hidden md:block lg:px-10">
+        <div className="max-w-7xl mx-auto px-5 hidden lg:block lg:px-10">
           <NavBar />
         </div>
 

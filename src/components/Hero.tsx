@@ -31,7 +31,7 @@ export default function Hero() {
 
       <section className="flex flex-col flex-nowrap gap-5 min-h-68 mt-10 xl:flex-row xl:gap-20">
         <motion.div
-          className="flex flex-col flex-wrap shrink-0 gap-2 justify-start"
+          className="flex flex-col flex-wrap flex-1 shrink-0 gap-2 justify-start"
           initial={{ opacity: 0, transform: "translateY(100px)" }}
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{
@@ -43,13 +43,13 @@ export default function Hero() {
             Personal Organizer
           </p>
 
-          <h1 className="font-anton text-clamp text-deepViolet-700 whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-8xl xl:text-8xl">
+          <h1 className="font-anton text-clamp text-deepViolet-700 whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-[100px] xl:text-[116px]">
             Leticia Martins
           </h1>
         </motion.div>
 
         <motion.div
-          className="flex flex-col flex-wrap shrink gap-8 max-w-sm lg:self-end"
+          className="flex flex-col flex-wrap shrink gap-8 max-w-sm lg:pl-10 lg:self-end"
           initial={{ opacity: 0, transform: "translateY(100px)" }}
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{

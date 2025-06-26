@@ -1,11 +1,21 @@
 import React from "react";
 import { motion, Transition, SVGMotionProps } from "motion/react";
+
+type LineProps = {
+  stroke?: string
+  strokeWidth?: number
+  vectorEffect?: string
+  initial?: string
+  animate?: "opened" | "closed"
+  transition?: Transition
+  strokeLinecap?: "butt" | "round" | "square" | "inherit"
+}
 interface Props extends SVGMotionProps<SVGSVGElement> {
   isOpen?: boolean;
   color?: string;
   strokeWidth?: string | number;
   transition?: Transition;
-  lineProps?: any;
+  lineProps?: LineProps;
 }
 
 const MenuButton = ({
@@ -15,7 +25,7 @@ const MenuButton = ({
   strokeWidth = 1,
   color = "#000",
   transition,
-  lineProps = {},
+  lineProps,
   ...props
 }: Props) => {
   const variant = isOpen ? "opened" : "closed";
@@ -54,6 +64,7 @@ const MenuButton = ({
     initial: "closed",
     animate: variant,
     transition,
+    strokeLinecap: lineProps?.strokeLinecap ?? "round",
     ...lineProps
   };
   const unitHeight = 4;
