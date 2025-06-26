@@ -14,7 +14,7 @@ export default function MenuMobile() {
       <MenuButton
         isOpen={isOpen}
         onClick={() => setOpen(!isOpen)}
-        strokeWidth="8"
+        strokeWidth="4"
         color="#401952"
         lineProps={{ strokeLinecap: "round" }}
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
