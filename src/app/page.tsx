@@ -18,7 +18,7 @@ export default function Home() {
           <NavBar />
         </div>
 
-        <div>
+        <div className="max-w-7xl mx-auto px-5 lg:hidden lg:px-10">
           <MenuMobile />
         </div>
       </nav>

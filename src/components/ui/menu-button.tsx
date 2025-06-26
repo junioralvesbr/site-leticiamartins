@@ -1,16 +1,11 @@
 import React from "react";
 import { motion, Transition, SVGMotionProps } from "motion/react";
-
-type lineProps = {
-
-}
-
 interface Props extends SVGMotionProps<SVGSVGElement> {
   isOpen?: boolean;
   color?: string;
   strokeWidth?: string | number;
   transition?: Transition;
-  lineProps?: {};
+  lineProps?: any;
 }
 
 const MenuButton = ({

@@ -43,6 +43,7 @@ export default function NavBar() {
           />
         </motion.figure>
       </a>
+
       <motion.ul
         className="flex justify-between items-center right-0 absolute z-10"
         style={{ width: smoothWidth }}
