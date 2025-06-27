@@ -52,7 +52,7 @@ export function FlipText({
             transition={{ duration, delay: i * delayMultiple }}
             viewport={{ once: true, amount: 0.5 }}
             className={
-              cn("origin-center drop-shadow-sm font-anton font-bold text-deepViolet-700 inline-block text-4xl sm:text-5xl",
+              cn("origin-center drop-shadow-sm font-titles font-bold text-deepViolet-700 inline-block text-4xl sm:text-5xl",
                 className)}
             {...props}
           >

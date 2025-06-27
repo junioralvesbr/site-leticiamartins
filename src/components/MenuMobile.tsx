@@ -76,7 +76,7 @@ export default function MenuMobile() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <li className="text-lg font-ptSerif bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
+            <li className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
               <FaInstagram
                 className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
             </li>
@@ -89,7 +89,7 @@ export default function MenuMobile() {
             rel="noopener noreferrer"
           >
             <li
-              className="text-lg font-ptSerif bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
+              className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
               <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
             </li>
           </Link>

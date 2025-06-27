@@ -39,11 +39,11 @@ export default function Hero() {
             delay: 0.5
           }}
         >
-          <p className="text-lg font-ptSerif text-deepViolet-600">
+          <p className="text-lg font-subTitles text-deepViolet-600">
             Personal Organizer
           </p>
 
-          <h1 className="font-anton text-clamp text-deepViolet-700 whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-[100px] xl:text-[116px]">
+          <h1 className="font-titles text-clamp text-deepViolet-700 whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-[100px] xl:text-[116px]">
             Leticia Martins
           </h1>
         </motion.div>
@@ -57,7 +57,7 @@ export default function Hero() {
             delay: 1
           }}
         >
-          <p className="text-lg font-ptSerif text-deepViolet-500 text-balance">
+          <p className="text-lg font-subTitles text-deepViolet-500 text-balance">
             Minha paixão é organizar! Transformo ambientes para trazer mais harmonia e praticidade ao seu dia a dia.
           </p>
 
@@ -68,7 +68,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-lg font-ptSerif bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
+              <li className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
                 <FaInstagram
                   className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
               </li>
@@ -81,7 +81,7 @@ export default function Hero() {
               rel="noopener noreferrer"
             >
               <li
-                className="text-lg font-ptSerif bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
+                className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
                 <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
               </li>
             </Link>

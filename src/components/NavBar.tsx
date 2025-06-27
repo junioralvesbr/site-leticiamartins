@@ -51,24 +51,24 @@ export default function NavBar() {
         transition={{ duration: 5, ease: 'easeInOut' }}
       >
         <li>
-          <a href="#services" className="font-ptSerif text-zinc-600 hover:text-deepViolet-600 transition-all">
+          <a href="#services" className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all">
             Serviços
           </a>
         </li>
         <li>
-          <a href="#about" className="font-ptSerif text-zinc-600 hover:text-deepViolet-600 transition-all">
+          <a href="#about" className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all">
             Sobre
           </a>
         </li>
         <li>
-          <a href="#pictures" className="font-ptSerif text-zinc-600 hover:text-deepViolet-600 transition-all">
+          <a href="#pictures" className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all">
             Curso
           </a>
         </li>
         <li className="group">
           <a href="#contato">
             <div className="border-1 rounded-full border-deepViolet-600 px-6 py-2 group-hover:bg-deepViolet-600 transition-all">
-              <p className="font-ptSerif text-deepViolet-600 group-hover:text-white transition-all">
+              <p className="font-subTitles text-deepViolet-600 group-hover:text-white transition-all">
                 Contato
               </p>
             </div>

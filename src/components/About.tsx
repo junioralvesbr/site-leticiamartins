@@ -24,11 +24,11 @@ export default function About() {
             </div>
           </div>
           <div>
-            <p className="text-3xl font-ptSerif font-bold text-black capitalize">
+            <p className="text-3xl font-subTitles font-bold text-black capitalize">
               Experiência
             </p>
 
-            <p className="text-base font-ptSerif text-deepViolet-700">
+            <p className="text-base font-subTitles text-deepViolet-700">
               Mais de {calculaExperiencia()} anos de atendimento com diversos projetos.
             </p>
           </div>
@@ -41,11 +41,11 @@ export default function About() {
             </div>
           </div>
           <div>
-            <p className="text-3xl font-ptSerif font-bold text-black capitalize">
+            <p className="text-3xl font-subTitles font-bold text-black capitalize">
               Equipe
             </p>
 
-            <p className="text-base font-ptSerif text-deepViolet-700">
+            <p className="text-base font-subTitles text-deepViolet-700">
               Equipe bem treinada e capacitada para o seu atendimento.
             </p>
           </div>
@@ -58,11 +58,11 @@ export default function About() {
             </div>
           </div>
           <div>
-            <p className="text-3xl font-ptSerif font-bold text-white capitalize">
+            <p className="text-3xl font-subTitles font-bold text-white capitalize">
               Projetos profissionais
             </p>
 
-            <p className="text-base font-ptSerif text-white">
+            <p className="text-base font-subTitles text-white">
               Facilidade e simplicidade para o seu dia a dia, tornando tudo mais prático e eficiente.
             </p>
           </div>
@@ -75,11 +75,11 @@ export default function About() {
             </div>
           </div>
           <div>
-            <p className="text-3xl font-ptSerif font-bold text-white capitalize">
+            <p className="text-3xl font-subTitles font-bold text-white capitalize">
               Atendimento ao cliente
             </p>
 
-            <p className="text-base font-ptSerif text-white">
+            <p className="text-base font-subTitles text-white">
               Elaboramos soluções personalizadas para a organização da sua casa ou empresa.
             </p>
           </div>

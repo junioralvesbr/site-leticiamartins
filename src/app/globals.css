@@ -17,8 +17,8 @@
   --color-deepViolet-700: #401952;
 
   /* Fonts */
-  --font-anton: var(--font-anton);
-  --font-ptSerif: var(--font-pt-serif);
+  --font-titles: var(--font-anton);
+  --font-subTitles: var(--font-pt-serif);
   --font-dmSans: var(--font-dm-sans);
 
   /* Height */
@@ -32,7 +32,7 @@
 }
 
 body {
-  @apply font-ptSerif leading-relaxed;
+  @apply font-subTitles leading-relaxed;
   font-optical-sizing: auto;
   font-synthesis: none;
   scroll-behavior: smooth;

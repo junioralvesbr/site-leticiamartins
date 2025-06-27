@@ -54,11 +54,11 @@ export default function Services() {
                 className="w-full h-96 rounded-lg hover:scale-105 transition-all duration-300 ease-in-out"
               />
             </div>
-            <p className="text-deepViolet-600 font-ptSerif">
+            <p className="text-deepViolet-600 font-subTitles">
               {item.description}
             </p>
 
-            <h3 className="text-3xl font-ptSerif font-bold text-deepViolet-700">
+            <h3 className="text-3xl font-subTitles font-bold text-deepViolet-700">
               {item.title}
             </h3>
           </article>
