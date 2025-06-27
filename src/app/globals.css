@@ -19,7 +19,7 @@
   /* Fonts */
   --font-titles: var(--font-anton);
   --font-subTitles: var(--font-pt-serif);
-  --font-dmSans: var(--font-dm-sans);
+  --font-paragraph: var(--font-dm-sans);
 
   /* Height */
   --height-120: calc(var(--spacing) * 120);
