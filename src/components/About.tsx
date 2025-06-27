@@ -1,7 +1,5 @@
 import { FlipText } from "@/components/ui/flip-text";
-import { FaRing } from "react-icons/fa6";
-import { PiCertificateDuotone } from "react-icons/pi";
-
+import { FaMedal, FaUsersGear, FaCompassDrafting, FaHandshake } from "react-icons/fa6";
 
 export default function About() {
 
@@ -21,8 +19,8 @@ export default function About() {
       <div className="flex flex-col gap-10 sticky top-36">
         <div className="bg-deepViolet-200 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-2">
           <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-[#dec2f0] w-12 h-12">
-              <PiCertificateDuotone width={42} height={42} color="#9556c7" />
+            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-300 w-12 h-12">
+              <FaMedal width={42} height={42} className="text-deepViolet-500 w-6 h-6" />
             </div>
           </div>
           <div>
@@ -38,7 +36,9 @@ export default function About() {
 
         <div className="bg-deepViolet-300 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 -rotate-2">
           <div className="flex justify-end-safe">
-            <FaRing />
+            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-400 w-12 h-12">
+              <FaUsersGear width={42} height={42} className="text-white w-6 h-6" />
+            </div>
           </div>
           <div>
             <p className="text-3xl font-ptSerif font-bold text-black capitalize">
@@ -53,7 +53,9 @@ export default function About() {
 
         <div className="bg-deepViolet-400 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-4">
           <div className="flex justify-end-safe">
-            <FaRing />
+            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-600 w-12 h-12">
+              <FaCompassDrafting width={42} height={42} className="text-white w-6 h-6" />
+            </div>
           </div>
           <div>
             <p className="text-3xl font-ptSerif font-bold text-white capitalize">
@@ -68,7 +70,9 @@ export default function About() {
 
         <div className="bg-deepViolet-500 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36">
           <div className="flex justify-end-safe">
-            <FaRing />
+            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-700 w-12 h-12">
+              <FaHandshake width={42} height={42} className="text-white w-6 h-6" />
+            </div>
           </div>
           <div>
             <p className="text-3xl font-ptSerif font-bold text-white capitalize">
