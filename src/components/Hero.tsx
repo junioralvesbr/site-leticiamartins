@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import * as motion from "motion/react-client"
 
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
+import SocialMediaButton from "@/components/SocialMediaButtons";
 
 export default function Hero() {
   return (
@@ -61,31 +60,9 @@ export default function Hero() {
             Minha paixão é organizar! Transformo ambientes para trazer mais harmonia e praticidade ao seu dia a dia.
           </p>
 
-          <ul className="flex gap-4">
-            <Link
-              href="https://www.instagram.com/leticiamartins.organizer/"
-              className="group"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
-                <FaInstagram
-                  className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
-              </li>
-            </Link>
-
-            <Link
-              href="https://wa.me/5511999999999"
-              className="group"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li
-                className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
-                <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
-              </li>
-            </Link>
-          </ul>
+          <div>
+            <SocialMediaButton className="flex gap-4" />
+          </div>
         </motion.div>
       </section>
     </div>

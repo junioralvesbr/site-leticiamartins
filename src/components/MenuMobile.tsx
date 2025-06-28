@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { MenuButton } from "./ui/menu-button";
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import SocialMediaButton from "./SocialMediaButtons";
 
 export default function MenuMobile() {
   const [isOpen, setOpen] = useState(false);
@@ -68,32 +69,9 @@ export default function MenuMobile() {
           </li>
         </ul>
 
-
-        <ul className="flex justify-center items-center gap-8 mt-10">
-          <Link
-            href="https://www.instagram.com/leticiamartins.organizer/"
-            className="group"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <li className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
-              <FaInstagram
-                className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
-            </li>
-          </Link>
-
-          <Link
-            href="https://wa.me/5511999999999"
-            className="group"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <li
-              className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300">
-              <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
-            </li>
-          </Link>
-        </ul>
+        <div>
+          <SocialMediaButton className="flex justify-center items-center gap-8 mt-10" />
+        </div>
       </motion.div>
     </>
   )
