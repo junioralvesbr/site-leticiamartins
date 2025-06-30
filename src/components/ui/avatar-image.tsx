@@ -12,6 +12,5 @@ export default function AvatarImage() {
         style={{ objectPosition: "50% 25%" }}
       />
     </figure>
-
   )
 }

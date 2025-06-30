@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import Pictures from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import MenuMobile from "@/components/MenuMobile";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,12 +21,8 @@ export default function Home() {
         id="navbar"
         className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70"
       >
-        <div className="max-w-7xl mx-auto px-5 hidden lg:block lg:px-10">
+        <div className="max-w-7xl mx-auto hidden px-5 lg:block ">
           <NavBar />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-5 lg:hidden lg:px-10">
-          <MenuMobile />
         </div>
       </nav>
 
