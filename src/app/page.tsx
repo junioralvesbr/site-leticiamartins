@@ -5,6 +5,14 @@ import Pictures from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import MenuMobile from "@/components/MenuMobile";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Leticia Martins Personal Organizer',
+  alternates: {
+    canonical: 'https://www.leticiamartins.com.br',
+  },
+}
 
 export default function Home() {
   return (
