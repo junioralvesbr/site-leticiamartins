@@ -1,6 +1,7 @@
 'use client';
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import Image from "next/image";
+import AvatarImage from "./ui/avatar-image";
 
 export default function NavBar() {
   const { scrollYProgress } = useScroll();
@@ -29,20 +30,12 @@ export default function NavBar() {
   return (
     <div className="flex items-center relative">
       <a href="#header">
-        <motion.figure
-          className="relative w-12 h-12 rounded-full overflow-hidden"
+        <motion.div
           style={{ opacity: smoothOpacity, scale: smoothScale }}
           transition={{ duration: 5, ease: 'easeInOut' }}
         >
-          <Image
-            src="/images/leticia-martins.png"
-            alt="Logo"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "50% 25%" }}
-          />
-        </motion.figure>
+          <AvatarImage />
+        </motion.div>
       </a>
 
       <motion.ul

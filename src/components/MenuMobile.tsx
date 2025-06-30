@@ -3,38 +3,48 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { MenuButton } from "./ui/menu-button";
-import Link from "next/link";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import SocialMediaButton from "./SocialMediaButtons";
+import AvatarImage from "./ui/avatar-image";
+import Link from "next/link";
 
 export default function MenuMobile() {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <>
-      <div className="flex justify-end-safe">
-        <MenuButton
-          isOpen={isOpen}
-          onClick={() => setOpen(!isOpen)}
-          strokeWidth="4"
-          color="#401952"
-          lineProps={{ strokeLinecap: "round" }}
-          transition={{ type: "spring", stiffness: 260, damping: 20 }}
-          width="24"
-          height="24"
-        // style={menuButtonStyle}
-        />
-      </div>
+      <motion.div
+        className="flex items-center justify-between"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        <Link href="#navbar">
+          <AvatarImage />
+        </Link>
+
+        <div className="flex justify-end-safe">
+          <MenuButton
+            isOpen={isOpen}
+            onClick={() => setOpen(!isOpen)}
+            strokeWidth="4"
+            color="#401952"
+            lineProps={{ strokeLinecap: "round" }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            width="24"
+            height="24"
+          // style={menuButtonStyle}
+          />
+        </div>
+      </motion.div>
 
 
       <motion.div
-        className="absolute overflow-hidden top-10 left-0 right-0 h-dvh p-8 bg-white"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isOpen ? 1 : 0 }}
+        className="absolute overflow-hidden top-16 -right-full w-full h-dvh p-8 bg-white"
+        initial={{ right: "-100%" }}
+        animate={{ right: isOpen ? 0 : "-100%" }}
         layout
         transition={{
           type: "spring",
-          visualDuration: 0.2,
+          visualDuration: 0.5,
           bounce: 0.2,
         }}
       >
