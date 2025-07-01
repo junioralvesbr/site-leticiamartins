@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import * as motion from "motion/react-client"
-
-import SocialMediaButton from "@/components/SocialMediaButtons";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { links } from "@/data/links";
+import SocialLinkButton from "./ui/social-link-button";
 
 export default function Hero() {
   return (
@@ -60,9 +62,40 @@ export default function Hero() {
             Minha paixão é organizar! Transformo ambientes para trazer mais harmonia e praticidade ao seu dia a dia.
           </p>
 
-          <div>
-            <SocialMediaButton className="flex gap-4" />
-          </div>
+          <ul className="flex gap-4">
+            {links.socialMedia.map((link) => (
+              <SocialLinkButton key={link.id} name={link.name} href={link.path} />
+            ))}
+            {/* <li className="group">
+              <Link
+                href={links.Instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300"
+                >
+                  <FaInstagram
+                    className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
+                </div>
+              </Link>
+            </li>
+
+            <li className="group">
+              <Link
+                href={links.Whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300"
+                >
+                  <FaWhatsapp
+                    className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
+                </div>
+              </Link>
+            </li> */}
+          </ul>
         </motion.div>
       </section>
     </div>
