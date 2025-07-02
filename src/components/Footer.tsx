@@ -17,20 +17,12 @@ export default function Footer() {
                     href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                   >
                     {item.name}
                   </a>
                 </li>
               ))}
-              <li>
-                <a
-                  href="https://curso.leticiamartins.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Curso
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -38,11 +30,34 @@ export default function Footer() {
             <h3 className="border-y-1 border-white uppercase font-titles text-lg py-5">
               Explore
             </h3>
-            <ul className="flex flex-col gap-4">
-              <li>Sobre min</li>
-              <li>Serviços</li>
-              <li>Contato</li>
-            </ul>
+
+            <div className="flex flex-wrap justify-between">
+              <ul className="flex flex-col gap-4">
+                {links.internal.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={item.path}
+                      className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className="flex flex-col gap-4">
+                {links.navigation.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={item.path}
+                      className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

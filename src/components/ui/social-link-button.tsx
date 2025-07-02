@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 type Props = {
   name: string;
@@ -10,7 +10,8 @@ type Icons = Record<string, JSX.Element>
 
 const Icons: Icons = {
   Instagram: <FaInstagram className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />,
-  WhatsApp: <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
+  WhatsApp: <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />,
+  Facebook: <FaFacebook className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
 }
 
 export default function SocialLinkButton({ name, href }: Props) {

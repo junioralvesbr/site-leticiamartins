@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import * as motion from "motion/react-client"
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { links } from "@/data/links";
+
 import SocialLinkButton from "./ui/social-link-button";
 
 export default function Hero() {

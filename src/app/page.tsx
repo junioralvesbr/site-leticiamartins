@@ -39,7 +39,7 @@ export default function Home() {
 
       <main>
         <section
-          id="services"
+          id="servicos"
           className="bg-degrade rounded-tr-12xl rounded-bl-12xl py-20">
           <div className="max-w-7xl mx-auto h-full px-5">
             <Services />
@@ -47,7 +47,7 @@ export default function Home() {
         </section>
 
         <section
-          id="about"
+          id="sobre"
           className="bg-site-100 mt-12 sm:mt-20">
           <div className="bg-white rounded-tr-12xl">
             <div className="max-w-7xl mx-auto px-5 lg:px-10">

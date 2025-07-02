@@ -2,10 +2,12 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import Image from "next/image";
 import AvatarImage from "./ui/avatar-image";
+import { links } from "@/data/links";
+import Link from "next/link";
 
 export default function NavBar() {
   const { scrollYProgress } = useScroll();
-  const width = useTransform(scrollYProgress, [0, 0.01], ['100%', '30%'])
+  const width = useTransform(scrollYProgress, [0, 0.01], ['100%', '40%'])
   const itemOpacity = useTransform(scrollYProgress, [0, 0.02], [0, 1])
   const itemScale = useTransform(scrollYProgress, [0, 0.02], [0, 1])
 
@@ -43,23 +45,18 @@ export default function NavBar() {
         style={{ width: smoothWidth }}
         transition={{ duration: 5, ease: 'easeInOut' }}
       >
-        <li>
-          <a href="#services" className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all">
-            Serviços
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all">
-            Sobre
-          </a>
-        </li>
-        <li>
-          <a href="#pictures" className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all">
-            Curso
-          </a>
-        </li>
+        {links.internal.map((item) => (
+          <li key={item.id}>
+            <Link
+              href={item.path}
+              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
         <li className="group">
-          <a href="#contato">
+          <a href={links.socialMedia[1].path}>
             <div className="border-1 rounded-full border-deepViolet-600 px-6 py-2 group-hover:bg-deepViolet-600 transition-all">
               <p className="font-subTitles text-deepViolet-600 group-hover:text-white transition-all">
                 Contato
