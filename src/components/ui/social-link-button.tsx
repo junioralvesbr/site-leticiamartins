@@ -1,9 +1,7 @@
-import Link from "next/link";
 import { JSX } from "react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 type Props = {
-  key: number;
   name: string;
   href: string;
 }
@@ -15,10 +13,10 @@ const Icons: Icons = {
   WhatsApp: <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
 }
 
-export default function SocialLinkButton({ key, name, href }: Props) {
+export default function SocialLinkButton({ name, href }: Props) {
   return (
-    <li className="group" key={key}>
-      <Link
+    <div className="group">
+      <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
@@ -28,7 +26,7 @@ export default function SocialLinkButton({ key, name, href }: Props) {
         >
           {Icons[name]}
         </div>
-      </Link>
-    </li>
+      </a>
+    </div>
   )
 }

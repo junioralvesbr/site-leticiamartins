@@ -1,3 +1,6 @@
+import { links } from "@/data/links";
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="text-white p-24">
@@ -8,9 +11,26 @@ export default function Footer() {
               Entre em contato
             </h3>
             <ul className="flex flex-col gap-4">
-              <li>Instagram</li>
-              <li>WhatsApp</li>
-              <li>Organize a sua casa</li>
+              {links.socialMedia.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="https://curso.leticiamartins.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Curso
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -64,37 +64,10 @@ export default function Hero() {
 
           <ul className="flex gap-4">
             {links.socialMedia.map((link) => (
-              <SocialLinkButton key={link.id} name={link.name} href={link.path} />
+              <li key={link.id}>
+                <SocialLinkButton name={link.name} href={link.path} />
+              </li>
             ))}
-            {/* <li className="group">
-              <Link
-                href={links.Instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300"
-                >
-                  <FaInstagram
-                    className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
-                </div>
-              </Link>
-            </li>
-
-            <li className="group">
-              <Link
-                href={links.Whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div
-                  className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300"
-                >
-                  <FaWhatsapp
-                    className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
-                </div>
-              </Link>
-            </li> */}
           </ul>
         </motion.div>
       </section>
