@@ -1,11 +1,10 @@
-import NavBar from "@/components/NavBar";
+import { Metadata } from "next";
+
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Pictures from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import { Metadata } from "next";
-import MenuMobile from "@/components/MenuMobile";
 
 export const metadata: Metadata = {
   title: 'Leticia Martins Personal Organizer',

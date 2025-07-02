@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PT_Serif, DM_Sans, Anton } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import MenuMobile from "@/components/MenuMobile";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -86,6 +87,7 @@ export default function RootLayout({
       <body className={`${anton.variable} ${ptSerif.variable} ${dmSans.className} antialiased scroll-smooth`}>
         <div className="min-h-dvh max-w-screen bg-white">
           <NavBar />
+          <MenuMobile />
           {children}
         </div>
       </body>
