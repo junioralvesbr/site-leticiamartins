@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 
 import "./globals.css";
 import Footer from "@/components/Footer";
+import NavMobile from "@/components/NavMobile";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -89,6 +90,7 @@ export default function RootLayout({
       <body className={`${anton.variable} ${ptSerif.variable} ${dmSans.className} antialiased scroll-smooth`}>
         <div className="min-h-dvh max-w-screen bg-white">
           <NavBar />
+          <NavMobile />
           {children}
           <Footer />
         </div>
