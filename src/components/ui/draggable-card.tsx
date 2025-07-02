@@ -175,7 +175,7 @@ export const DraggableCardBody = ({
       transition={{ duration, delay }}
       viewport={{ once: true, amount }}
       className={cn(
-        "relative min-h-96 w-80 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d dark:bg-neutral-900",
+        "relative min-h-40 w-52 overflow-hidden rounded-md bg-neutral-100 p-6 shadow-2xl transform-3d dark:bg-neutral-900 lg-min-h-96 lg:w-80",
         className,
       )}
     >

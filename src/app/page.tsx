@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import Pictures from "@/components/Pictures";
+import { PicturesDesktop, PicturesMobile } from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
 
@@ -48,9 +48,12 @@ export default function Home() {
 
         <section
           id="pictures"
-          className="h-screen bg-deepViolet-700 overflow-hidden mt-20 hidden md:block">
-          <div className="bg-white rounded-bl-12xl">
-            <Pictures />
+          className="h-screen bg-deepViolet-700 overflow-hidden mt-20">
+          <div className="bg-white rounded-bl-12xl hidden lg:block">
+            <PicturesDesktop />
+          </div>
+          <div className="bg-white rounded-bl-12xl block lg:hidden">
+            <PicturesMobile />
           </div>
         </section>
       </main>
