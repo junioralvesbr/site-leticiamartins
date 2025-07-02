@@ -5,6 +5,7 @@ import Pictures from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import { Metadata } from "next";
+import MenuMobile from "@/components/MenuMobile";
 
 export const metadata: Metadata = {
   title: 'Leticia Martins Personal Organizer',
@@ -15,17 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-dvh max-w-screen bg-white">
-
-      <nav
-        id="navbar"
-        className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70"
-      >
-        <div className="max-w-7xl mx-auto hidden px-5 lg:block ">
-          <NavBar />
-        </div>
-      </nav>
-
+    <>
       <header
         id="header"
         className="bg-degrade"
@@ -70,6 +61,6 @@ export default function Home() {
         className="bg-deepViolet-700">
         <Footer />
       </footer>
-    </div>
+    </>
   );
 }

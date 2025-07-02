@@ -8,7 +8,7 @@ export const links = {
     {
       id: 2,
       name: "WhatsApp",
-      path: "https://wa.me/5511999999999",
+      path: "https://wa.me/5544998138138",
     },
     {
       id: 3,
@@ -18,9 +18,9 @@ export const links = {
   ],
   internal: [
     { id: 1, name: "Home", path: "/" },
-    { id: 2, name: "Serviços", path: "#servicos" },
-    { id: 3, name: "Sobre mim", path: "#sobre" },
-    { id: 4, name: "Curso", path: "#curso" },
+    { id: 2, name: "Serviços", path: "/#servicos" },
+    { id: 3, name: "Sobre mim", path: "/#sobre" },
+    { id: 4, name: "Curso", path: "/#curso" },
   ],
   navigation: [
     { id: 1, name: "Residencial", path: "/residencial" },

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PT_Serif, DM_Sans, Anton } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -83,7 +84,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${anton.variable} ${ptSerif.variable} ${dmSans.className} antialiased scroll-smooth`}>
-        {children}
+        <div className="min-h-dvh max-w-screen bg-white">
+          <NavBar />
+          {children}
+        </div>
       </body>
     </html>
   );
