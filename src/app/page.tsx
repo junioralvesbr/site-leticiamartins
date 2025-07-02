@@ -49,20 +49,14 @@ export default function Home() {
         <section
           id="pictures"
           className="h-screen bg-deepViolet-700 overflow-hidden mt-20">
-          <div className="bg-white rounded-bl-12xl hidden lg:block">
+          <div className="bg-white rounded-bl-12xl hidden sm:block">
             <PicturesDesktop />
           </div>
-          <div className="bg-white rounded-bl-12xl block lg:hidden">
+          <div className="bg-white rounded-bl-12xl block sm:hidden">
             <PicturesMobile />
           </div>
         </section>
       </main>
-
-      <footer
-        id="footer"
-        className="bg-deepViolet-700">
-        <Footer />
-      </footer>
     </>
   );
 }

@@ -4,6 +4,7 @@ import { PT_Serif, DM_Sans, Anton } from "next/font/google";
 import NavBar from "@/components/NavBar";
 
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -89,6 +90,7 @@ export default function RootLayout({
         <div className="min-h-dvh max-w-screen bg-white">
           <NavBar />
           {children}
+          <Footer />
         </div>
       </body>
     </html>

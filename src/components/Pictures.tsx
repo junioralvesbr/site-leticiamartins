@@ -11,7 +11,7 @@ const items = [
     image: "/images/mural/mural-1.jpg",
     className: "absolute top-10 left-[40%] rotate-[-5deg]",
     finalPosition: { x: '-200%', y: 40 },
-    finalPositionMobile: { x: '-80%', y: 60 }
+    finalPositionMobile: { x: '-80%', y: 10 }
   },
   {
     title: "The Narrator",
@@ -25,7 +25,7 @@ const items = [
     image: "/images/mural/mural-3.jpg",
     className: "absolute top-32 left-[55%] rotate-[10deg]",
     finalPosition: { x: '40%', y: 40 },
-    finalPositionMobile: { x: '-10%', y: -10 }
+    finalPositionMobile: { x: '-10%', y: -40 }
   },
   {
     title: "Norway",
