@@ -35,8 +35,8 @@ export default function NavMobile() {
               transition={{ duration: 0.2 }}
               className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-white border-b border-b-white/20"
             >
-              <ul className="grid gap-2">
-                {routes.internal.map((route, index) => (
+              <ul className="grid gap-5">
+                {routes.ancors.map((route, index) => (
                   <motion.li
                     key={route.id}
                     initial={{ opacity: 0, scale: 0 }}
@@ -50,7 +50,7 @@ export default function NavMobile() {
                     className="w-full p-[0.08rem] rounded-xl"
                   >
                     <Link href={route.path}>
-                      <span className="flex gap-1 text-center text-lg">
+                      <span className="flex gap-1 text-center text-lg text-deepViolet-400">
                         {route.name}
                       </span>
                     </Link>
@@ -58,10 +58,20 @@ export default function NavMobile() {
                 ))}
 
                 <ul className="flex gap-4">
-                  {routes.socialMedia.map((route) => (
-                    <li key={route.id}>
+                  {routes.socialMedia.map((route, index) => (
+                    <motion.li
+                      key={route.id}
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                        delay: 0.1 + index / 10
+                      }}
+                    >
                       <SocialLinkButton name={route.name} href={route.path} />
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </ul>

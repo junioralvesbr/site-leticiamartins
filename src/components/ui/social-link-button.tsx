@@ -9,9 +9,9 @@ type Props = {
 type Icons = Record<string, JSX.Element>
 
 const Icons: Icons = {
-  Instagram: <FaInstagram className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />,
-  WhatsApp: <FaWhatsapp className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />,
-  Facebook: <FaFacebook className="text-zinc-600 text-2xl group-hover:text-white transition-all duration-300" />
+  Instagram: <FaInstagram className="text-zinc-600 text-xl group-hover:text-white transition-all duration-300 lg:text-2xl" />,
+  WhatsApp: <FaWhatsapp className="text-zinc-600 text-xl group-hover:text-white transition-all duration-300 lg:text-2xl" />,
+  Facebook: <FaFacebook className="text-zinc-600 text-xl group-hover:text-white transition-all duration-300 lg:text-2xl" />
 }
 
 export default function SocialLinkButton({ name, href }: Props) {
@@ -23,7 +23,7 @@ export default function SocialLinkButton({ name, href }: Props) {
         rel="noopener noreferrer"
       >
         <div
-          className="text-lg font-subTitles bg-zinc-100 p-2.5 rounded-full group-hover:bg-purple-400 transition-all duration-300"
+          className="text-lg font-subTitles bg-zinc-100 p-2 rounded-full group-hover:bg-purple-400 transition-all duration-300 lg:p-2.5"
         >
           {Icons[name]}
         </div>
