@@ -31,14 +31,14 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70 hidden lg:block">
       <div className="flex items-center relative max-w-7xl mx-auto">
-        <a href="#header">
+        <Link href="#header">
           <motion.div
             style={{ opacity: smoothOpacity, scale: smoothScale }}
             transition={{ duration: 5, ease: 'easeInOut' }}
           >
             <AvatarImage />
           </motion.div>
-        </a>
+        </Link>
 
         <motion.ul
           className="flex justify-between items-center right-0 absolute z-10"
