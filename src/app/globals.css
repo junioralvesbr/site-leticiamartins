@@ -46,6 +46,17 @@ body {
       rgba(245, 236, 251) 100%);
 }
 
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
 /* Configuração do Scrollbar */
 * {
   scrollbar-width: thin;
