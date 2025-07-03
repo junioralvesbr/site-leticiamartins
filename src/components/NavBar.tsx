@@ -7,22 +7,8 @@ import Link from "next/link";
 export default function NavBar() {
   const { scrollYProgress } = useScroll();
   const width = useTransform(scrollYProgress, [0, 0.01], ['100%', '40%'])
-  const itemOpacity = useTransform(scrollYProgress, [0, 0.02], [0, 1])
-  const itemScale = useTransform(scrollYProgress, [0, 0.02], [0, 1])
 
   const smoothWidth = useSpring(width, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
-
-  const smoothOpacity = useSpring(itemOpacity, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
-
-  const smoothScale = useSpring(itemScale, {
     stiffness: 100,
     damping: 20,
     mass: 0.5,
@@ -32,12 +18,7 @@ export default function NavBar() {
     <nav className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70 hidden lg:block">
       <div className="flex items-center relative max-w-7xl mx-auto">
         <Link href="#header">
-          <motion.div
-            style={{ opacity: smoothOpacity, scale: smoothScale }}
-            transition={{ duration: 5, ease: 'easeInOut' }}
-          >
-            <AvatarImage />
-          </motion.div>
+          <AvatarImage />
         </Link>
 
         <motion.ul
