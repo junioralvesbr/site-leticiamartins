@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Hamburger from "hamburger-react";
 import { motion, AnimatePresence } from "motion/react";
+
 import { routes } from "@/data/routes";
 import SocialLinkButton from "./ui/social-link-button";
 
@@ -70,7 +71,7 @@ export default function NavMobile() {
                         delay: 0.1 + index / 10
                       }}
                     >
-                      <SocialLinkButton name={route.name} href={route.path} />
+                      <SocialLinkButton href={route.path} Icon={route.icon} />
                     </motion.li>
                   ))}
                 </ul>

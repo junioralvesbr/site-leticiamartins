@@ -64,7 +64,7 @@ export default function Hero() {
           <ul className="flex gap-4">
             {routes.socialMedia.map((route) => (
               <li key={route.id}>
-                <SocialLinkButton name={route.name} href={route.path} />
+                <SocialLinkButton href={route.path} Icon={route.icon} />
               </li>
             ))}
           </ul>
