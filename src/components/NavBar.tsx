@@ -1,7 +1,7 @@
 'use client';
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import AvatarImage from "./ui/avatar-image";
-import { links } from "@/data/links";
+import { routes } from "@/data/routes";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -45,18 +45,18 @@ export default function NavBar() {
           style={{ width: smoothWidth }}
           transition={{ duration: 5, ease: 'easeInOut' }}
         >
-          {links.internal.map((item) => (
-            <li key={item.id}>
+          {routes.ancors.map((route) => (
+            <li key={route.id}>
               <Link
-                href={item.path}
+                href={route.path}
                 className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
               >
-                {item.name}
+                {route.name}
               </Link>
             </li>
           ))}
           <li className="group">
-            <a href={links.socialMedia[1].path}>
+            <a href={routes.socialMedia[1].path}>
               <div className="border-1 rounded-full border-deepViolet-600 px-6 py-2 group-hover:bg-deepViolet-600 transition-all">
                 <p className="font-subTitles text-deepViolet-600 group-hover:text-white transition-all">
                   Contato

@@ -1,4 +1,4 @@
-export const links = {
+export const routes = {
   socialMedia: [
     {
       id: 1,
@@ -16,13 +16,13 @@ export const links = {
       path: "https://www.facebook.com/leticiamartinsorganizer/",
     }
   ],
-  internal: [
+  ancors: [
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "Serviços", path: "/#servicos" },
     { id: 3, name: "Sobre mim", path: "/#sobre" },
     { id: 4, name: "Curso", path: "/#curso" },
   ],
-  navigation: [
+  internal: [
     { id: 1, name: "Residencial", path: "/residencial" },
     { id: 2, name: "Pos Mudança", path: "/posmudanca" },
     { id: 3, name: "Comercial", path: "/comercial" },

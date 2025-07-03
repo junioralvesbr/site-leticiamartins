@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Hamburger from "hamburger-react";
 import { motion, AnimatePresence } from "motion/react";
-import { links } from "@/data/links";
+import { routes } from "@/data/routes";
 import SocialLinkButton from "./ui/social-link-button";
 
 export default function NavMobile() {
@@ -36,9 +36,9 @@ export default function NavMobile() {
               className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-white border-b border-b-white/20"
             >
               <ul className="grid gap-2">
-                {links.internal.map((item, index) => (
+                {routes.internal.map((route, index) => (
                   <motion.li
-                    key={item.id}
+                    key={route.id}
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -49,18 +49,18 @@ export default function NavMobile() {
                     }}
                     className="w-full p-[0.08rem] rounded-xl"
                   >
-                    <Link href={item.path}>
+                    <Link href={route.path}>
                       <span className="flex gap-1 text-center text-lg">
-                        {item.name}
+                        {route.name}
                       </span>
                     </Link>
                   </motion.li>
                 ))}
 
                 <ul className="flex gap-4">
-                  {links.socialMedia.map((link) => (
-                    <li key={link.id}>
-                      <SocialLinkButton name={link.name} href={link.path} />
+                  {routes.socialMedia.map((route) => (
+                    <li key={route.id}>
+                      <SocialLinkButton name={route.name} href={route.path} />
                     </li>
                   ))}
                 </ul>

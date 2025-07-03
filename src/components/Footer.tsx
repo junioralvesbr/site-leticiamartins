@@ -1,4 +1,4 @@
-import { links } from "@/data/links";
+import { routes } from "@/data/routes";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,15 +11,15 @@ export default function Footer() {
               Entre em contato
             </h3>
             <ul className="flex flex-col gap-4">
-              {links.socialMedia.map((item) => (
-                <li key={item.name}>
+              {routes.socialMedia.map((route) => (
+                <li key={route.name}>
                   <a
-                    href={item.path}
+                    href={route.path}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                   >
-                    {item.name}
+                    {route.name}
                   </a>
                 </li>
               ))}
@@ -33,26 +33,26 @@ export default function Footer() {
 
             <div className="flex flex-wrap justify-between">
               <ul className="flex flex-col gap-4">
-                {links.internal.map((item) => (
-                  <li key={item.id}>
+                {routes.ancors.map((route) => (
+                  <li key={route.id}>
                     <Link
-                      href={item.path}
+                      href={route.path}
                       className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                     >
-                      {item.name}
+                      {route.name}
                     </Link>
                   </li>
                 ))}
               </ul>
 
               <ul className="flex flex-col gap-4">
-                {links.navigation.map((item) => (
-                  <li key={item.id}>
+                {routes.internal.map((route) => (
+                  <li key={route.id}>
                     <Link
-                      href={item.path}
+                      href={route.path}
                       className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                     >
-                      {item.name}
+                      {route.name}
                     </Link>
                   </li>
                 ))}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import * as motion from "motion/react-client"
-import { links } from "@/data/links";
+import { routes } from "@/data/routes";
 
 import SocialLinkButton from "./ui/social-link-button";
 
@@ -62,9 +62,9 @@ export default function Hero() {
           </p>
 
           <ul className="flex gap-4">
-            {links.socialMedia.map((link) => (
-              <li key={link.id}>
-                <SocialLinkButton name={link.name} href={link.path} />
+            {routes.socialMedia.map((route) => (
+              <li key={route.id}>
+                <SocialLinkButton name={route.name} href={route.path} />
               </li>
             ))}
           </ul>

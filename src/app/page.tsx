@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
 import { PicturesDesktop, PicturesMobile } from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
