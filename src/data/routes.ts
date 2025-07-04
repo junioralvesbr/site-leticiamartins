@@ -22,9 +22,9 @@ export const routes = {
     }
   ],
   ancors: [
-    { id: 1, name: "Home", path: "/" },
+    { id: 1, name: "Inicio", path: "/" },
     { id: 2, name: "Serviços", path: "/#servicos" },
-    { id: 3, name: "Sobre mim", path: "/#sobre" },
+    { id: 3, name: "Experiência", path: "/#expertise" },
     { id: 4, name: "Curso", path: "/#curso" },
   ],
   internal: [

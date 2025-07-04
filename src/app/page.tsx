@@ -2,9 +2,9 @@ import { Metadata } from "next";
 
 import Hero from "@/components/Hero";
 import { PicturesDesktop, PicturesMobile } from "@/components/Pictures";
-import About from "@/components/About";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
+import Expertise from "@/components/Expertise";
 
 export const metadata: Metadata = {
   title: 'Leticia Martins Personal Organizer',
@@ -37,11 +37,11 @@ export default function Home() {
         </section>
 
         <section
-          id="sobre"
+          id="expertise"
           className="bg-site-100 mt-12 sm:mt-20">
           <div className="bg-white rounded-tr-12xl">
             <div className="max-w-7xl mx-auto px-5 lg:px-10">
-              <About />
+              <Expertise />
             </div>
           </div>
         </section>

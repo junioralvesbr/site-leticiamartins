@@ -1,7 +1,7 @@
 import { FlipText } from "@/components/ui/flip-text";
 import { FaMedal, FaUsersGear, FaCompassDrafting, FaHandshake } from "react-icons/fa6";
 
-export default function About() {
+export default function Expertise() {
 
   const calculaExperiencia = () => {
     const anoAtual = new Date().getFullYear()
