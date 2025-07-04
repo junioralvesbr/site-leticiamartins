@@ -8,7 +8,13 @@ export default function Residencial() {
     <>
       <header className="flex flex-col items-center justify-center">
         <h1 className="pt-40">
-          <FlipText className="lg:text-8xl">{`Organização ${'\n'} Residencial`}</FlipText>
+          <FlipText
+            duration={0.5}
+            delayMultiple={0.02}
+            className="text-4xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+          >
+            Organização Residencial
+          </FlipText>
         </h1>
 
         <div className="max-w-3xl mt-6">

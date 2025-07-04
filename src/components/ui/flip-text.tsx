@@ -1,7 +1,10 @@
 "use client";
-import React, { ElementType, Children } from "react";
+
 import { AnimatePresence, motion, Variants, MotionProps } from "motion/react";
+
 import { cn } from "@/lib/utils";
+import { ElementType } from "react";
+import React from "react";
 
 interface FlipTextProps extends MotionProps {
   /** The duration of the animation */
@@ -36,24 +39,20 @@ export function FlipText({
   ...props
 }: FlipTextProps) {
   const MotionComponent = motion.create(Component);
-  const characters = Children.toArray(children).join("").split("");
+  const characters = React.Children.toArray(children).join("").split("");
 
   return (
-    <div className="flex space-x-1">
-      <AnimatePresence>
+    <div className="flex space-x-2">
+      <AnimatePresence mode="wait">
         {characters.map((char, i) => (
           <MotionComponent
             key={i}
             initial="hidden"
-            whileInView="visible"
-            // animate="visible"
+            animate="visible"
             exit="hidden"
             variants={variants || defaultVariants}
             transition={{ duration, delay: i * delayMultiple }}
-            viewport={{ once: true, amount: 0.5 }}
-            className={
-              cn("origin-center drop-shadow-sm font-titles font-bold text-deepViolet-700 inline-block text-4xl sm:text-5xl",
-                className)}
+            className={cn("origin-center drop-shadow-sm", className)}
             {...props}
           >
             {char}
@@ -63,3 +62,4 @@ export function FlipText({
     </div>
   );
 }
+

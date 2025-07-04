@@ -38,8 +38,10 @@ const data = [
 export default function Services() {
   return (
     <div>
-      <h2 className="flex items-center justify-center">
-        <FlipText>{`Nossos ${'\n'} Serviços`}</FlipText>
+      <h2 className="flex gap-4 items-center justify-center">
+        <FlipText className="text-4xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]">
+          Nossos  Serviços
+        </FlipText>
       </h2>
 
       <motion.div

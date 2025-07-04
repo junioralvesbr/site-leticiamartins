@@ -9,10 +9,12 @@ export default function About() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
+    <div className="grid grid-cols-1 gap-12 relative md:grid-cols-2 lg:pt-20">
       <div className="sticky top-20 sm:top-36">
         <h2 className="sticky top-20 sm:top-36">
-          <FlipText>{`Sobre ${'\n'} min`}</FlipText>
+          <FlipText className="text-4xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]">
+            Expertise
+          </FlipText>
         </h2>
       </div>
 
@@ -25,7 +27,7 @@ export default function About() {
           </div>
           <div>
             <p className="text-3xl font-subTitles font-bold text-black capitalize">
-              Experiência
+              Ampla experiência
             </p>
 
             <p className="text-base font-subTitles text-deepViolet-700">
@@ -42,7 +44,7 @@ export default function About() {
           </div>
           <div>
             <p className="text-3xl font-subTitles font-bold text-black capitalize">
-              Equipe
+              Formação de equipe
             </p>
 
             <p className="text-base font-subTitles text-deepViolet-700">
