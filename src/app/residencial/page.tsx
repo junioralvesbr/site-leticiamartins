@@ -1,4 +1,5 @@
-import { TabsDemo } from "@/components/AnimatedTabs";
+import Footer from "@/components/Footer";
+import { ResidencialTimeLine } from "@/components/ResidencialTimeLine";
 import { FlipText } from "@/components/ui/flip-text";
 import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 
@@ -32,7 +33,8 @@ export default function Residencial() {
       </header>
 
       <main className="h-dvh">
-        <TabsDemo />
+        <ResidencialTimeLine />
+        <Footer />
       </main>
     </>
   )

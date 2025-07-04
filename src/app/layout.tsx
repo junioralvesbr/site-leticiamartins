@@ -4,7 +4,6 @@ import { PT_Serif, DM_Sans, Anton } from "next/font/google";
 import NavBar from "@/components/NavBar";
 
 import "./globals.css";
-import Footer from "@/components/Footer";
 import NavMobile from "@/components/NavMobile";
 
 const ptSerif = PT_Serif({
@@ -92,7 +91,6 @@ export default function RootLayout({
           <NavBar />
           <NavMobile />
           {children}
-          <Footer />
         </div>
       </body>
     </html>

@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import { PicturesDesktop, PicturesMobile } from "@/components/Pictures";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: 'Leticia Martins Personal Organizer',
@@ -55,6 +56,8 @@ export default function Home() {
             <PicturesMobile />
           </div>
         </section>
+
+        <Footer />
       </main>
     </>
   );
