@@ -84,7 +84,7 @@ export const HoveredLink = ({ children, href }: { children: React.ReactNode, hre
   return (
     <a
       href={href}
-      className="text-deepViolet-700 hover:deepViolet-400 hover:underline"
+      className="text-deepViolet-700 hover:deepViolet-400 hover:translate-x-2 transition-all"
     >
       {children}
     </a>
