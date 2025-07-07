@@ -1,10 +1,13 @@
 'use client';
+import { useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import AvatarImage from "./ui/avatar-image";
-import { routes } from "@/data/routes";
 import Link from "next/link";
+import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
+
 
 export default function NavBar() {
+  const [active, setActive] = useState<string | null>(null);
   const { scrollYProgress } = useScroll();
   const width = useTransform(scrollYProgress, [0, 0.01], ['100%', '40%'])
 
@@ -26,18 +29,53 @@ export default function NavBar() {
           style={{ width: smoothWidth }}
           transition={{ duration: 5, ease: 'easeInOut' }}
         >
-          {routes.ancors.map((route) => (
-            <li key={route.id}>
-              <Link
-                href={route.path}
-                className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
-              >
-                {route.name}
-              </Link>
-            </li>
-          ))}
+          <li>
+            <Link
+              href="/"
+              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+            >
+              Inicio
+            </Link>
+          </li>
+
           <li className="group">
-            <a href={routes.socialMedia[1].path}>
+            <Menu setActive={setActive}>
+              <MenuItem setActive={setActive} active={active} item="Serviços">
+                <div className="flex flex-col space-y-4 text-sm">
+                  <HoveredLink href="/residencial">Organização Residencial</HoveredLink>
+                  <HoveredLink href="/posmudanca">Pós Mudança</HoveredLink>
+                  <HoveredLink href="/comercial">Organização Comercial</HoveredLink>
+                  <HoveredLink href="/consultoria">Consultoria</HoveredLink>
+                </div>
+              </MenuItem>
+            </Menu>
+          </li>
+
+          <li>
+            <Link
+              href="/#expertise"
+              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+            >
+              Experiência
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/#curso"
+              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+            >
+              Curso
+            </Link>
+          </li>
+
+
+          <li className="group">
+            <a
+              href="https://wa.me/5544998138138"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="border-1 rounded-full border-deepViolet-600 px-6 py-2 group-hover:bg-deepViolet-600 transition-all">
                 <p className="font-subTitles text-deepViolet-600 group-hover:text-white transition-all">
                   Contato

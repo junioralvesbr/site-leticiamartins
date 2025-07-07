@@ -1,6 +1,6 @@
 import Image from "next/image";
-import * as motion from "motion/react-client"
-import { routes } from "@/data/routes";
+import * as motion from "motion/react-client";
+import { routes } from "@/routers/routes";
 
 import SocialLinkButton from "./ui/social-link-button";
 

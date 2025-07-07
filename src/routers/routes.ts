@@ -21,16 +21,15 @@ export const routes = {
       icon: FaFacebook
     }
   ],
-  ancors: [
-    { id: 1, name: "Inicio", path: "/" },
-    { id: 2, name: "Serviços", path: "/#servicos" },
-    { id: 3, name: "Experiência", path: "/#expertise" },
-    { id: 4, name: "Curso", path: "/#curso" },
+  ancoras: [
+    { name: "Inicio", path: "/" },
+    { name: "Experiência", path: "/#expertise" },
+    { name: "Curso", path: "/#curso" },
   ],
-  internal: [
-    { id: 1, name: "Residencial", path: "/organizacaoresidencial" },
-    { id: 2, name: "Pos Mudança", path: "/posmudanca" },
-    { id: 3, name: "Comercial", path: "/organizacaocomercial" },
-    { id: 4, name: "Consultoria", path: "/consultoria" },
-  ]
+  links: [
+    { name: "Organização Residencial", path: "/residencial" },
+    { name: "Pós Mudança", path: "/posmudanca" },
+    { name: "Comercial", path: "/comercial" },
+    { name: "Consultoria", path: "/consultoria" },
+  ],
 }

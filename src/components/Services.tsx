@@ -2,7 +2,7 @@ import Image from "next/image";
 import * as motion from "motion/react-client"
 import { FlipText } from "@/components/ui/flip-text";
 import Link from "next/link";
-import { routes } from "@/data/routes";
+import { routes } from "@/routers/routes";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const data = [
@@ -11,28 +11,28 @@ const data = [
     image: "/images/servicos/residencial.png",
     alt: "Foto de organização residencial",
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia',
-    path: routes.internal[0].path
+    path: "/residencial"
   },
   {
     title: 'Pós Mudança',
     image: "/images/servicos/pos-mudanca.png",
     alt: "Foto de pós mudança residencial",
     description: 'Mudança residencial',
-    path: routes.internal[1].path
+    path: "posmudanca"
   },
   {
     title: 'Organização Empresarial',
     image: "/images/servicos/empresarial.png",
     alt: "Foto de organização empresarial",
     description: 'Organização de empresas',
-    path: routes.internal[2].path
+    path: "comercial"
   },
   {
     title: 'Consultora em Móveis Planejados',
     image: "/images/servicos/moveis-planejados.png",
     alt: "Foto de consultoria em móveis planejados",
     description: 'Cursos e palestras de organização',
-    path: routes.internal[3].path
+    path: "consultoria"
   },
 ]
 

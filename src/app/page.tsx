@@ -29,7 +29,7 @@ export default function Home() {
 
       <main>
         <section
-          id="servicos"
+          id="services"
           className="bg-degrade rounded-tr-12xl rounded-bl-12xl py-20">
           <div className="max-w-7xl mx-auto h-full px-5">
             <Services />

@@ -1,5 +1,5 @@
-import { routes } from "@/data/routes";
 import Link from "next/link";
+import { routes } from "@/routers/routes";
 
 export default function Footer() {
   return (
@@ -33,7 +33,7 @@ export default function Footer() {
 
             <div className="flex flex-wrap justify-between">
               <ul className="flex flex-col gap-4">
-                {routes.ancors.map((route) => (
+                {routes.ancoras.map((route) => (
                   <li key={route.id}>
                     <Link
                       href={route.path}
@@ -46,7 +46,7 @@ export default function Footer() {
               </ul>
 
               <ul className="flex flex-col gap-4">
-                {routes.internal.map((route) => (
+                {routes.links.map((route) => (
                   <li key={route.id}>
                     <Link
                       href={route.path}
