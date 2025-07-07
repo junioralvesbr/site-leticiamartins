@@ -9,12 +9,12 @@ type HeaderProps = {
 
 export default function Header({ title, text, subText }: HeaderProps) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="pt-40">
+    <div className="flex flex-col items-center justify-center px-4">
+      <h1 className="pt-10 lg:pt-40">
         <FlipText
           duration={0.5}
           delayMultiple={0.02}
-          className="text-4xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+          className="text-2xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
         >
           {title}
         </FlipText>
