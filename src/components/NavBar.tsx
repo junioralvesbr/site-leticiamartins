@@ -20,7 +20,7 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70 hidden lg:block">
       <div className="flex items-center relative max-w-7xl mx-auto">
-        <Link href="#header">
+        <Link href="/">
           <AvatarImage />
         </Link>
 

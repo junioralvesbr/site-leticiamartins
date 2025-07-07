@@ -1,8 +1,8 @@
 import Image from "next/image";
 import * as motion from "motion/react-client"
-import { FlipText } from "@/components/ui/flip-text";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { TextAnimate } from "./ui/text-animate";
 
 const data = [
   {
@@ -38,11 +38,18 @@ const data = [
 export default function Services() {
   return (
     <div>
-      <h2 className="flex gap-4 items-center justify-center">
-        <FlipText className="text-4xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]">
-          Nossos  Serviços
-        </FlipText>
-      </h2>
+      <div className="flex gap-4 items-center justify-center">
+        <TextAnimate
+          as="h2"
+          animation="blurInUp"
+          by="character"
+          delay={0.5}
+          once={true}
+          className="text-4xl font-bold font-subTitles -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+        >
+          Nossos Serviços
+        </TextAnimate>
+      </div>
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20"

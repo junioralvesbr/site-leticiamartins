@@ -1,5 +1,5 @@
-import { FlipText } from "./ui/flip-text";
 import { HeroVideoDialog } from "./ui/hero-video-dialog";
+import { TextAnimate } from "./ui/text-animate";
 
 type HeaderProps = {
   title: string;
@@ -10,24 +10,41 @@ type HeaderProps = {
 export default function Header({ title, text, subText }: HeaderProps) {
   return (
     <div className="flex flex-col items-center justify-center px-4">
-      <h1 className="pt-10 lg:pt-40">
-        <FlipText
-          duration={0.5}
-          delayMultiple={0.02}
-          className="text-2xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+      <div className="pt-10 lg:pt-40">
+        <TextAnimate
+          as="h1"
+          animation="blurInUp"
+          by="character"
+          delay={0.5}
+          once={true}
+          className="text-4xl font-bold font-subTitles -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
         >
           {title}
-        </FlipText>
-      </h1>
+        </TextAnimate>
+      </div>
 
       <div className="max-w-3xl mt-6">
-        <p className="text-center text-zinc-600">
+        <TextAnimate
+          as="p"
+          animation="fadeIn"
+          by="line"
+          delay={0.5}
+          once={true}
+          className="text-center text-zinc-600"
+        >
           {text}
-        </p>
+        </TextAnimate>
 
-        <p className="text-center text-zinc-600">
+        <TextAnimate
+          as="p"
+          animation="fadeIn"
+          by="line"
+          delay={0.5}
+          once={true}
+          className="text-center text-zinc-600"
+        >
           {subText}
-        </p>
+        </TextAnimate>
       </div>
 
       <div className="mt-20">

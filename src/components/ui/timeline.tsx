@@ -5,6 +5,7 @@ import {
   motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { TextAnimate } from "./text-animate";
 
 interface TimelineEntry {
   title: string;
@@ -43,12 +44,26 @@ export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg font-subTitles md:text-4xl mb-4 text-deepViolet-600 dark:text-white max-w-sm">
+        <TextAnimate
+          as="h2"
+          animation="blurIn"
+          by="line"
+          delay={0.5}
+          once={true}
+          className="text-lg font-subTitles md:text-4xl mb-4 text-deepViolet-600 dark:text-white max-w-sm"
+        >
           {title}
-        </h2>
-        <p className="text-neutral-500 font-subTitles dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        </TextAnimate>
+        <TextAnimate
+          as="h2"
+          animation="blurIn"
+          by="line"
+          delay={0.5}
+          once={true}
+          className="text-neutral-500 font-subTitles dark:text-neutral-300 text-sm md:text-base max-w-sm"
+        >
           {subTitle}
-        </p>
+        </TextAnimate>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

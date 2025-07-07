@@ -1,5 +1,5 @@
-import { FlipText } from "@/components/ui/flip-text";
 import { FaMedal, FaUsersGear, FaCompassDrafting, FaHandshake } from "react-icons/fa6";
+import { TextAnimate } from "./ui/text-animate";
 
 export default function Expertise() {
 
@@ -12,9 +12,15 @@ export default function Expertise() {
     <div className="grid grid-cols-1 gap-12 relative md:grid-cols-2 lg:pt-20">
       <div className="sticky top-20 sm:top-36">
         <h2 className="sticky top-20 sm:top-36">
-          <FlipText className="text-4xl font-bold font-subTitles -tracking-widest text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]">
+          <TextAnimate
+            animation="blurInUp"
+            by="character"
+            delay={0.5}
+            once={true}
+            className="text-4xl font-bold font-subTitles -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+          >
             Expertise
-          </FlipText>
+          </TextAnimate>
         </h2>
       </div>
 
