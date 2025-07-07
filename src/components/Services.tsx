@@ -2,7 +2,6 @@ import Image from "next/image";
 import * as motion from "motion/react-client"
 import { FlipText } from "@/components/ui/flip-text";
 import Link from "next/link";
-import { routes } from "@/routers/routes";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const data = [

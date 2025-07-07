@@ -1,7 +1,7 @@
 import Image from "next/image";
 import * as motion from "motion/react-client";
-import { routes } from "@/routers/routes";
 
+import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa6";
 import SocialLinkButton from "./ui/social-link-button";
 
 export default function Hero() {
@@ -62,11 +62,24 @@ export default function Hero() {
           </p>
 
           <ul className="flex gap-4">
-            {routes.socialMedia.map((route) => (
-              <li key={route.id}>
-                <SocialLinkButton href={route.path} Icon={route.icon} />
-              </li>
-            ))}
+            <li>
+              <SocialLinkButton
+                href="https://www.instagram.com/leticiamartins.organizer/"
+                Icon={FaInstagram}
+              />
+            </li>
+            <li>
+              <SocialLinkButton
+                href="https://www.facebook.com/leticiamartinsorganizer/"
+                Icon={FaFacebook}
+              />
+            </li>
+            <li>
+              <SocialLinkButton
+                href="https://wa.me/5544998138138"
+                Icon={FaWhatsapp}
+              />
+            </li>
           </ul>
         </motion.div>
       </section>

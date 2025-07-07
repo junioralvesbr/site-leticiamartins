@@ -5,7 +5,7 @@ import Link from "next/link";
 import Hamburger from "hamburger-react";
 import { motion, AnimatePresence } from "motion/react";
 
-import { routes } from "@/routers/routes";
+import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa6";
 import SocialLinkButton from "./ui/social-link-button";
 import AvatarImage from "./ui/avatar-image";
 
@@ -191,22 +191,54 @@ export default function NavMobile() {
                     </Link>
                   </motion.li>
 
+
+                  {/* social Media */}
                   <ul className="flex gap-4">
-                    {routes.socialMedia.map((route, index) => (
-                      <motion.li
-                        key={route.id}
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{
-                          type: "spring",
-                          stiffness: 260,
-                          damping: 20,
-                          delay: 0.1 + index / 10
-                        }}
-                      >
-                        <SocialLinkButton href={route.path} Icon={route.icon} />
-                      </motion.li>
-                    ))}
+                    <motion.li
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                        delay: 0.1 + 8 / 10
+                      }}
+                    >
+                      <SocialLinkButton
+                        href="https://www.instagram.com/leticiamartins.organizer/"
+                        Icon={FaInstagram}
+                      />
+                    </motion.li>
+                    <motion.li
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                        delay: 0.1 + 9 / 10
+                      }}
+                    >
+                      <SocialLinkButton
+                        href="https://www.facebook.com/leticiamartinsorganizer/"
+                        Icon={FaFacebook}
+                      />
+                    </motion.li>
+                    <motion.li
+                      initial={{ opacity: 0, scale: 0 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                        delay: 0.1 + 10 / 10
+                      }}
+                    >
+                      <SocialLinkButton
+                        href="https://wa.me/5544998138138"
+                        Icon={FaWhatsapp}
+                      />
+                    </motion.li>
                   </ul>
                 </ul>
               </motion.div >
