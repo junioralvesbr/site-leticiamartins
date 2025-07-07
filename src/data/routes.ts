@@ -28,9 +28,9 @@ export const routes = {
     { id: 4, name: "Curso", path: "/#curso" },
   ],
   internal: [
-    { id: 1, name: "Residencial", path: "/residencial" },
+    { id: 1, name: "Residencial", path: "/organizacaoresidencial" },
     { id: 2, name: "Pos Mudança", path: "/posmudanca" },
-    { id: 3, name: "Comercial", path: "/comercial" },
+    { id: 3, name: "Comercial", path: "/organizacaocomercial" },
     { id: 4, name: "Consultoria", path: "/consultoria" },
   ]
 }

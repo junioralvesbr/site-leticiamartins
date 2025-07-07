@@ -3,33 +3,34 @@ import * as motion from "motion/react-client"
 import { FlipText } from "@/components/ui/flip-text";
 import Link from "next/link";
 import { routes } from "@/data/routes";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const data = [
   {
+    title: 'Organização Residencial',
     image: "/images/servicos/residencial.png",
     alt: "Foto de organização residencial",
-    title: 'Organização Residencial',
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia',
     path: routes.internal[0].path
   },
   {
+    title: 'Pós Mudança',
     image: "/images/servicos/pos-mudanca.png",
     alt: "Foto de pós mudança residencial",
-    title: 'Pós Mudança Residencial',
     description: 'Mudança residencial',
     path: routes.internal[1].path
   },
   {
+    title: 'Organização Empresarial',
     image: "/images/servicos/empresarial.png",
     alt: "Foto de organização empresarial",
-    title: 'Organização Empresarial',
     description: 'Organização de empresas',
     path: routes.internal[2].path
   },
   {
+    title: 'Consultora em Móveis Planejados',
     image: "/images/servicos/moveis-planejados.png",
     alt: "Foto de consultoria em móveis planejados",
-    title: 'Consultora em Móveis Planejados',
     description: 'Cursos e palestras de organização',
     path: routes.internal[3].path
   },
@@ -68,13 +69,21 @@ export default function Services() {
                   className="w-full h-96 rounded-lg hover:scale-105 transition-all duration-300 ease-in-out"
                 />
               </div>
-              <p className="text-deepViolet-600 font-subTitles">
-                {item.description}
-              </p>
 
-              <h3 className="text-3xl font-subTitles font-bold text-deepViolet-700">
-                {item.title}
-              </h3>
+              <div className="flex flex-col gap-2">
+                <p className="text-deepViolet-600 font-subTitles">
+                  {item.description}
+                </p>
+
+                <h3 className="text-3xl font-subTitles font-bold text-deepViolet-700">
+                  {item.title}
+                </h3>
+
+                <div className="flex items-center gap-2 text-deepViolet-700 font-bold">
+                  <span className="hover:underline">Saiba Mais</span>
+                  <FaArrowRightLong />
+                </div>
+              </div>
             </Link>
           </article>
         )

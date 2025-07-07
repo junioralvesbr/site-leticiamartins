@@ -16,7 +16,7 @@ export const DraggableCardBody = ({
   children,
   finalPosition = { x: 0, y: 0 },
   duration = 1,
-  delay = 0.5,
+  delay = 0.8,
   amount = 0.5
 }: {
   className?: string;
