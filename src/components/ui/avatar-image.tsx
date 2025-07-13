@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image";
 import { motion, useScroll, useSpring, useTransform } from "motion/react"
 
@@ -31,7 +29,7 @@ export default function AvatarImage() {
         alt="Logo"
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover absolute"
         style={{ objectPosition: "50% 25%" }}
       />
     </motion.figure>

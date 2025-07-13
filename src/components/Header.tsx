@@ -4,10 +4,9 @@ import { TextAnimate } from "./ui/text-animate";
 type HeaderProps = {
   title: string;
   text: string;
-  subText: string;
 };
 
-export default function Header({ title, text, subText }: HeaderProps) {
+export default function Header({ title, text }: HeaderProps) {
   return (
     <div className="flex flex-col items-center justify-center px-4">
       <div className="pt-10 lg:pt-40">
@@ -33,17 +32,6 @@ export default function Header({ title, text, subText }: HeaderProps) {
           className="text-center text-zinc-600"
         >
           {text}
-        </TextAnimate>
-
-        <TextAnimate
-          as="p"
-          animation="fadeIn"
-          by="line"
-          delay={0.5}
-          once={true}
-          className="text-center text-zinc-600"
-        >
-          {subText}
         </TextAnimate>
       </div>
 

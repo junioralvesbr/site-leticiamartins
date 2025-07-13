@@ -58,7 +58,7 @@ export default function Hero() {
           }}
         >
           <p className="text-lg font-subTitles text-deepViolet-500 text-balance">
-            Minha paixão é organizar! Transformo ambientes para trazer mais harmonia e praticidade ao seu dia a dia.
+            Organizar é a minha paixão: transformo ambientes para criar mais harmonia, funcionalidade e leveza no seu dia a dia.
           </p>
 
           <ul className="flex gap-4">

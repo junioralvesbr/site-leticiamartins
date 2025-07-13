@@ -15,7 +15,7 @@ interface TimelineEntry {
 interface TimeLineProps {
   data: TimelineEntry[];
   title: string;
-  subTitle: string;
+  subTitle?: string;
 }
 
 export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
@@ -47,14 +47,15 @@ export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
         <TextAnimate
           as="h2"
           animation="blurIn"
-          by="line"
+          by="character"
           delay={0.5}
           once={true}
           className="text-lg font-subTitles md:text-4xl mb-4 text-deepViolet-600 dark:text-white max-w-sm"
         >
           {title}
         </TextAnimate>
-        <TextAnimate
+        
+        {subTitle && <TextAnimate
           as="h2"
           animation="blurIn"
           by="line"
@@ -63,7 +64,7 @@ export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
           className="text-neutral-500 font-subTitles dark:text-neutral-300 text-sm md:text-base max-w-sm"
         >
           {subTitle}
-        </TextAnimate>
+        </TextAnimate>}
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
