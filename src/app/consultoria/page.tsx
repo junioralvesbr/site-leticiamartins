@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import * as motion from "motion/react-client";
-import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
 
