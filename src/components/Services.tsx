@@ -7,7 +7,7 @@ import { TextAnimate } from "./ui/text-animate";
 const data = [
   {
     title: 'Organização Residencial',
-    image: "/images/servicos/residencial.png",
+    image: "/images/servicos/residencial.jpg",
     alt: "Foto de organização residencial",
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia',
     path: "/residencial"

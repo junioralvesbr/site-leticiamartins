@@ -61,12 +61,10 @@ export default function NavBar() {
           </li>
 
           <li>
-            <Link
-              href="/#curso"
-              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
-            >
+            <a
+              href="https://curso.leticiamartins.com.br/" target="_blank" rel="noopener noreferrer">
               Curso
-            </Link>
+            </a>
           </li>
 
 

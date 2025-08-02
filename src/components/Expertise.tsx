@@ -19,7 +19,7 @@ export default function Expertise() {
             once={true}
             className="text-4xl font-bold font-subTitles -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
           >
-            Expertise
+            Experiência
           </TextAnimate>
         </h2>
       </div>
