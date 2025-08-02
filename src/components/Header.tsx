@@ -1,14 +1,14 @@
-import { HeroVideoDialog } from "./ui/hero-video-dialog";
 import { TextAnimate } from "./ui/text-animate";
 
 type HeaderProps = {
   title: string;
   text: string;
+  subText?: string
 };
 
-export default function Header({ title, text }: HeaderProps) {
+export default function Header({ title, text, subText }: HeaderProps) {
   return (
-    <div className="flex flex-col items-center justify-center px-4">
+    <div className="text-center">
       <div className="pt-10 lg:pt-40">
         <TextAnimate
           as="h1"
@@ -35,15 +35,20 @@ export default function Header({ title, text }: HeaderProps) {
         </TextAnimate>
       </div>
 
-      <div className="mt-20">
-        <HeroVideoDialog
-          className="block dark:hidden"
-          animationStyle="from-center"
-          videoSrc="https://www.youtube.com/shorts/RAjsc032IaQ"
-          thumbnailSrc="/images/leticia-martins.png"
-          thumbnailAlt="Dummy Video Thumbnail"
-        />
-      </div>
+      {subText && (
+        <div className="max-w-3xl mt-6">
+          <TextAnimate
+            as="p"
+            animation="fadeIn"
+            by="line"
+            delay={0.5}
+            once={true}
+            className="text-center text-zinc-600"
+          >
+            {subText}
+          </TextAnimate>
+        </div>
+      )}
     </div>
   )
 }
