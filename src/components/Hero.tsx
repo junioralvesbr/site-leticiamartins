@@ -18,9 +18,10 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/images/leticia-martins-2.png"
+            src="/images/leticia-martins.png"
             alt="Leticia Martins"
             fill
+            quality={100}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover object-[25%_25%] w-full h-full"
             priority
