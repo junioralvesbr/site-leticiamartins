@@ -71,7 +71,7 @@ export default function Expertise() {
             </p>
 
             <p className="text-base font-subTitles text-white">
-              Facilidade e simplicidade para o seu dia a dia, tornando tudo mais prático e eficiente.
+              Praticidade e simplicidade para o seu dia a dia, tornando tudo mais produtivo e eficiente.
             </p>
           </div>
         </div>

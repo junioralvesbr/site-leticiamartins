@@ -18,7 +18,7 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/images/leticia-martins.png"
+            src="/images/leticia-martins (2).png"
             alt="Leticia Martins"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

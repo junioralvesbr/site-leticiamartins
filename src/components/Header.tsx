@@ -39,7 +39,7 @@ export default function Header({ title, text }: HeaderProps) {
         <HeroVideoDialog
           className="block dark:hidden"
           animationStyle="from-center"
-          videoSrc="https://youtu.be/JXkAeCALWLU?si=HtzQJ8JvqX8D0pvT"
+          videoSrc="https://www.youtube.com/shorts/RAjsc032IaQ"
           thumbnailSrc="/images/leticia-martins.png"
           thumbnailAlt="Dummy Video Thumbnail"
         />
