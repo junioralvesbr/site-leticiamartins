@@ -48,7 +48,7 @@ export default function Home() {
 
         <section
           id="pictures"
-          className="h-screen bg-deepViolet-700 overflow-hidden mt-20">
+          className="h-screen bg-first overflow-hidden mt-20">
           <div className="bg-white rounded-bl-12xl hidden sm:block">
             <PicturesDesktop />
           </div>

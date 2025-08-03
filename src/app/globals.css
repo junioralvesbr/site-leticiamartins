@@ -16,6 +16,25 @@
   --color-deepViolet-600: #733b8e;
   --color-deepViolet-700: #401952;
 
+  --color-tawny-port-50: #fbf4f9;
+  --color-tawny-port-100: #f7ecf3;
+  --color-tawny-port-200: #f1d9ea;
+  --color-tawny-port-300: #e7bad8;
+  --color-tawny-port-400: #d88ebf;
+  --color-tawny-port-500: #c86ca5;
+  --color-tawny-port-600: #b44e89;
+  --color-tawny-port-700: #9a3c70;
+  --color-tawny-port-800: #80345d;
+  --color-tawny-port-900: #642c4a;
+  --color-tawny-port-950: #40172c;
+
+  --color-first: var(--color-tawny-port-900);
+  --color-second: var(--color-tawny-port-500);
+  --color-third: var(--color-tawny-port-400);
+  --color-fourth: var(--color-tawny-port-600);
+  --color-fifth: var(--color-tawny-port-300);
+  --color-sixth: var(--color-tawny-port-200);
+
   /* Fonts */
   --font-titles: var(--font-anton);
   --font-subTitles: var(--font-pt-serif);
@@ -42,8 +61,8 @@ body {
 
 .bg-degrade {
   background: radial-gradient(75% 75% at 91.7% 6.8%,
-      rgba(190, 135, 222, 0.6) 0%,
-      rgba(245, 236, 251) 100%);
+      /* rgba(190, 135, 222, 0.6) 0%, */
+      rgba(216, 142, 191, 0.6) 0%, rgba(245, 236, 251) 100%);
 }
 
 /* Configuração das Tabs */
@@ -60,7 +79,7 @@ body {
 /* Configuração do Scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #401952 #ffffff;
+  scrollbar-color: #642c4a #ffffff;
 }
 
 *::-webkit-scrollbar {
@@ -83,13 +102,13 @@ body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: #401952;
+  background-color: #642c4a;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #401952;
+  background-color: #642c4a;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #401952;
+  background-color: #642c4a;
 }

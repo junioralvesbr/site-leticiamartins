@@ -45,7 +45,7 @@ export default function Services() {
           by="character"
           delay={0.5}
           once={true}
-          className="text-4xl font-bold font-subTitles -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+          className="text-4xl font-bold font-subTitles -tracking-tight text-first dark:text-white md:text-7xl md:leading-[5rem]"
         >
           Nossos Serviços
         </TextAnimate>
@@ -77,15 +77,15 @@ export default function Services() {
               </div>
 
               <div className="flex flex-col gap-2">
-                <p className="text-deepViolet-600 font-subTitles">
+                <p className="text-third font-subTitles">
                   {item.description}
                 </p>
 
-                <h3 className="text-3xl font-subTitles font-bold text-deepViolet-700">
+                <h3 className="text-3xl font-subTitles font-bold text-first">
                   {item.title}
                 </h3>
 
-                <div className="flex items-center gap-2 text-deepViolet-700 font-bold">
+                <div className="flex items-center gap-2 text-first font-bold">
                   <span className="hover:underline">Saiba Mais</span>
                   <FaArrowRightLong />
                 </div>

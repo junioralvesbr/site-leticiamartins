@@ -51,7 +51,7 @@ export const Timeline = ({ data, title, title2 = "", subTitle }: TimeLineProps) 
           by="character"
           delay={0.5}
           once={true}
-          className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-deepViolet-600 dark:text-white"
+          className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-third dark:text-white"
         >
           {title}
         </TextAnimate>
@@ -62,7 +62,7 @@ export const Timeline = ({ data, title, title2 = "", subTitle }: TimeLineProps) 
           by="character"
           delay={0.5}
           once={true}
-          className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-deepViolet-600 dark:text-white"
+          className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-third dark:text-white"
         >
           {title2}
         </TextAnimate>
@@ -113,7 +113,7 @@ export const Timeline = ({ data, title, title2 = "", subTitle }: TimeLineProps) 
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-deepViolet-700 via-deepViolet-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-first via-fourth to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

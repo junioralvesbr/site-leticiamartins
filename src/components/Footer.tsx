@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="text-white bg-deepViolet-700 p-8 lg:p-24">
+    <footer className="text-white bg-first p-8 lg:p-24">
       <div className="flex flex-col gap-24 max-w-7xl mx-auto min-h-64">
         <div className="flex flex-wrap gap-20">
           <div className="flex flex-col flex-2 gap-8">
@@ -15,7 +15,7 @@ export default function Footer() {
                   href="https://www.instagram.com/leticiamartins.organizer/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                  className="font-subTitles text-white hover:text-second transition-all"
                 >
                   Instagram
                 </a>
@@ -26,7 +26,7 @@ export default function Footer() {
                   href="https://www.facebook.com/leticiamartinsorganizer/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                  className="font-subTitles text-white hover:text-second transition-all"
                 >
                   Facebook
                 </a>
@@ -37,7 +37,7 @@ export default function Footer() {
                   href="https://wa.me/5544998138138"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                  className="font-subTitles text-white hover:text-second transition-all"
                 >
                   Whatsapp
                 </a>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Início
                   </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/#services"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Serviços
                   </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/#experiencia"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Experiência
                   </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/#curso"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Curso
                   </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/residencial"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Residencial
                   </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/posmudanca"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Pós Mudança
                   </Link>
@@ -110,7 +110,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/comercial"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Comercial
                   </Link>
@@ -118,7 +118,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/marcenariainteligente"
-                    className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
+                    className="font-subTitles text-white hover:text-second transition-all"
                   >
                     Marcenaria Inteligente
                   </Link>

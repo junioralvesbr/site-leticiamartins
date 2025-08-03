@@ -21,7 +21,7 @@ export default function Header({ title, text, subText, capa, alt }: HeaderProps)
             by="character"
             delay={0.5}
             once={true}
-            className="text-4xl font-bold font-subTitles text-balance -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+            className="text-4xl font-bold font-subTitles text-balance -tracking-tight text-first dark:text-white md:text-7xl md:leading-[5rem]"
           >
             {title}
           </TextAnimate>

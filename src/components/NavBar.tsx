@@ -32,7 +32,7 @@ export default function NavBar() {
           <li>
             <Link
               href="/"
-              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+              className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
               Início
             </Link>
@@ -54,7 +54,7 @@ export default function NavBar() {
           <li>
             <Link
               href="/#experiencia"
-              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+              className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
               Experiência
             </Link>
@@ -65,7 +65,7 @@ export default function NavBar() {
               href="https://curso.leticiamartins.com.br/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+              className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
               Curso
             </a>
@@ -78,8 +78,8 @@ export default function NavBar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="border-1 rounded-full border-deepViolet-600 px-6 py-2 group-hover:bg-deepViolet-600 transition-all">
-                <p className="font-subTitles text-deepViolet-600 group-hover:text-white transition-all">
+              <div className="border-1 rounded-full border-third px-6 py-2 group-hover:bg-first transition-all">
+                <p className="font-subTitles text-third group-hover:text-white transition-all">
                   Contato
                 </p>
               </div>

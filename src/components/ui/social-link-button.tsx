@@ -14,7 +14,7 @@ export default function SocialLinkButton({ href, Icon }: Props) {
         rel="noopener noreferrer"
       >
         <div
-          className="text-lg font-subTitles bg-zinc-100 p-2 rounded-full group-hover:bg-purple-400 transition-all duration-300 lg:p-2.5"
+          className="text-lg font-subTitles bg-zinc-100 p-2 rounded-full group-hover:bg-fourth transition-all duration-300 lg:p-2.5"
         >
           <Icon className="text-zinc-600 text-xl group-hover:text-white transition-all duration-300 lg:text-2xl" />
         </div>

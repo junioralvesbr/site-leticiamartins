@@ -17,7 +17,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-zinc-600 hover:text-deepViolet-600 transition-all"
+        className="cursor-pointer text-zinc-600 hover:text-third transition-all"
       >
         {item}
       </motion.p>
@@ -84,7 +84,7 @@ export const HoveredLink = ({ children, href }: { children: React.ReactNode, hre
   return (
     <a
       href={href}
-      className="text-deepViolet-700 hover:deepViolet-400 hover:translate-x-2 transition-all"
+      className="text-first hover:text-second hover:translate-x-2 transition-all"
     >
       {children}
     </a>

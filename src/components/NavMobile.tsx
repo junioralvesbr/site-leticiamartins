@@ -28,7 +28,7 @@ export default function NavMobile() {
           label="Menu"
           toggle={setOpen}
           distance="lg"
-          color="#9F56C7"
+          color="#642c4a"
           direction="right"
         />
 
@@ -56,7 +56,7 @@ export default function NavMobile() {
                     onClick={() => setOpen(false)}
                   >
                     <Link href="/">
-                      <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                      <span className="flex gap-1 text-center text-lg text-second">
                         Início
                       </span>
                     </Link>
@@ -73,7 +73,7 @@ export default function NavMobile() {
                       delay: 0.1 + 1 / 10
                     }}
                   >
-                    <h2 className="flex gap-1 text-center text-lg text-deepViolet-400">
+                    <h2 className="flex gap-1 text-center text-lg text-second">
                       Serviços
                     </h2>
 
@@ -91,7 +91,7 @@ export default function NavMobile() {
                         onClick={() => setOpen(false)}
                       >
                         <Link href="/residencial">
-                          <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                          <span className="flex gap-1 text-center text-lg text-second">
                             Organização Residencial
                           </span>
                         </Link>
@@ -109,7 +109,7 @@ export default function NavMobile() {
                         onClick={() => setOpen(false)}
                       >
                         <Link href="/posmudanca">
-                          <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                          <span className="flex gap-1 text-center text-lg text-second">
                             Pós Mudança
                           </span>
                         </Link>
@@ -127,7 +127,7 @@ export default function NavMobile() {
                         onClick={() => setOpen(false)}
                       >
                         <Link href="/comercial">
-                          <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                          <span className="flex gap-1 text-center text-lg text-second">
                             Organização Comercial
                           </span>
                         </Link>
@@ -145,7 +145,7 @@ export default function NavMobile() {
                         onClick={() => setOpen(false)}
                       >
                         <Link href="/marcenariainteligente">
-                          <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                          <span className="flex gap-1 text-center text-lg text-second">
                             Marcenaria Inteligente
                           </span>
                         </Link>
@@ -166,7 +166,7 @@ export default function NavMobile() {
                     onClick={() => setOpen(false)}
                   >
                     <Link href="/#experiencia">
-                      <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                      <span className="flex gap-1 text-center text-lg text-second">
                         Experiência
                       </span>
                     </Link>
@@ -189,7 +189,7 @@ export default function NavMobile() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span className="flex gap-1 text-center text-lg text-deepViolet-400">
+                      <span className="flex gap-1 text-center text-lg text-second">
                         Curso
                       </span>
                     </a>

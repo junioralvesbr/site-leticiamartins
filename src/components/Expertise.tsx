@@ -17,7 +17,7 @@ export default function Expertise() {
             by="character"
             delay={0.5}
             once={true}
-            className="text-4xl font-bold font-subTitles -tracking-tight text-deepViolet-700 dark:text-white md:text-7xl md:leading-[5rem]"
+            className="text-4xl font-bold font-subTitles -tracking-tight text-first dark:text-white md:text-7xl md:leading-[5rem]"
           >
             Experiência
           </TextAnimate>
@@ -25,10 +25,10 @@ export default function Expertise() {
       </div>
 
       <div className="flex flex-col gap-10 sticky top-36">
-        <div className="bg-deepViolet-200 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-2">
+        <div className="bg-sixth flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-2">
           <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-300 w-12 h-12">
-              <FaMedal width={42} height={42} className="text-deepViolet-500 w-6 h-6" />
+            <div className="flex justify-center items-center rounded-4xl bg-fifth w-12 h-12">
+              <FaMedal width={42} height={42} className="text-fourth w-6 h-6" />
             </div>
           </div>
           <div>
@@ -36,15 +36,15 @@ export default function Expertise() {
               Ampla experiência
             </p>
 
-            <p className="text-base font-subTitles text-deepViolet-700">
+            <p className="text-base font-subTitles text-first">
               Mais de {calculaExperiencia()} anos de atendimento com diversos projetos.
             </p>
           </div>
         </div>
 
-        <div className="bg-deepViolet-300 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 -rotate-2">
+        <div className="bg-fifth flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 -rotate-2">
           <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-400 w-12 h-12">
+            <div className="flex justify-center items-center rounded-4xl bg-second w-12 h-12">
               <FaUsersGear width={42} height={42} className="text-white w-6 h-6" />
             </div>
           </div>
@@ -53,15 +53,15 @@ export default function Expertise() {
               Formação de equipe
             </p>
 
-            <p className="text-base font-subTitles text-deepViolet-700">
+            <p className="text-base font-subTitles text-first">
               Equipe bem treinada e capacitada para o seu atendimento.
             </p>
           </div>
         </div>
 
-        <div className="bg-deepViolet-400 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-4">
+        <div className="bg-second flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-4">
           <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-600 w-12 h-12">
+            <div className="flex justify-center items-center rounded-4xl bg-first w-12 h-12">
               <FaCompassDrafting width={42} height={42} className="text-white w-6 h-6" />
             </div>
           </div>
@@ -76,9 +76,9 @@ export default function Expertise() {
           </div>
         </div>
 
-        <div className="bg-deepViolet-500 flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36">
+        <div className="bg-fourth flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36">
           <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-deepViolet-700 w-12 h-12">
+            <div className="flex justify-center items-center rounded-4xl bg-first w-12 h-12">
               <FaHandshake width={42} height={42} className="text-white w-6 h-6" />
             </div>
           </div>
