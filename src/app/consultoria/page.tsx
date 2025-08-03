@@ -74,7 +74,7 @@ export default function Consultoria() {
       <main className="h-dvh">
         <Timeline
           data={data}
-          title={"Marcenaria inteligente:Solução ideal para clientes exigentes."}
+          title={`Ideal para clientes exigentes.`}
         />
         <Footer />
       </main>

@@ -151,7 +151,7 @@ export default function OrganizacaoResidencial() {
         <div className="relative w-full overflow-clip">
           <Timeline
             data={data}
-            title="A organização que traz paz e tranquilidade"
+            title="Paz, conforto e tranquilidade"
           />
         </div>
 

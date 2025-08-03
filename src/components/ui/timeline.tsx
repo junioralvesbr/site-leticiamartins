@@ -50,11 +50,11 @@ export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
           by="character"
           delay={0.5}
           once={true}
-          className="text-lg font-subTitles md:text-4xl mb-4 text-deepViolet-600 dark:text-white max-w-sm"
+          className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-deepViolet-600 dark:text-white"
         >
           {title}
         </TextAnimate>
-        
+
         {subTitle && <TextAnimate
           as="h2"
           animation="blurIn"

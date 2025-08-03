@@ -113,7 +113,7 @@ export default function Organizacaocomercial() {
       <main className="h-dvh">
         <Timeline
           data={data}
-          title="Um espaço organizado é um espaço produtivo. Organize-se agora."
+          title="Organização, produtividade e inovação"
         />
         <Footer />
       </main>
