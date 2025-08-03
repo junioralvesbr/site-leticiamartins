@@ -135,7 +135,8 @@ export default function PosMudanca() {
       <header className="flex flex-col items-center justify-center px-4">
         <Header
           title="Pós Mudança"
-          text="Organização de pós-mudança é muito mais do que desempacotar caixas: é pensar em cada detalhe para criar um lar funcional, acolhedor e harmonioso. Com cuidado e método, cada item encontra o lugar certo, facilitando sua rotina e trazendo a sensação de tranquilidade para começar essa nova fase com o bem-estar que você merece."
+          text="Organização de pós-mudança é muito mais do que desempacotar caixas: é pensar em cada detalhe para criar um lar funcional, acolhedor e harmonioso."
+          subText="Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia."
         />
         <HeroVideoDialog
           className="block dark:hidden mt-20"

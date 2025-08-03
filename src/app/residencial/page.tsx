@@ -135,7 +135,8 @@ export default function OrganizacaoResidencial() {
       <header className="flex flex-col items-center justify-center px-4">
         <Header
           title="Organização Residencial"
-          text={`Somos apaixonadas por organização e atuamos em todos os ambientes da casa. Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia. \n Eu e minha equipe estamos prontas para transformar seu lar e facilitar sua rotina com leveza, praticidade e carinho em cada detalhe.`}
+          text="Somos apaixonadas por organização e atuamos em todos os ambientes da casa. Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia."
+          subText="Eu e minha equipe estamos prontas para transformar seu lar e facilitar sua rotina com leveza, praticidade e carinho em cada detalhe."
         />
         <HeroVideoDialog
           className="block dark:hidden mt-20"

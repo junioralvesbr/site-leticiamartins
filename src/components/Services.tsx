@@ -7,30 +7,30 @@ import { TextAnimate } from "./ui/text-animate";
 const data = [
   {
     title: 'Organização Residencial',
-    image: "/images/servicos/residencial.jpg",
+    image: "/images/servicos/foto-1.jpg",
     alt: "Foto de organização residencial",
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia',
     path: "/residencial"
   },
   {
     title: 'Pós Mudança',
-    image: "/images/servicos/pos-mudanca.png",
+    image: "/images/servicos/foto-2.webp",
     alt: "Foto de pós mudança residencial",
     description: 'Mudança residencial',
     path: "posmudanca"
   },
   {
     title: 'Organização Empresarial',
-    image: "/images/servicos/empresarial.png",
+    image: "/images/servicos/foto-3.png",
     alt: "Foto de organização empresarial",
     description: 'Organização de empresas',
     path: "comercial"
   },
   {
-    title: 'Consultora em Móveis Planejados',
-    image: "/images/servicos/moveis-planejados.png",
+    title: 'Consultoria em Móveis Planejados',
+    image: "/images/servicos/foto-4.png",
     alt: "Foto de consultoria em móveis planejados",
-    description: 'Cursos e palestras de organização',
+    description: 'Detalhamento do móvel planejado',
     path: "consultoria"
   },
 ]
