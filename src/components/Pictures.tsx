@@ -60,12 +60,13 @@ export function PicturesDesktop() {
           className={item.className}
           finalPosition={item.finalPosition}
         >
+          {/* w-60 h-40 lg:h-80 lg:w-80 */}
           <Image
             src={item.image}
             alt={item.title}
             width={320}
             height={320}
-            className="pointer-events-none relative z-10 object-cover w-60 h-40 lg:h-80 lg:w-80"
+            className="pointer-events-none relative z-10 object-cover"
           />
           <h3 className="mt-4 text-center text-xl font-paragraph font-bold text-neutral-700 dark:text-neutral-300 lg:text-2xl">
             {item.title}
