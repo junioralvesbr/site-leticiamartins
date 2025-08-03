@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://www.leticiamartins.com.br/sobremim',
+      url: 'https://www.leticiamartins.com.br/#experiencia',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
@@ -28,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.leticiamartins.com.br/comercial',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.leticiamartins.com.br/marcenariainteligente',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,

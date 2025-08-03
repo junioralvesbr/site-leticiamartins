@@ -184,11 +184,15 @@ export default function NavMobile() {
                     className="w-full p-[0.08rem] rounded-xl"
                     onClick={() => setOpen(false)}
                   >
-                    <Link href="/#curso">
+                    <a
+                      href="https://curso.leticiamartins.com.br"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <span className="flex gap-1 text-center text-lg text-deepViolet-400">
                         Curso
                       </span>
-                    </Link>
+                    </a>
                   </motion.li>
 
 
