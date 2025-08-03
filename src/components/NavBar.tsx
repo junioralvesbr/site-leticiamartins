@@ -45,7 +45,7 @@ export default function NavBar() {
                   <HoveredLink href="/residencial">Organização Residencial</HoveredLink>
                   <HoveredLink href="/posmudanca">Pós Mudança</HoveredLink>
                   <HoveredLink href="/comercial">Organização Comercial</HoveredLink>
-                  <HoveredLink href="/consultoria">Consultoria</HoveredLink>
+                  <HoveredLink href="/marcenariainteligente">Marcenaria Inteligente</HoveredLink>
                 </div>
               </MenuItem>
             </Menu>

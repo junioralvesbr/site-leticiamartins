@@ -47,12 +47,12 @@ const data = [
 ]
 
 
-export default function Consultoria() {
+export default function MarcenariaInteligente() {
   return (
     <>
       <header className="flex flex-col items-center justify-center px-4">
         <Header
-          title="Consultoria"
+          title="Marcenaria Inteligente"
           text="Elaborar a parte interna de um móvel requer, um bom planejamento, cuidado e atenção com as medidas. É necessário focar na distribuição adequada das gavetas, prateleiras e de toda parte interna, trazendo maior praticidade, aproveitamento dos espaços e ainda mais beleza para os seus móveis."
         />
         <motion.div

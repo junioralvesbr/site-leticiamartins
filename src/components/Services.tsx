@@ -20,18 +20,18 @@ const data = [
     path: "posmudanca"
   },
   {
-    title: 'Organização Empresarial',
+    title: 'Organização Comercial',
     image: "/images/servicos/foto-3.png",
     alt: "Foto de organização empresarial",
-    description: 'Organização de empresas',
+    description: 'Organização de empresas, lojas e escritórios',
     path: "comercial"
   },
   {
-    title: 'Consultoria em Móveis Planejados',
+    title: 'Marcenaria Inteligente para Móveis Planejados',
     image: "/images/servicos/foto-4.png",
     alt: "Foto de consultoria em móveis planejados",
-    description: 'Detalhamento do móvel planejado',
-    path: "consultoria"
+    description: 'Consultoria em Móveis Planejados',
+    path: "marcenariainteligente"
   },
 ]
 

@@ -117,10 +117,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/consultoria"
+                    href="/marcenariainteligente"
                     className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                   >
-                    Consultoria
+                    Marcenaria Inteligente
                   </Link>
                 </li>
               </ul>
