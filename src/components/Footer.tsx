@@ -57,7 +57,7 @@ export default function Footer() {
                     href="/"
                     className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                   >
-                    Inicio
+                    Início
                   </Link>
                 </li>
 
@@ -72,7 +72,7 @@ export default function Footer() {
 
                 <li>
                   <Link
-                    href="/#expertise"
+                    href="/#experiencia"
                     className="font-subTitles text-white hover:text-deepViolet-400 transition-all"
                   >
                     Experiência

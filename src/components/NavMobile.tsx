@@ -57,7 +57,7 @@ export default function NavMobile() {
                   >
                     <Link href="/">
                       <span className="flex gap-1 text-center text-lg text-deepViolet-400">
-                        Inicio
+                        Início
                       </span>
                     </Link>
                   </motion.li>
@@ -165,7 +165,7 @@ export default function NavMobile() {
                     className="w-full p-[0.08rem] rounded-xl"
                     onClick={() => setOpen(false)}
                   >
-                    <Link href="/#expertise">
+                    <Link href="/#experiencia">
                       <span className="flex gap-1 text-center text-lg text-deepViolet-400">
                         Experiência
                       </span>

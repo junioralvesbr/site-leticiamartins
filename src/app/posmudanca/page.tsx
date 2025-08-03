@@ -134,9 +134,9 @@ export default function PosMudanca() {
       <header>
         <Header
           title="Pós Mudança"
-          text="Organização de pós-mudança é muito mais do que desempacotar caixas: é pensar em cada detalhe para criar um lar funcional, acolhedor e harmonioso."
+          text="Organização de pós-mudança é muito mais do que desempacotar caixas, é pensar em cada detalhe para criar um lar funcional, acolhedor e harmonioso."
           subText="Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia."
-          capa="/images/servicos/foto-2.png"
+          capa="/images/posmudanca/capa.jpg"
           alt="Foto da pagina de pós mudanca"
         />
       </header>

@@ -34,7 +34,7 @@ export default function NavBar() {
               href="/"
               className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
             >
-              Inicio
+              Início
             </Link>
           </li>
 
@@ -53,7 +53,7 @@ export default function NavBar() {
 
           <li>
             <Link
-              href="/#expertise"
+              href="/#experiencia"
               className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
             >
               Experiência
@@ -62,7 +62,11 @@ export default function NavBar() {
 
           <li>
             <a
-              href="https://curso.leticiamartins.com.br/" target="_blank" rel="noopener noreferrer">
+              href="https://curso.leticiamartins.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-subTitles text-zinc-600 hover:text-deepViolet-600 transition-all"
+            >
               Curso
             </a>
           </li>
