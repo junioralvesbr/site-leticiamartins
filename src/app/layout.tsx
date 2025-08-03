@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { PT_Serif, DM_Sans, Anton } from "next/font/google";
 
 import NavBar from "@/components/NavBar";
-
-import "./globals.css";
 import NavMobile from "@/components/NavMobile";
 import { WhatssAppIcon } from "@/components/whatsapp";
+
+import "./globals.css";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
   authors: { name: 'Junior Alves' },
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: '/apple-touch-icon.png',
     shortcut: ['/leticiamartins-icon.png'],
