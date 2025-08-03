@@ -144,9 +144,9 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href="/consultoria">
+                        <Link href="/marcenariainteligente">
                           <span className="flex gap-1 text-center text-lg text-deepViolet-400">
-                            Consultoria
+                            Marcenaria Inteligente
                           </span>
                         </Link>
                       </motion.li>

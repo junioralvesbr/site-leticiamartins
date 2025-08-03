@@ -14,7 +14,7 @@ const data = [
   },
   {
     title: 'Pós Mudança',
-    image: "/images/servicos/foto-2.webp",
+    image: "/images/servicos/foto-2.png",
     alt: "Foto de pós mudança residencial",
     description: 'Mudança residencial',
     path: "posmudanca"
@@ -72,7 +72,7 @@ export default function Services() {
                   alt={item.alt}
                   width={500}
                   height={500}
-                  className="w-full h-96 rounded-lg hover:scale-105 transition-all duration-300 ease-in-out"
+                  className="w-full h-96 rounded-lg object-cover transition-all duration-300 ease-in-out hover:scale-105"
                 />
               </div>
 
