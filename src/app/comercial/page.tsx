@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const data = [
   {
-    title: "Almoxarifado Estoque",
+    title: "Almoxarifado & Estoque",
     content: (
       <div>
         <p className="mb-8 text-xs font-paragraph font-normal text-neutral-600 md:text-sm dark:text-neutral-200">
@@ -45,7 +45,7 @@ const data = [
       </div>)
   },
   {
-    title: "Loja, Ateliê Escritório",
+    title: "Loja, Ateliê & Escritório",
     content: (
       <div>
         <p className="mb-8 text-xs font-paragraph font-normal text-neutral-600 md:text-sm dark:text-neutral-200">
@@ -90,7 +90,7 @@ export default function Organizacaocomercial() {
     <>
       <header className="flex flex-col items-center justify-center px-4">
         <Header
-          title="Organização Comercial"
+          title="Comercial"
           text="Organizar não é apenas arrumar coisas, é criar um ambiente que inspira criatividade, produtividade e sucesso. É estabelecer hábitos que transformam sua loja ou escritório em um espaço de eficiência, inovação e crescimento."
           subText="É investir em si mesmo e em seu negócio, para alcançar metas e superar desafios. Organize-se, organize seu negócio e veja o impacto que isso pode ter em sua vida e no seu negócio."
         />
@@ -113,7 +113,8 @@ export default function Organizacaocomercial() {
       <main className="h-dvh">
         <Timeline
           data={data}
-          title="Organização, produtividade e inovação"
+          title="Organização,"
+          title2="Produtividade e inovação"
         />
         <Footer />
       </main>

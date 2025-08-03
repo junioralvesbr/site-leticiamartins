@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const data = [
   {
-    title: "Quartos Closets",
+    title: "Quartos & Closets",
     content: (
       <div>
         <p className="mb-8 text-xs font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
@@ -46,7 +46,7 @@ const data = [
     ),
   },
   {
-    title: "Cozinhas Despensas",
+    title: "Cozinhas & Despensas",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
@@ -86,7 +86,7 @@ const data = [
     ),
   },
   {
-    title: "Banheiros Lavanderia",
+    title: "Banheiros & Lavanderia",
     content: (
       <div>
         <p className="mb-4 text-xs font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
@@ -151,7 +151,8 @@ export default function OrganizacaoResidencial() {
         <div className="relative w-full overflow-clip">
           <Timeline
             data={data}
-            title="Paz, conforto e tranquilidade"
+            title="Organização que traz paz,"
+            title2="conforto e tranquilidade."
           />
         </div>
 

@@ -74,7 +74,8 @@ export default function MarcenariaInteligente() {
       <main className="h-dvh">
         <Timeline
           data={data}
-          title={`Ideal para clientes exigentes.`}
+          title={`Ideal para clientes`}
+          title2={`exigentes.`}
         />
         <Footer />
       </main>

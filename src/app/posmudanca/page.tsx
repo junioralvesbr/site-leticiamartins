@@ -151,7 +151,8 @@ export default function PosMudanca() {
         <div className="relative w-full overflow-clip">
           <Timeline
             data={data}
-            title={`Mudança sem estresse e sem preocupação`}
+            title={`Mudança sem estresse`}
+            title2={`e sem preocupação`}
           />
         </div>
         <Footer />

@@ -16,9 +16,10 @@ interface TimeLineProps {
   data: TimelineEntry[];
   title: string;
   subTitle?: string;
+  title2?: string;
 }
 
-export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
+export const Timeline = ({ data, title, title2 = "", subTitle }: TimeLineProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
@@ -53,6 +54,17 @@ export const Timeline = ({ data, title, subTitle }: TimeLineProps) => {
           className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-deepViolet-600 dark:text-white"
         >
           {title}
+        </TextAnimate>
+
+        <TextAnimate
+          as="h2"
+          animation="blurIn"
+          by="character"
+          delay={0.5}
+          once={true}
+          className="text-3xl font-subTitles text-wrap max-w-md md:max-w-full md:text-4xl mb-4 text-deepViolet-600 dark:text-white"
+        >
+          {title2}
         </TextAnimate>
 
         {subTitle && <TextAnimate
