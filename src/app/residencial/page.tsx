@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { HeroVideoDialog } from "@/components/ui/hero-video-dialog";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
 
@@ -9,7 +8,7 @@ const data = [
     title: "Quartos & Closets",
     content: (
       <div>
-        <p className="mb-8 text-xs font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
+        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
           Um quarto organizado proporciona mais do que um ambiente bonito: oferece tranquilidade, bem-estar e uma sensação de acolhimento no dia a dia. Facilita a rotina, otimiza tempo, reduz o estresse e cria um espaço convidativo para descanso e renovação.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -49,7 +48,7 @@ const data = [
     title: "Cozinhas & Despensas",
     content: (
       <div>
-        <p className="mb-8 text-xs font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
+        <p className="mb-8 text-base font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
           Uma cozinha organizada proporciona praticidade no preparo das refeições, otimiza o tempo, evita desperdícios e cria um ambiente mais funcional e agradável para a rotina. Mais do que isso, transforma o ato de cozinhar em um momento prazeroso, acolhedor e cheio de boas experiências para você e sua família.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -89,7 +88,7 @@ const data = [
     title: "Banheiros & Lavanderia",
     content: (
       <div>
-        <p className="mb-4 text-xs font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
+        <p className="mb-4 text-base font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
           Esses ambientes organizados oferecem mais praticidade e funcionalidade para o dia a dia. No banheiro, a organização garante um ambiente agradável, limpo e relaxante para seus momentos de autocuidado. Já na lavanderia, facilita as tarefas domésticas, economiza tempo e torna o espaço mais eficiente e harmonioso para cuidar da casa com muito mais leveza.
         </p>
 
@@ -132,18 +131,13 @@ const data = [
 export default function OrganizacaoResidencial() {
   return (
     <>
-      <header className="flex flex-col items-center justify-center px-4">
+      <header>
         <Header
           title="Organização Residencial"
           text="Somos apaixonadas por organização e atuamos em todos os ambientes da casa. Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia."
           subText="Eu e minha equipe estamos prontas para transformar seu lar e facilitar sua rotina com leveza, praticidade e carinho em cada detalhe."
-        />
-        <HeroVideoDialog
-          className="block dark:hidden mt-20"
-          animationStyle="from-center"
-          videoSrc="https://youtube.com/embed/p-a3oyMTcRk?si=Gp9Z3xgqBewOkyS3"
-          thumbnailSrc="/images/leticia-martins.png"
-          thumbnailAlt="Dummy Video Thumbnail"
+          capa="/images/servicos/foto-1.jpg"
+          alt="Capa da pagina residencial"
         />
       </header>
 
