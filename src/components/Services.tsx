@@ -3,6 +3,7 @@ import * as motion from "motion/react-client"
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { TextAnimate } from "./ui/text-animate";
+import { linksAndPaths } from "@/data/linksAndPaths";
 
 const data = [
   {
@@ -10,28 +11,28 @@ const data = [
     image: "/images/servicos/foto-1.jpg",
     alt: "Foto de organização residencial",
     description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia',
-    path: "/residencial"
+    path: linksAndPaths.residencial.href
   },
   {
     title: 'Pós Mudança',
     image: "/images/servicos/foto-2.png",
     alt: "Foto de pós mudança residencial",
     description: 'Mudança residencial',
-    path: "posmudanca"
+    path: linksAndPaths.posMudanca.href
   },
   {
     title: 'Organização Comercial',
     image: "/images/servicos/foto-3.png",
     alt: "Foto de organização empresarial",
     description: 'Organização de empresas, lojas e escritórios',
-    path: "comercial"
+    path: linksAndPaths.comercial.href
   },
   {
     title: 'Marcenaria Inteligente para Móveis Planejados',
     image: "/images/servicos/foto-4.png",
     alt: "Foto de consultoria em móveis planejados",
     description: 'Consultoria em Móveis Planejados',
-    path: "marcenariainteligente"
+    path: linksAndPaths.marcenariaInteligente.href
   },
 ]
 

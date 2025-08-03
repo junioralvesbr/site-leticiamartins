@@ -3,6 +3,7 @@ import * as motion from "motion/react-client";
 
 import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa6";
 import SocialLinkButton from "./ui/social-link-button";
+import { linksAndPaths } from "@/data/linksAndPaths";
 
 export default function Hero() {
   return (
@@ -65,19 +66,19 @@ export default function Hero() {
           <ul className="flex gap-4">
             <li>
               <SocialLinkButton
-                href="https://www.instagram.com/leticiamartins.organizer/"
+                href={linksAndPaths.instagram.href}
                 Icon={FaInstagram}
               />
             </li>
             <li>
               <SocialLinkButton
-                href="https://www.facebook.com/leticiamartinsorganizer/"
+                href={linksAndPaths.facebook.href}
                 Icon={FaFacebook}
               />
             </li>
             <li>
               <SocialLinkButton
-                href="https://wa.me/5544998138138"
+                href={linksAndPaths.whatsapp.href}
                 Icon={FaWhatsapp}
               />
             </li>

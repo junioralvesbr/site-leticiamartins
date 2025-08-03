@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa6";
 import SocialLinkButton from "./ui/social-link-button";
 import AvatarImage from "./ui/avatar-image";
+import { linksAndPaths } from "@/data/linksAndPaths";
 
 export default function NavMobile() {
   const [isOpen, setOpen] = useState(false);
@@ -90,9 +91,9 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href="/residencial">
+                        <Link href={linksAndPaths.residencial.href}>
                           <span className="flex gap-1 text-center text-lg text-second">
-                            Organização Residencial
+                            {linksAndPaths.residencial.name}
                           </span>
                         </Link>
                       </motion.li>
@@ -108,9 +109,9 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href="/posmudanca">
+                        <Link href={linksAndPaths.posMudanca.href}>
                           <span className="flex gap-1 text-center text-lg text-second">
-                            Pós Mudança
+                            {linksAndPaths.posMudanca.name}
                           </span>
                         </Link>
                       </motion.li>
@@ -126,9 +127,9 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href="/comercial">
+                        <Link href={linksAndPaths.comercial.href}>
                           <span className="flex gap-1 text-center text-lg text-second">
-                            Organização Comercial
+                            {linksAndPaths.comercial.name}
                           </span>
                         </Link>
                       </motion.li>
@@ -144,9 +145,9 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href="/marcenariainteligente">
+                        <Link href={linksAndPaths.marcenariaInteligente.href}>
                           <span className="flex gap-1 text-center text-lg text-second">
-                            Marcenaria Inteligente
+                            {linksAndPaths.marcenariaInteligente.name}
                           </span>
                         </Link>
                       </motion.li>
@@ -165,9 +166,9 @@ export default function NavMobile() {
                     className="w-full p-[0.08rem] rounded-xl"
                     onClick={() => setOpen(false)}
                   >
-                    <Link href="/#experiencia">
+                    <Link href={linksAndPaths.experiencia.href}>
                       <span className="flex gap-1 text-center text-lg text-second">
-                        Experiência
+                        {linksAndPaths.experiencia.name}
                       </span>
                     </Link>
                   </motion.li>
@@ -185,12 +186,12 @@ export default function NavMobile() {
                     onClick={() => setOpen(false)}
                   >
                     <a
-                      href="https://curso.leticiamartins.com.br"
+                      href={linksAndPaths.curso.href}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <span className="flex gap-1 text-center text-lg text-second">
-                        Curso
+                        {linksAndPaths.curso.name}
                       </span>
                     </a>
                   </motion.li>
@@ -209,7 +210,7 @@ export default function NavMobile() {
                       }}
                     >
                       <SocialLinkButton
-                        href="https://www.instagram.com/leticiamartins.organizer/"
+                        href={linksAndPaths.instagram.href}
                         Icon={FaInstagram}
                       />
                     </motion.li>
@@ -224,7 +225,7 @@ export default function NavMobile() {
                       }}
                     >
                       <SocialLinkButton
-                        href="https://www.facebook.com/leticiamartinsorganizer/"
+                        href={linksAndPaths.facebook.href}
                         Icon={FaFacebook}
                       />
                     </motion.li>
@@ -239,7 +240,7 @@ export default function NavMobile() {
                       }}
                     >
                       <SocialLinkButton
-                        href="https://wa.me/5544998138138"
+                        href={linksAndPaths.whatsapp.href}
                         Icon={FaWhatsapp}
                       />
                     </motion.li>

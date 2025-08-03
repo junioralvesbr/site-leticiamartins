@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 
 import "./globals.css";
 import NavMobile from "@/components/NavMobile";
+import { WhatssAppIcon } from "@/components/whatsapp";
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -91,6 +92,7 @@ export default function RootLayout({
           <NavBar />
           <NavMobile />
           {children}
+          <WhatssAppIcon />
         </div>
       </body>
     </html>

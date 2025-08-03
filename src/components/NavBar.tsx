@@ -4,6 +4,7 @@ import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import AvatarImage from "./ui/avatar-image";
 import Link from "next/link";
 import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
+import { linksAndPaths } from "@/data/linksAndPaths";
 
 
 export default function NavBar() {
@@ -20,7 +21,7 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 py-4 backdrop-blur-xl bg-white/70 hidden lg:block">
       <div className="flex items-center relative max-w-7xl mx-auto">
-        <Link href="/">
+        <Link href={linksAndPaths.inicio.href}>
           <AvatarImage />
         </Link>
 
@@ -31,10 +32,10 @@ export default function NavBar() {
         >
           <li>
             <Link
-              href="/"
+              href={linksAndPaths.inicio.href}
               className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
-              Início
+              {linksAndPaths.inicio.name}
             </Link>
           </li>
 
@@ -42,10 +43,18 @@ export default function NavBar() {
             <Menu setActive={setActive}>
               <MenuItem setActive={setActive} active={active} item="Serviços">
                 <div className="flex flex-col space-y-4 text-sm">
-                  <HoveredLink href="/residencial">Organização Residencial</HoveredLink>
-                  <HoveredLink href="/posmudanca">Pós Mudança</HoveredLink>
-                  <HoveredLink href="/comercial">Organização Comercial</HoveredLink>
-                  <HoveredLink href="/marcenariainteligente">Marcenaria Inteligente</HoveredLink>
+                  <HoveredLink href={linksAndPaths.residencial.href}>
+                    {linksAndPaths.residencial.name}
+                  </HoveredLink>
+                  <HoveredLink href={linksAndPaths.posMudanca.href}>
+                    {linksAndPaths.posMudanca.name}
+                  </HoveredLink>
+                  <HoveredLink href={linksAndPaths.comercial.href}>
+                    {linksAndPaths.comercial.name}
+                  </HoveredLink>
+                  <HoveredLink href={linksAndPaths.marcenariaInteligente.href}>
+                    {linksAndPaths.marcenariaInteligente.name}
+                  </HoveredLink>
                 </div>
               </MenuItem>
             </Menu>
@@ -53,34 +62,36 @@ export default function NavBar() {
 
           <li>
             <Link
-              href="/#experiencia"
+              href={linksAndPaths.experiencia.href}
               className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
-              Experiência
+              {linksAndPaths.experiencia.name}
             </Link>
           </li>
 
           <li>
             <a
-              href="https://curso.leticiamartins.com.br/"
+              href={linksAndPaths.curso.href}
               target="_blank"
               rel="noopener noreferrer"
               className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
-              Curso
+              {linksAndPaths.curso.name}
             </a>
           </li>
 
 
           <li className="group">
             <a
-              href="https://wa.me/5544998138138"
+              href={linksAndPaths.whatsapp.href}
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="border-1 rounded-full border-third px-6 py-2 group-hover:bg-first transition-all">
-                <p className="font-subTitles text-third group-hover:text-white transition-all">
-                  Contato
+                <p
+                  className="font-subTitles text-third transition-all group-hover:text-white"
+                >
+                  {linksAndPaths.contato.name}
                 </p>
               </div>
             </a>

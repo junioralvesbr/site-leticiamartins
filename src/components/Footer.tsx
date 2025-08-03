@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { linksAndPaths } from "@/data/linksAndPaths";
 
 export default function Footer() {
   return (
@@ -12,34 +13,34 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href="https://www.instagram.com/leticiamartins.organizer/"
+                  href={linksAndPaths.instagram.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-subTitles text-white hover:text-second transition-all"
                 >
-                  Instagram
+                  {linksAndPaths.instagram.name}
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://www.facebook.com/leticiamartinsorganizer/"
+                  href={linksAndPaths.facebook.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-subTitles text-white hover:text-second transition-all"
                 >
-                  Facebook
+                  {linksAndPaths.facebook.name}
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://wa.me/5544998138138"
+                  href={linksAndPaths.whatsapp.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-subTitles text-white hover:text-second transition-all"
                 >
-                  Whatsapp
+                  {linksAndPaths.whatsapp.name}
                 </a>
               </li>
             </ul>
@@ -54,73 +55,75 @@ export default function Footer() {
               <ul className="flex flex-col gap-4">
                 <li>
                   <Link
-                    href="/"
+                    href={linksAndPaths.inicio.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Início
+                    {linksAndPaths.inicio.name}
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    href="/#services"
+                    href={linksAndPaths.servicos.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Serviços
+                    {linksAndPaths.servicos.name}
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    href="/#experiencia"
+                    href={linksAndPaths.experiencia.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Experiência
+                    {linksAndPaths.experiencia.name}
                   </Link>
                 </li>
 
                 <li>
-                  <Link
-                    href="/#curso"
+                  <a
+                    href={linksAndPaths.curso.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Curso
-                  </Link>
+                    {linksAndPaths.curso.name}
+                  </a>
                 </li>
               </ul>
 
               <ul className="flex flex-col gap-4">
                 <li>
                   <Link
-                    href="/residencial"
+                    href={linksAndPaths.residencial.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Residencial
+                    {linksAndPaths.residencial.name}
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    href="/posmudanca"
+                    href={linksAndPaths.posMudanca.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Pós Mudança
+                    {linksAndPaths.posMudanca.name}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/comercial"
+                    href={linksAndPaths.comercial.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Comercial
+                    {linksAndPaths.comercial.name}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/marcenariainteligente"
+                    href={linksAndPaths.marcenariaInteligente.href}
                     className="font-subTitles text-white hover:text-second transition-all"
                   >
-                    Marcenaria Inteligente
+                    {linksAndPaths.marcenariaInteligente.name}
                   </Link>
                 </li>
               </ul>
