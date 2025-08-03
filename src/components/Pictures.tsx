@@ -7,41 +7,41 @@ import {
 
 const items = [
   {
-    title: "Tyler Durden",
+    title: "",
     image: "/images/mural/mural-1.jpg",
     className: "absolute top-10 left-[40%] rotate-[-5deg]",
     finalPosition: { x: '-200%', y: 40 },
     finalPositionMobile: { x: '-80%', y: 10 }
   },
   {
-    title: "The Narrator",
+    title: "",
     image: "/images/mural/mural-2.jpg",
     className: "absolute top-40 left-[25%] rotate-[-7deg]",
     finalPosition: { x: '-40%', y: 220 },
     finalPositionMobile: { x: '-60%', y: 300 }
   },
   {
-    title: "Japan",
+    title: "",
     image: "/images/mural/mural-3.jpg",
     className: "absolute top-32 left-[55%] rotate-[10deg]",
     finalPosition: { x: '40%', y: 40 },
     finalPositionMobile: { x: '-10%', y: -40 }
   },
   {
-    title: "Norway",
+    title: "",
     image: "/images/mural/mural-4.jpg",
     className: "absolute top-20 right-[35%] rotate-[2deg]",
     finalPosition: { x: '180%', y: 300 },
     finalPositionMobile: { x: '80%', y: 370 }
   },
   {
-    title: "New Zealand",
+    title: "",
     image: "/images/mural/mural-5.jpg",
     className: "absolute top-24 left-[45%] rotate-[-7deg]",
     finalPosition: { x: '180%', y: -20 }
   },
   {
-    title: "Canada",
+    title: "",
     image: "/images/mural/mural-6.jpg",
     className: "absolute top-8 left-[30%] rotate-[4deg]",
     finalPosition: { x: '-60%', y: 0 }
