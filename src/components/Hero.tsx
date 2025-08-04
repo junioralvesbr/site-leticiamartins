@@ -24,7 +24,7 @@ export default function Hero() {
             fill
             quality={100}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover object-[25%_25%] w-full h-full"
+            className="object-cover md:object-[25%_25%] w-full h-full"
             priority
           />
         </motion.figure>
