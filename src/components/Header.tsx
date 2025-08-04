@@ -66,7 +66,7 @@ export default function Header({ title, text, subText, capa, alt }: HeaderProps)
           alt={alt}
           width={800}
           height={600}
-          className="w-full object-contain rounded-md border shadow-lg max-w-5xl mx-auto"
+          className="w-full max-h-[562px] object-cover rounded-md border shadow-lg max-w-5xl mx-auto"
         />
       </motion.div>
     </div>
