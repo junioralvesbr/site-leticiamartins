@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 import Hero from "@/components/Hero";
-import { PicturesDesktop, PicturesMobile } from "@/components/Pictures";
+import { MuralDesktop, MuralMobile } from "@/components/Mural";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 import Expertise from "@/components/Expertise";
@@ -47,13 +47,13 @@ export default function Home() {
         </section>
 
         <section
-          id="pictures"
+          id="mural"
           className="h-screen bg-first overflow-hidden mt-20">
           <div className="bg-white rounded-bl-12xl hidden sm:block">
-            <PicturesDesktop />
+            <MuralDesktop />
           </div>
           <div className="bg-white rounded-bl-12xl block sm:hidden">
-            <PicturesMobile />
+            <MuralMobile />
           </div>
         </section>
 
