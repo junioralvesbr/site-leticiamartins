@@ -1,8 +1,8 @@
 const getWhatsAppLink = () => {
   const phone = '5544998138138'
-  const space = '%20'
-  const message = `Ola,${space}Vim,${space}pelo${space}site,${space}gostaria${space}de${space}saber${space}sobre${space}seu${space}trabalho${space}
-  `
+  const text = "Olá Letícia, vim pelo site, gostaria de saber sobre seu trabalho de Personal Organizer..."
+  const message = text.split(' ').join('%20')
+
   return `https://api.whatsapp.com/send?phone=${phone}&text=${message}`
 }
 
