@@ -1,7 +1,35 @@
-import Footer from "@/components/Footer";
+import Image from "next/image";
+import { Metadata } from "next";
+
 import Header from "@/components/Header";
 import { Timeline } from "@/components/ui/timeline";
-import Image from "next/image";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Pós Mudança - Leticia Martins",
+  alternates: {
+    canonical: "https://www.leticiamartins.com.br",
+  },
+  description:
+    "Serviço de organização pós-mudança em Maringá com Leticia Martins. Desempacote, organize e transforme seu novo lar com praticidade, conforto e soluções personalizadas para sua família.",
+  keywords: [
+    "organização pós-mudança",
+    "personal organizer pós-mudança",
+    "organização residencial",
+    "organização de mudança",
+    "desempacotar mudança",
+    "organização de casa nova",
+    "personal organizer Maringá",
+    "organização profissional",
+    "organização de armários",
+    "organização de ambientes",
+    "Leticia Martins",
+    "mudança sem estresse",
+    "serviço pós-mudança",
+    "organização familiar",
+    "organização eficiente",
+  ],
+};
 
 const data = [
   {
@@ -9,7 +37,9 @@ const data = [
     content: (
       <div>
         <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
-          Ao contar com a ajuda da minha equipe de personal organizer, você receberá todo cuidado e zelo com seus pertences, garantindo todo conforto e tranquilidade a etapa final do serviço.
+          Ao contar com a ajuda da minha equipe de personal organizer, você todo
+          cuidado e zelo com seus pertences, garantindo todo conforto e
+          tranquilidade a etapa final do serviço.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
@@ -49,7 +79,10 @@ const data = [
     content: (
       <div>
         <p className="mb-8 text-base font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
-          Inclui otimizar o espaço nos armários, criar sistemas de organização eficientes e encontrar soluções práticas para armazenar seus pertences. Além disso, oferecemos orientações sobre como manter a organização a longo prazo, o que facilitará sua adaptação ao novo lar.
+          Inclui otimizar o espaço nos armários, criar sistemas de organização
+          eficientes e encontrar soluções práticas para armazenar seus
+          pertences. Além disso, oferecemos orientações sobre como manter a
+          organização a longo prazo, o que facilitará sua adaptação ao novo lar.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
@@ -89,7 +122,8 @@ const data = [
     content: (
       <div>
         <p className="mb-4 text-base font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
-          Estamos prontos para te oferecer uma experiência única e exclusiva, com todo conforto e tranquilidade que você e sua familia merece.
+          Estamos prontos para te oferecer uma experiência única e exclusiva,
+          com todo conforto e tranquilidade que você e sua familia merece.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -127,7 +161,6 @@ const data = [
   },
 ];
 
-
 export default function PosMudanca() {
   return (
     <>
@@ -152,6 +185,5 @@ export default function PosMudanca() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
-

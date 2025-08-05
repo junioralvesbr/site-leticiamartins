@@ -1,15 +1,46 @@
-import Footer from "@/components/Footer";
+import Image from "next/image";
+import { Metadata } from "next";
+
 import Header from "@/components/Header";
 import { Timeline } from "@/components/ui/timeline";
-import Image from "next/image";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Organização Comercial - Leticia Martins",
+  alternates: {
+    canonical: "https://www.leticiamartins.com.br",
+  },
+  description:
+    "Serviço de organização comercial em Maringá com Leticia Martins. Soluções personalizadas para empresas, escritórios, lojas, estoques e ateliês. Aumente a produtividade, otimize espaços e transforme seu ambiente de trabalho com uma personal organizer especializada.",
+  keywords: [
+    "organização comercial",
+    "personal organizer comercial",
+    "organização de empresas",
+    "organização de escritórios",
+    "organização de lojas",
+    "organização de estoque",
+    "organização de ateliê",
+    "organização profissional Maringá",
+    "Leticia Martins",
+    "produtividade empresarial",
+    "otimização de ambientes comerciais",
+    "organização de ambientes de trabalho",
+    "consultoria organizacional Maringá",
+    "organização para negócios",
+    "personal organizer para empresas",
+    "organização eficiente Maringá",
+  ],
+};
 
 const data = [
   {
     title: "Almoxarifado & Estoque",
     content: (
       <div>
-        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-sm dark:text-neutral-200">
-          Estamos prontos para facilitar e tornar a rotina da sua empresa mais eficiente e produtiva. Nossa equipe proporciona um plano personalizado e exclusivo para o seu negócio.
+        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
+          Estamos prontos para facilitar e tornar a rotina da sua empresa mais
+          eficiente e produtiva. Nossa equipe proporciona um plano personalizado
+          e exclusivo para o seu negócio.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
@@ -41,14 +72,16 @@ const data = [
             className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
           />
         </div>
-      </div>)
+      </div>
+    ),
   },
   {
     title: "Loja, Ateliê & Escritório",
     content: (
       <div>
-        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-sm dark:text-neutral-200">
-          Organização é liberdade: livre-se da bagunça e encontre o sucesso em seu escritório e loja.
+        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
+          Organização é liberdade: livre-se da bagunça e encontre o sucesso em
+          seu escritório e loja.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
@@ -80,9 +113,10 @@ const data = [
             className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
           />
         </div>
-      </div>)
-  }
-]
+      </div>
+    ),
+  },
+];
 
 export default function Organizacaocomercial() {
   return (
@@ -106,6 +140,5 @@ export default function Organizacaocomercial() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
-

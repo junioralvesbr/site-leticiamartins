@@ -13,7 +13,7 @@ const ptSerif = PT_Serif({
   subsets: ["latin"],
   display: "swap",
   style: ["normal"],
-})
+});
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -21,7 +21,7 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
   style: ["normal"],
-})
+});
 
 const anton = Anton({
   variable: "--font-anton",
@@ -29,13 +29,10 @@ const anton = Anton({
   subsets: ["latin"],
   display: "swap",
   style: ["normal"],
-})
+});
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leticiamartins.com.br'),
-  description:
-    'Leticia Martins personal organizer. Profissional especializada em organização residencial, empresarial e pós-mudança.',
-  keywords: ['Curso', 'organização', 'personal organizer', 'personal organizer maringá', 'curso de personal organizer', 'organizadores', 'Minha casa organizada', 'mudança', 'mudança residencial', 'pós mudança', 'pós-mudança', 'organização empresarial', 'organização de lojas', 'organização de vitrines', 'moveis planejado'],
+  metadataBase: new URL("https://leticiamartins.com.br"),
   robots: {
     index: true,
     follow: true,
@@ -44,41 +41,42 @@ export const metadata: Metadata = {
       index: true,
       follow: false,
       noimageindex: false,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
-    images: '/images/leticia-martins.png',
-    title: 'Leticia Martins personal organizer',
+    images: "/images/leticia-martins.png",
+    title: "Leticia Martins Personal Organizer",
   },
-  authors: { name: 'Junior Alves' },
+  authors: { name: "Junior Alves" },
   icons: {
     icon: [
-      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: '/apple-touch-icon.png',
-    shortcut: ['/leticiamartins-icon.png'],
+    apple: "/apple-touch-icon.png",
+    shortcut: ["/leticiamartins-icon.png"],
     other: [
       {
-        rel: '/android-chrome-192x192.png',
-        url: '/android-chrome-512x512.png',
+        rel: "/android-chrome-192x192.png",
+        url: "/android-chrome-512x512.png",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Leticia Martins personal organizer',
-    description: 'Leticia Martins personal organizer. Profissional especializada em organização residencial, empresarial e pós-mudança.',
-    siteId: '1467726470533754880',
-    creator: 'Junior Alves',
-    creatorId: '1467726470533754880',
-    images: ['https://www.leticiamartins.com.br/images/leticia-martins.png'], // Must be an absolute URL
+    card: "summary_large_image",
+    title: "Leticia Martins personal organizer",
+    description:
+      "Leticia Martins é uma personal organizer em Maringá. Especialista em organização residencial, empresarial e pós-mudança. Transforme seus ambientes com soluções práticas, personalizadas e eficientes.",
+    siteId: "1467726470533754880",
+    creator: "Junior Alves",
+    creatorId: "1467726470533754880",
+    images: ["https://www.leticiamartins.com.br/images/leticia-martins.png"], // Must be an absolute URL
   },
-  manifest: '/site.webmanifest',
-}
+  manifest: "/site.webmanifest",
+};
 
 export default function RootLayout({
   children,
@@ -87,7 +85,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${anton.variable} ${ptSerif.variable} ${dmSans.className} antialiased scroll-smooth`}>
+      <body
+        className={`${anton.variable} ${ptSerif.variable} ${dmSans.className} antialiased scroll-smooth`}
+      >
         <div className="min-h-dvh max-w-screen bg-white">
           <NavBar />
           <NavMobile />

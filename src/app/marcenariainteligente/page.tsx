@@ -1,15 +1,47 @@
-import Footer from "@/components/Footer";
+import { Metadata } from "next";
+import Image from "next/image";
+
 import Header from "@/components/Header";
 import { Timeline } from "@/components/ui/timeline";
-import Image from "next/image";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Marcenaria Inteligente - Leticia Martins",
+  alternates: {
+    canonical: "https://www.leticiamartins.com.br",
+  },
+  description:
+    "Marcenaria inteligente em Maringá com Leticia Martins. Planejamento e organização de móveis sob medida, otimizando espaços com divisórias, gavetas e prateleiras personalizadas. Soluções práticas para ambientes funcionais, bonitos e organizados.",
+  keywords: [
+    "marcenaria inteligente",
+    "organização de móveis planejados",
+    "móveis sob medida Maringá",
+    "personal organizer Maringá",
+    "otimização de espaços",
+    "divisórias personalizadas",
+    "gavetas sob medida",
+    "prateleiras planejadas",
+    "organização residencial",
+    "Leticia Martins",
+    "soluções para marcenaria",
+    "ambientes funcionais",
+    "organização de interiores",
+    "móveis planejados Maringá",
+    "consultoria em marcenaria",
+    "projeto de móveis inteligentes",
+  ],
+};
 
 const data = [
   {
     title: "Tudo bem projetado",
     content: (
       <div>
-        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-sm dark:text-neutral-200">
-          Organizamos com eficiência: maximizamos os espaços no móvel planejado, utilizando soluções como divisórias, gavetas sob medidas, prateleiras ajustadas e compartimentos personalizados para manter seus pertences em ordem e facilmente acessíveis.
+        <p className="mb-8 text-base font-paragraph font-normal text-neutral-600 md:text-xl dark:text-neutral-200">
+          Organizamos com eficiência: maximizamos os espaços no móvel planejado,
+          utilizando soluções como divisórias, gavetas sob medidas, prateleiras
+          ajustadas e compartimentos personalizados para manter seus pertences
+          em ordem e facilmente acessíveis.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
@@ -41,10 +73,10 @@ const data = [
             className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
           />
         </div>
-      </div>)
-  }
-]
-
+      </div>
+    ),
+  },
+];
 
 export default function MarcenariaInteligente() {
   return (
@@ -67,6 +99,5 @@ export default function MarcenariaInteligente() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
-
