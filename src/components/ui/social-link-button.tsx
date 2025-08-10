@@ -12,6 +12,7 @@ export default function SocialLinkButton({ href, Icon }: Props) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Links para as redes sociais"
       >
         <div
           className="text-lg font-subTitles bg-zinc-100 p-2 rounded-full group-hover:bg-fourth transition-all duration-300 lg:p-2.5"

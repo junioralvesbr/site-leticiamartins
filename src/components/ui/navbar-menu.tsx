@@ -85,6 +85,7 @@ export const HoveredLink = ({ children, href }: { children: React.ReactNode, hre
     <a
       href={href}
       className="text-first hover:text-second hover:translate-x-2 transition-all"
+      aria-label="Links da pagina da Leticia Martins Organizadora"
     >
       {children}
     </a>

@@ -66,6 +66,7 @@ export default function Services() {
           >
             <Link
               href={item.path}
+              aria-label="Link para os partes de serviços"
             >
               <div className="overflow-hidden rounded-lg">
                 <Image

@@ -17,6 +17,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-subTitles text-white hover:text-second transition-all"
+                  aria-label="Link para o instagram"
                 >
                   {linksAndPaths.instagram.name}
                 </a>
@@ -28,6 +29,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-subTitles text-white hover:text-second transition-all"
+                  aria-label="Link para o facebook"
                 >
                   {linksAndPaths.facebook.name}
                 </a>
@@ -39,6 +41,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-subTitles text-white hover:text-second transition-all"
+                  aria-label="Link para o Whatsapp"
                 >
                   {linksAndPaths.whatsapp.name}
                 </a>
@@ -57,6 +60,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.inicio.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o Inicio"
                   >
                     {linksAndPaths.inicio.name}
                   </Link>
@@ -66,6 +70,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.servicos.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o serviços"
                   >
                     {linksAndPaths.servicos.name}
                   </Link>
@@ -75,6 +80,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.experiencia.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o experiencia"
                   >
                     {linksAndPaths.experiencia.name}
                   </Link>
@@ -86,6 +92,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o curso"
                   >
                     {linksAndPaths.curso.name}
                   </a>
@@ -97,6 +104,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.residencial.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o residencial"
                   >
                     {linksAndPaths.residencial.name}
                   </Link>
@@ -106,6 +114,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.posMudanca.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o pos mudanca"
                   >
                     {linksAndPaths.posMudanca.name}
                   </Link>
@@ -114,6 +123,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.comercial.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o comercial"
                   >
                     {linksAndPaths.comercial.name}
                   </Link>
@@ -122,6 +132,7 @@ export default function Footer() {
                   <Link
                     href={linksAndPaths.marcenariaInteligente.href}
                     className="font-subTitles text-white hover:text-second transition-all"
+                    aria-label="Link para o marcenaria inteligente"
                   >
                     {linksAndPaths.marcenariaInteligente.name}
                   </Link>

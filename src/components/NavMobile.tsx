@@ -56,7 +56,7 @@ export default function NavMobile() {
                     className="w-full p-[0.08rem] rounded-xl"
                     onClick={() => setOpen(false)}
                   >
-                    <Link href="/">
+                    <Link href="/" aria-label="Link para o Inicio">
                       <span className="flex gap-1 text-center text-lg text-second">
                         Início
                       </span>
@@ -91,7 +91,7 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.residencial.href}>
+                        <Link href={linksAndPaths.residencial.href} aria-label="Link para o residencial">
                           <span className="flex gap-1 text-center text-lg text-second">
                             {linksAndPaths.residencial.name}
                           </span>
@@ -109,7 +109,7 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.posMudanca.href}>
+                        <Link href={linksAndPaths.posMudanca.href} aria-label="Link para o pos mudanca">
                           <span className="flex gap-1 text-center text-lg text-second">
                             {linksAndPaths.posMudanca.name}
                           </span>
@@ -127,7 +127,7 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.comercial.href}>
+                        <Link href={linksAndPaths.comercial.href} aria-label="Link para o comercial">
                           <span className="flex gap-1 text-center text-lg text-second">
                             {linksAndPaths.comercial.name}
                           </span>
@@ -145,7 +145,10 @@ export default function NavMobile() {
                         className="w-full p-[0.08rem] rounded-xl"
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.marcenariaInteligente.href}>
+                        <Link
+                          href={linksAndPaths.marcenariaInteligente.href}
+                          aria-label="Link para o marcenaria inteligente"
+                        >
                           <span className="flex gap-1 text-center text-lg text-second">
                             {linksAndPaths.marcenariaInteligente.name}
                           </span>
@@ -166,7 +169,10 @@ export default function NavMobile() {
                     className="w-full p-[0.08rem] rounded-xl"
                     onClick={() => setOpen(false)}
                   >
-                    <Link href={linksAndPaths.experiencia.href}>
+                    <Link
+                      href={linksAndPaths.experiencia.href}
+                      aria-label="Link para a experiencias"
+                    >
                       <span className="flex gap-1 text-center text-lg text-second">
                         {linksAndPaths.experiencia.name}
                       </span>
@@ -189,6 +195,7 @@ export default function NavMobile() {
                       href={linksAndPaths.curso.href}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Link para o Curso da leticia Martins"
                     >
                       <span className="flex gap-1 text-center text-lg text-second">
                         {linksAndPaths.curso.name}

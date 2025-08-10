@@ -33,6 +33,7 @@ export default function NavBar() {
           <li>
             <Link
               href={linksAndPaths.inicio.href}
+              aria-label="Link para o inicio"
               className="font-subTitles text-zinc-600 hover:text-third transition-all"
             >
               {linksAndPaths.inicio.name}
