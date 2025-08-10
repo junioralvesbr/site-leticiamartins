@@ -26,6 +26,7 @@ export default function Hero() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover md:object-[25%_25%] w-full h-full"
             priority
+            fetchPriority="high"
           />
         </motion.figure>
       </div>
@@ -41,7 +42,7 @@ export default function Hero() {
             delay: 0.5
           }}
         >
-          <p className="text-lg font-subTitles text-third">
+          <p className="text-lg font-subTitles text-fourth">
             Personal Organizer
           </p>
 
