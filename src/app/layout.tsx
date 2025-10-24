@@ -1,5 +1,6 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
-import { PT_Serif, DM_Sans, Anton } from "next/font/google";
+import { Anton, DM_Sans, PT_Serif } from "next/font/google";
 
 import NavBar from "@/components/NavBar";
 import NavMobile from "@/components/NavMobile";
@@ -93,6 +94,7 @@ export default function RootLayout({
           <NavMobile />
           {children}
           <WhatssAppIcon />
+          <Analytics />
         </div>
       </body>
     </html>
