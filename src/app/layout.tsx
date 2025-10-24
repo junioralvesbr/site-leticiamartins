@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Anton, DM_Sans, PT_Serif } from "next/font/google";
@@ -34,6 +35,14 @@ const anton = Anton({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://leticiamartins.com.br"),
+  verification: {
+    google: 'google',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['leticia384b@gmail.com', 'https://www.leticiamartins.com.br'],
+    },
+  },
   robots: {
     index: true,
     follow: true,
@@ -67,16 +76,20 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
     title: "Leticia Martins personal organizer",
     description:
       "Leticia Martins é uma personal organizer em Maringá. Especialista em organização residencial, empresarial e pós-mudança. Transforme seus ambientes com soluções práticas, personalizadas e eficientes.",
-    siteId: "1467726470533754880",
+    siteId: "prj_4IBaNnMK4MnvcPrgEFHHNSBlhINE",
     creator: "Junior Alves",
-    creatorId: "1467726470533754880",
+    creatorId: "lX02uwy4OteDC5MLg4V8nXvP",
     images: ["https://www.leticiamartins.com.br/images/leticia-martins.png"], // Must be an absolute URL
   },
   manifest: "/site.webmanifest",
+  assets: ['https://www.leticiamartins.com.br/images'],
+  category: 'Personal Organizer',
+  pinterest: {
+    richPin: true,
+  },
 };
 
 export default function RootLayout({
@@ -95,6 +108,7 @@ export default function RootLayout({
           {children}
           <WhatssAppIcon />
           <Analytics />
+          <GoogleAnalytics gaId="G-MLEXRG2E0N" />
         </div>
       </body>
     </html>
