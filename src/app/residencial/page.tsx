@@ -1,8 +1,8 @@
 import Footer from "@/components/Footer";
+import GridImage from "@/components/GridImage";
 import Header from "@/components/Header";
 import { Timeline } from "@/components/ui/timeline";
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Organização Residencial - Leticia Martins",
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 
 const data = [
   {
+    id: 1,
     title: "Quartos & Closets",
     content: (
       <div>
@@ -42,39 +43,28 @@ const data = [
           espaço convidativo para descanso e renovação.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Image
+          <GridImage
             src="/images/residencial/closet-1.jpg"
-            alt="Foto do closet"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do closet organizada"
           />
-          <Image
+          <GridImage
             src="/images/residencial/closet-2.jpg"
-            alt="Foto do closet"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do closet organizada"
           />
-          <Image
+          <GridImage
             src="/images/residencial/closet-3.jpg"
-            alt="Foto do closet"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do closet organizada"
           />
-          <Image
+          <GridImage
             src="/images/residencial/closet-4.jpg"
-            alt="Foto do closet"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do closet organizada"
           />
         </div>
       </div>
     ),
   },
   {
+    id: 2,
     title: "Cozinhas & Despensas",
     content: (
       <div>
@@ -86,39 +76,28 @@ const data = [
           experiências para você e sua família.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Image
+          <GridImage
             src="/images/residencial/cozinha-1.jpg"
-            alt="Foto da Cozinha"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto da Cozinha organizada"
           />
-          <Image
+          <GridImage
             src="/images/residencial/cozinha-2.jpg"
-            alt="Foto da Cozinha"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto da Cozinha organizada"
           />
-          <Image
+          <GridImage
             src="/images/residencial/cozinha-3.jpg"
-            alt="Foto da Cozinha"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto da Cozinha organizada"
           />
-          <Image
+          <GridImage
             src="/images/residencial/cozinha-4.jpg"
-            alt="Foto da Cozinha"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto da Cozinha organizada"
           />
         </div>
       </div>
     ),
   },
   {
+    id: 3,
     title: "Banheiros & Lavanderia",
     content: (
       <div>
@@ -132,33 +111,21 @@ const data = [
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Image
+          <GridImage
             src="/images/residencial/banheiro-1.jpg"
-            alt="Foto do Banheiro"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do Banheiro organizado"
           />
-          <Image
+          <GridImage
             src="/images/residencial/banheiro-2.jpg"
-            alt="Foto do Banheiro"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do Banheiro organizado"
           />
-          <Image
+          <GridImage
             src="/images/residencial/banheiro-3.jpg"
-            alt="Foto do Banheiro"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do Banheiro organizado"
           />
-          <Image
+          <GridImage
             src="/images/residencial/banheiro-4.jpg"
-            alt="Foto do Banheiro"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="Foto do Banheiro organizado"
           />
         </div>
       </div>

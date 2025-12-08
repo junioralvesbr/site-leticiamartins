@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import Image from "next/image";
 
+import Footer from "@/components/Footer";
+import GridImage from "@/components/GridImage";
 import Header from "@/components/Header";
 import { Timeline } from "@/components/ui/timeline";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Marcenaria Inteligente - Leticia Martins",
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
 
 const data = [
   {
+    id: 1,
     title: "Tudo bem projetado",
     content: (
       <div>
@@ -44,33 +45,21 @@ const data = [
           em ordem e facilmente acessíveis.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Image
+          <GridImage
             src="/images/marcenaria/foto-1.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="fotos de móveis planejados para organização"
           />
-          <Image
+          <GridImage
             src="/images/marcenaria/foto-2.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="fotos de móveis planejados para organização"
           />
-          <Image
+          <GridImage
             src="/images/marcenaria/foto-3.webp"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="fotos de móveis planejados para organização"
           />
-          <Image
+          <GridImage
             src="/images/marcenaria/foto-4.jpg"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="h-52 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-72"
+            alt="fotos de móveis planejados para organização"
           />
         </div>
       </div>
