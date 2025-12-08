@@ -45,19 +45,19 @@ const data = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
-            src="/images/comercial/foto-1.jpg"
+            src="/images/comercial/comercial-1.jpg"
             alt="Almoxarifados e estoques organizados"
           />
           <GridImage
-            src="/images/comercial/foto-2.jpg"
+            src="/images/comercial/comercial-2.jpg"
             alt="Almoxarifados e estoques organizados"
           />
           <GridImage
-            src="/images/comercial/foto-3.jpg"
+            src="/images/comercial/comercial-3.jpg"
             alt="Almoxarifados e estoques organizados"
           />
           <GridImage
-            src="/images/comercial/foto-4.jpg"
+            src="/images/comercial/comercial-4.jpg"
             alt="Almoxarifados e estoques organizados"
           />
         </div>
@@ -75,19 +75,19 @@ const data = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
-            src="/images/comercial/foto-5.jpg"
+            src="/images/comercial/comercial-5.jpg"
             alt="Loja, atelie e escritórios organizados"
           />
           <GridImage
-            src="/images/comercial/foto-6.jpg"
+            src="/images/comercial/comercial-6.jpg"
             alt="Loja, atelie e escritórios organizados"
           />
           <GridImage
-            src="/images/comercial/foto-7.jpg"
+            src="/images/comercial/comercial-7.jpg"
             alt="Loja, atelie e escritórios organizados"
           />
           <GridImage
-            src="/images/comercial/foto-8.jpg"
+            src="/images/comercial/comercial-8.jpg"
             alt="Loja, atelie e escritórios organizados"
           />
         </div>

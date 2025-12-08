@@ -46,19 +46,19 @@ const data = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
-            src="/images/marcenaria/foto-1.webp"
+            src="/images/marcenaria/marcenaria-inteligente-1.webp"
             alt="fotos de móveis planejados para organização"
           />
           <GridImage
-            src="/images/marcenaria/foto-2.webp"
+            src="/images/marcenaria/marcenaria-inteligente-2.webp"
             alt="fotos de móveis planejados para organização"
           />
           <GridImage
-            src="/images/marcenaria/foto-3.webp"
+            src="/images/marcenaria/marcenaria-inteligente-3.webp"
             alt="fotos de móveis planejados para organização"
           />
           <GridImage
-            src="/images/marcenaria/foto-4.jpg"
+            src="/images/marcenaria/marcenaria-inteligente-4.jpg"
             alt="fotos de móveis planejados para organização"
           />
         </div>
@@ -74,7 +74,7 @@ export default function MarcenariaInteligente() {
         <Header
           title="Marcenaria Inteligente"
           text="Elaborar a parte interna de um móvel requer, um bom planejamento, cuidado e atenção com as medidas. É necessário focar na distribuição adequada das gavetas, prateleiras e de toda parte interna, trazendo maior praticidade, aproveitamento dos espaços e ainda mais beleza para os seus móveis."
-          capa="/images/marcenaria/foto-5.jpg"
+          capa="/images/marcenaria/marcenaria-inteligente-5.jpg"
           alt="foto capa do site macenaria inteligente"
         />
       </header>
