@@ -1,94 +1,123 @@
-import { FaMedal, FaUsersGear, FaCompassDrafting, FaHandshake } from "react-icons/fa6";
-import { TextAnimate } from "./ui/text-animate";
+import {
+  FaCompassDrafting,
+  FaHandshake,
+  FaMedal,
+  FaUsersGear,
+} from 'react-icons/fa6'
 
 export default function Expertise() {
-
   const calculaExperiencia = () => {
     const anoAtual = new Date().getFullYear()
     return anoAtual - 2018
   }
 
   return (
-    <div className="grid grid-cols-1 gap-12 relative md:grid-cols-2 lg:pt-20">
-      <div className="sticky top-20 sm:top-36">
-        <h2 className="sticky top-20 sm:top-36">
-          <TextAnimate
-            animation="blurInUp"
-            by="character"
-            delay={0.5}
-            once={true}
-            className="text-4xl font-bold font-subTitles -tracking-tight text-first dark:text-white md:text-7xl md:leading-[5rem]"
-          >
-            Experiência
-          </TextAnimate>
-        </h2>
+    <div className='relative grid grid-cols-1 gap-12 md:grid-cols-2 lg:pt-20'>
+      <div className='sticky top-20 sm:top-36'>
+        <div className='sticky top-20 sm:top-36'>
+          <h2 className='font-subTitles text-first text-4xl font-bold -tracking-tight md:text-7xl md:leading-20 dark:text-white'>
+            Leticia Martins
+          </h2>
+
+          <p className='font-subTitles text-first mt-5 text-base -tracking-tight dark:text-white'>
+            Sou Personal Organizer e ajudo pessoas a transformarem seus espaços
+            em ambientes organizados, funcionais e harmoniosos.
+          </p>
+
+          <p className='font-subTitles text-first mt-5 text-base -tracking-tight dark:text-white'>
+            Acredito que a organização vai muito além da estética. Ela impacta
+            diretamente na sua rotina, produtividade e bem-estar. Cada projeto é
+            pensado de forma personalizada, respeitando sua realidade, seus
+            hábitos e suas necessidades.
+          </p>
+
+          <p className='font-subTitles text-first mt-5 text-base -tracking-tight dark:text-white'>
+            Atendo projetos residenciais e comerciais em Maringá e região,
+            sempre com foco em praticidade, leveza e sofisticação.
+          </p>
+        </div>
       </div>
 
-      <div className="flex flex-col gap-10 sticky top-36">
-        <div className="bg-sixth flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-2">
-          <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-fifth w-12 h-12">
-              <FaMedal width={42} height={42} className="text-fourth w-6 h-6" />
+      <div className='sticky top-36 flex flex-col gap-10'>
+        <div className='bg-sixth sticky top-36 flex min-h-[360px] w-full rotate-2 flex-col justify-between rounded-2xl p-6'>
+          <div className='flex justify-end-safe'>
+            <div className='bg-fifth flex h-12 w-12 items-center justify-center rounded-4xl'>
+              <FaMedal width={42} height={42} className='text-fourth h-6 w-6' />
             </div>
           </div>
           <div>
-            <p className="text-3xl font-subTitles font-bold text-black capitalize">
+            <p className='font-subTitles text-3xl font-bold text-black capitalize'>
               Ampla experiência
             </p>
 
-            <p className="text-base font-subTitles text-first">
-              Mais de {calculaExperiencia()} anos de atendimento com diversos projetos.
+            <p className='font-subTitles text-first text-base'>
+              Mais de {calculaExperiencia()} anos de atendimento com diversos
+              projetos.
             </p>
           </div>
         </div>
 
-        <div className="bg-fifth flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 -rotate-2">
-          <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-second w-12 h-12">
-              <FaUsersGear width={42} height={42} className="text-white w-6 h-6" />
+        <div className='bg-fifth sticky top-36 flex min-h-[360px] w-full -rotate-2 flex-col justify-between rounded-2xl p-6'>
+          <div className='flex justify-end-safe'>
+            <div className='bg-second flex h-12 w-12 items-center justify-center rounded-4xl'>
+              <FaUsersGear
+                width={42}
+                height={42}
+                className='h-6 w-6 text-white'
+              />
             </div>
           </div>
           <div>
-            <p className="text-3xl font-subTitles font-bold text-black capitalize">
+            <p className='font-subTitles text-3xl font-bold text-black capitalize'>
               Formação de equipe
             </p>
 
-            <p className="text-base font-subTitles text-first">
+            <p className='font-subTitles text-first text-base'>
               Equipe bem treinada e capacitada para o seu atendimento.
             </p>
           </div>
         </div>
 
-        <div className="bg-second flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36 rotate-4">
-          <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-first w-12 h-12">
-              <FaCompassDrafting width={42} height={42} className="text-white w-6 h-6" />
+        <div className='bg-second sticky top-36 flex min-h-[360px] w-full rotate-4 flex-col justify-between rounded-2xl p-6'>
+          <div className='flex justify-end-safe'>
+            <div className='bg-first flex h-12 w-12 items-center justify-center rounded-4xl'>
+              <FaCompassDrafting
+                width={42}
+                height={42}
+                className='h-6 w-6 text-white'
+              />
             </div>
           </div>
           <div>
-            <p className="text-3xl font-subTitles font-bold text-white capitalize">
+            <p className='font-subTitles text-3xl font-bold text-white capitalize'>
               Projetos profissionais
             </p>
 
-            <p className="text-base font-subTitles text-white">
-              Praticidade e simplicidade para o seu dia a dia, tornando tudo mais produtivo e eficiente.
+            <p className='font-subTitles text-base text-white'>
+              Praticidade e simplicidade para o seu dia a dia, tornando tudo
+              mais produtivo e eficiente.
             </p>
           </div>
         </div>
 
-        <div className="bg-fourth flex flex-col justify-between rounded-2xl w-full min-h-[360px] p-6 sticky top-36">
-          <div className="flex justify-end-safe">
-            <div className="flex justify-center items-center rounded-4xl bg-first w-12 h-12">
-              <FaHandshake width={42} height={42} className="text-white w-6 h-6" />
+        <div className='bg-fourth sticky top-36 flex min-h-[360px] w-full flex-col justify-between rounded-2xl p-6'>
+          <div className='flex justify-end-safe'>
+            <div className='bg-first flex h-12 w-12 items-center justify-center rounded-4xl'>
+              <FaHandshake
+                width={42}
+                height={42}
+                className='h-6 w-6 text-white'
+              />
             </div>
           </div>
           <div>
-            <p className="text-3xl font-subTitles font-bold text-white capitalize">
+            <p className='font-subTitles text-3xl font-bold text-white capitalize'>
               Atendimento ao cliente
             </p>
 
-            <p className="text-base font-subTitles text-white">
-              Elaboramos soluções personalizadas para a organização da sua casa ou empresa.
+            <p className='font-subTitles text-base text-white'>
+              Elaboramos soluções personalizadas para a organização da sua casa
+              ou empresa.
             </p>
           </div>
         </div>
