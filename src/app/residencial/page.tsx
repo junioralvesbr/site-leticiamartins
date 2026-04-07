@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Organização Residencial - Leticia Martins",
   alternates: {
-    canonical: "https://www.leticiamartins.com.br",
+    canonical: "https://www.leticiamartins.com.br/residencial",
   },
   description:
     "Leticia Martins é uma personal organizer em Maringá. Especialista em organização residencial, empresarial e pós-mudança. Transforme seus ambientes com soluções práticas, personalizadas e eficientes.",

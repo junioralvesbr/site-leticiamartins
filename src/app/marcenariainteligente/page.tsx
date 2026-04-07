@@ -8,7 +8,7 @@ import { Timeline } from "@/components/ui/timeline";
 export const metadata: Metadata = {
   title: "Marcenaria Inteligente - Leticia Martins",
   alternates: {
-    canonical: "https://www.leticiamartins.com.br",
+    canonical: "https://www.leticiamartins.com.br/marcenariainteligente",
   },
   description:
     "Marcenaria inteligente em Maringá com Leticia Martins. Planejamento e organização de móveis sob medida, otimizando espaços com divisórias, gavetas e prateleiras personalizadas. Soluções práticas para ambientes funcionais, bonitos e organizados.",

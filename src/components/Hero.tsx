@@ -1,9 +1,9 @@
-import Image from "next/image";
 import * as motion from "motion/react-client";
+import Image from "next/image";
 
-import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa6";
-import SocialLinkButton from "./ui/social-link-button";
 import { linksAndPaths } from "@/data/linksAndPaths";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import SocialLinkButton from "./ui/social-link-button";
 
 export default function Hero() {
   return (
@@ -46,9 +46,9 @@ export default function Hero() {
             Personal Organizer
           </p>
 
-          <h1 className="font-titles text-clamp text-first whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-[100px] xl:text-[116px]">
+          <span className="font-titles text-clamp text-first whitespace-pre letter-spacing-[-0.02em] leading-[1.2] font-bold lg:text-[100px] xl:text-[116px]">
             Leticia Martins
-          </h1>
+          </span>
         </motion.div>
 
         <motion.div
@@ -60,30 +60,36 @@ export default function Hero() {
             delay: 1
           }}
         >
+          <h1 className="text-lg font-subTitles text-fourth text-balance">
+            Organização Residencial e Comercial em Maringá
+          </h1>
           <p className="text-lg font-subTitles text-fourth text-balance">
-            Organizar é a minha paixão: transformo ambientes para criar mais harmonia, funcionalidade e leveza no seu dia a dia.
+            Organizar é a minha paixão: Transforme sua casa ou empresa com mais praticidade, leveza e sofisticação através da organização profissional.
           </p>
 
-          <ul className="flex gap-4">
-            <li>
-              <SocialLinkButton
-                href={linksAndPaths.instagram.href}
-                Icon={FaInstagram}
-              />
-            </li>
-            <li>
-              <SocialLinkButton
-                href={linksAndPaths.facebook.href}
-                Icon={FaFacebook}
-              />
-            </li>
-            <li>
-              <SocialLinkButton
-                href={linksAndPaths.whatsapp.href}
-                Icon={FaWhatsapp}
-              />
-            </li>
-          </ul>
+          <div>
+            <strong className="text-lg font-subTitles text-fourth text-balance">Entre em contato:</strong>
+            <ul className="flex gap-4 mt-2">
+              <li>
+                <SocialLinkButton
+                  href={linksAndPaths.instagram.href}
+                  Icon={FaInstagram}
+                />
+              </li>
+              <li>
+                <SocialLinkButton
+                  href={linksAndPaths.facebook.href}
+                  Icon={FaFacebook}
+                />
+              </li>
+              <li>
+                <SocialLinkButton
+                  href={linksAndPaths.whatsapp.href}
+                  Icon={FaWhatsapp}
+                />
+              </li>
+            </ul>
+          </div>
         </motion.div>
       </section>
     </div>

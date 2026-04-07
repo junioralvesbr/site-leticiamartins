@@ -8,7 +8,7 @@ import { Timeline } from "@/components/ui/timeline";
 export const metadata: Metadata = {
   title: "Pós Mudança - Leticia Martins",
   alternates: {
-    canonical: "https://www.leticiamartins.com.br",
+    canonical: "https://www.leticiamartins.com.br/posmudanca",
   },
   description:
     "Serviço de organização pós-mudança em Maringá com Leticia Martins. Desempacote, organize e transforme seu novo lar com praticidade, conforto e soluções personalizadas para sua família.",

@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
-import { TextAnimate } from "./ui/text-animate";
 import Image from "next/image";
+import { TextAnimate } from "./ui/text-animate";
 
 type HeaderProps = {
   title: string;
@@ -21,7 +21,7 @@ export default function Header({ title, text, subText, capa, alt }: HeaderProps)
             by="character"
             delay={0.5}
             once={true}
-            className="text-4xl font-bold font-subTitles text-balance -tracking-tight text-first dark:text-white md:text-7xl md:leading-[5rem]"
+            className="text-4xl font-bold font-subTitles text-balance -tracking-tight text-first dark:text-white md:text-7xl md:leading-20"
           >
             {title}
           </TextAnimate>

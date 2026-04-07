@@ -1,16 +1,36 @@
 import { Metadata } from "next";
 
+import Expertise from "@/components/Expertise";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { MuralDesktop, MuralMobile } from "@/components/Mural";
 import Services from "@/components/Services";
-import Footer from "@/components/Footer";
-import Expertise from "@/components/Expertise";
 
 export const metadata: Metadata = {
-  title: 'Leticia Martins Personal Organizer',
+  title: "Personal Organizer em Maringá | Letícia Martins",
+  description:
+    "Organização residencial e comercial em Maringá. Transforme seu ambiente com praticidade, leveza e sofisticação.",
   alternates: {
     canonical: 'https://www.leticiamartins.com.br',
   },
+  keywords: [
+    "Curso",
+    "organização",
+    "personal organizer",
+    "personal organizer maringá",
+    "curso de personal organizer",
+    "organizadores",
+    "Minha casa organizada",
+    "mudança",
+    "mudança residencial",
+    "pós mudança",
+    "pós-mudança",
+    "organização empresarial",
+    "organização de lojas",
+    "organização de vitrines",
+    "moveis planejado",
+    "Organização em maringá"
+  ],
 }
 
 export default function Home() {

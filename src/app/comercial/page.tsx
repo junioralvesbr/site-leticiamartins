@@ -8,7 +8,7 @@ import { Timeline } from "@/components/ui/timeline";
 export const metadata: Metadata = {
   title: "Organização Comercial - Leticia Martins",
   alternates: {
-    canonical: "https://www.leticiamartins.com.br",
+    canonical: "https://www.leticiamartins.com.br/comercial",
   },
   description:
     "Serviço de organização comercial em Maringá com Leticia Martins. Soluções personalizadas para empresas, escritórios, lojas, estoques e ateliês. Aumente a produtividade, otimize espaços e transforme seu ambiente de trabalho com uma personal organizer especializada.",
