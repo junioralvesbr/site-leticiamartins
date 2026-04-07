@@ -16,12 +16,12 @@ export default function Expertise() {
       <div className='sticky top-20 sm:top-36'>
         <div className='sticky top-20 sm:top-36'>
           <h2 className='font-subTitles text-first text-4xl font-bold -tracking-tight md:text-7xl md:leading-20 dark:text-white'>
-            Leticia Martins
+            Personal Organizer
           </h2>
 
           <p className='font-subTitles text-first mt-5 text-base -tracking-tight dark:text-white'>
-            Sou Personal Organizer e ajudo pessoas a transformarem seus espaços
-            em ambientes organizados, funcionais e harmoniosos.
+            Ajudo pessoas a transformarem seus espaços em ambientes organizados,
+            funcionais e harmoniosos.
           </p>
 
           <p className='font-subTitles text-first mt-5 text-base -tracking-tight dark:text-white'>

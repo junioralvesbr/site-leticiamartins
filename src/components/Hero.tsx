@@ -47,6 +47,9 @@ export default function Hero() {
           <span className='font-titles text-clamp text-first letter-spacing-[-0.02em] leading-[1.2] font-bold whitespace-pre lg:text-[100px] xl:text-[116px]'>
             Leticia Martins
           </span>
+          <h1 className='font-subTitles text-fourth text-lg text-balance'>
+            Organização Residencial e Comercial em Maringá
+          </h1>
         </motion.div>
 
         <motion.div
@@ -58,9 +61,6 @@ export default function Hero() {
             delay: 1,
           }}
         >
-          <h1 className='font-subTitles text-fourth text-lg text-balance'>
-            Organização Residencial e Comercial em Maringá
-          </h1>
           <p className='font-subTitles text-fourth text-lg text-balance'>
             Organizar é a minha paixão, sou personal organizer em Maringá
             especializada em criar ambientes funcionais, organizados e elegantes

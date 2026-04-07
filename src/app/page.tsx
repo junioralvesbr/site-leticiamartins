@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import { MuralDesktop, MuralMobile } from '@/components/Mural'
 import Services from '@/components/Services'
+import Benefits from '@/components/Benefits'
 
 export const metadata: Metadata = {
   title: 'Personal Organizer em Maringá | Letícia Martins',
@@ -51,6 +52,12 @@ export default function Home() {
         >
           <div className='mx-auto h-full max-w-7xl px-5'>
             <Services />
+          </div>
+        </section>
+
+        <section id='beneficios' className='bg-white'>
+          <div className='mx-auto max-w-7xl px-5 lg:px-10 overflow-hidden'>
+            <Benefits />
           </div>
         </section>
 
