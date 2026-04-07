@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 
-import Expertise from '@/components/Expertise'
+import AboutMe from '@/components/AboutMe'
+import Benefits from '@/components/Benefits'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import { MuralDesktop, MuralMobile } from '@/components/Mural'
 import Services from '@/components/Services'
-import Benefits from '@/components/Benefits'
 
 export const metadata: Metadata = {
   title: 'Personal Organizer em Maringá | Letícia Martins',
@@ -56,15 +56,15 @@ export default function Home() {
         </section>
 
         <section id='beneficios' className='bg-white'>
-          <div className='mx-auto max-w-7xl px-5 lg:px-10 overflow-hidden'>
+          <div className='mx-auto max-w-7xl overflow-hidden px-5 lg:px-10'>
             <Benefits />
           </div>
         </section>
 
-        <section id='experiencia' className='bg-site-100 mt-12 sm:mt-20'>
+        <section id='sobremim' className='bg-site-100 mt-12 sm:mt-20'>
           <div className='rounded-tr-12xl bg-white'>
             <div className='mx-auto max-w-7xl px-5 lg:px-10'>
-              <Expertise />
+              <AboutMe />
             </div>
           </div>
         </section>

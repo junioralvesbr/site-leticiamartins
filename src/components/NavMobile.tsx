@@ -1,23 +1,21 @@
 'use client'
 
-import { useState } from "react";
-import Link from "next/link";
-import Hamburger from "hamburger-react";
-import { motion, AnimatePresence } from "motion/react";
+import Hamburger from 'hamburger-react'
+import { AnimatePresence, motion } from 'motion/react'
+import Link from 'next/link'
+import { useState } from 'react'
 
-import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa6";
-import SocialLinkButton from "./ui/social-link-button";
-import AvatarImage from "./ui/avatar-image";
-import { linksAndPaths } from "@/data/linksAndPaths";
+import { linksAndPaths } from '@/data/linksAndPaths'
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa6'
+import AvatarImage from './ui/avatar-image'
+import SocialLinkButton from './ui/social-link-button'
 
 export default function NavMobile() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   return (
-    <div
-      className="sticky top-0 z-50 p-4 flex items-center justify-between backdrop-blur-xl bg-white/70 lg:hidden"
-    >
-      <Link href="#header">
+    <div className='sticky top-0 z-50 flex items-center justify-between bg-white/70 p-4 backdrop-blur-xl lg:hidden'>
+      <Link href='#header'>
         <AvatarImage />
       </Link>
 
@@ -26,73 +24,75 @@ export default function NavMobile() {
           toggled={isOpen}
           size={20}
           rounded
-          label="Menu"
+          label='Menu'
           toggle={setOpen}
-          distance="lg"
-          color="#642c4a"
-          direction="right"
+          distance='lg'
+          color='#642c4a'
+          direction='right'
         />
 
         <AnimatePresence>
-          {isOpen &&
+          {isOpen && (
             <div>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="fixed left-0 shadow-4xl right-0 top-[5rem] p-5 pt-0 bg-white border-b border-b-white/20"
+                className='shadow-4xl fixed top-20 right-0 left-0 border-b border-b-white/20 bg-white p-5 pt-0'
               >
-                <ul className="grid gap-5">
+                <ul className='grid gap-5'>
                   <motion.li
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 260,
                       damping: 20,
-                      delay: 0.1 + 0 / 10
+                      delay: 0.1 + 0 / 10,
                     }}
-                    className="w-full p-[0.08rem] rounded-xl"
+                    className='w-full rounded-xl p-[0.08rem]'
                     onClick={() => setOpen(false)}
                   >
-                    <Link href="/" aria-label="Link para o Inicio">
-                      <span className="flex gap-1 text-center text-lg text-second">
+                    <Link href='/' aria-label='Link para o Inicio'>
+                      <span className='text-second flex gap-1 text-center text-lg'>
                         Início
                       </span>
                     </Link>
                   </motion.li>
 
-
                   <motion.li
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 260,
                       damping: 20,
-                      delay: 0.1 + 1 / 10
+                      delay: 0.1 + 1 / 10,
                     }}
                   >
-                    <h2 className="flex gap-1 text-center text-lg text-second">
+                    <h2 className='text-second flex gap-1 text-center text-lg'>
                       Serviços
                     </h2>
 
-                    <ul className="flex flex-col px-4 gap-2">
+                    <ul className='flex flex-col gap-2 px-4'>
                       <motion.li
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
-                          type: "spring",
+                          type: 'spring',
                           stiffness: 260,
                           damping: 20,
-                          delay: 0.1 + 2 / 10
+                          delay: 0.1 + 2 / 10,
                         }}
-                        className="w-full p-[0.08rem] rounded-xl"
+                        className='w-full rounded-xl p-[0.08rem]'
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.residencial.href} aria-label="Link para o residencial">
-                          <span className="flex gap-1 text-center text-lg text-second">
+                        <Link
+                          href={linksAndPaths.residencial.href}
+                          aria-label='Link para o residencial'
+                        >
+                          <span className='text-second flex gap-1 text-center text-lg'>
                             {linksAndPaths.residencial.name}
                           </span>
                         </Link>
@@ -101,16 +101,19 @@ export default function NavMobile() {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
-                          type: "spring",
+                          type: 'spring',
                           stiffness: 260,
                           damping: 20,
-                          delay: 0.1 + 3 / 10
+                          delay: 0.1 + 3 / 10,
                         }}
-                        className="w-full p-[0.08rem] rounded-xl"
+                        className='w-full rounded-xl p-[0.08rem]'
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.posMudanca.href} aria-label="Link para o pos mudanca">
-                          <span className="flex gap-1 text-center text-lg text-second">
+                        <Link
+                          href={linksAndPaths.posMudanca.href}
+                          aria-label='Link para o pos mudanca'
+                        >
+                          <span className='text-second flex gap-1 text-center text-lg'>
                             {linksAndPaths.posMudanca.name}
                           </span>
                         </Link>
@@ -119,16 +122,19 @@ export default function NavMobile() {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
-                          type: "spring",
+                          type: 'spring',
                           stiffness: 260,
                           damping: 20,
-                          delay: 0.1 + 4 / 10
+                          delay: 0.1 + 4 / 10,
                         }}
-                        className="w-full p-[0.08rem] rounded-xl"
+                        className='w-full rounded-xl p-[0.08rem]'
                         onClick={() => setOpen(false)}
                       >
-                        <Link href={linksAndPaths.comercial.href} aria-label="Link para o comercial">
-                          <span className="flex gap-1 text-center text-lg text-second">
+                        <Link
+                          href={linksAndPaths.comercial.href}
+                          aria-label='Link para o comercial'
+                        >
+                          <span className='text-second flex gap-1 text-center text-lg'>
                             {linksAndPaths.comercial.name}
                           </span>
                         </Link>
@@ -137,19 +143,19 @@ export default function NavMobile() {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
-                          type: "spring",
+                          type: 'spring',
                           stiffness: 260,
                           damping: 20,
-                          delay: 0.1 + 5 / 10
+                          delay: 0.1 + 5 / 10,
                         }}
-                        className="w-full p-[0.08rem] rounded-xl"
+                        className='w-full rounded-xl p-[0.08rem]'
                         onClick={() => setOpen(false)}
                       >
                         <Link
                           href={linksAndPaths.marcenariaInteligente.href}
-                          aria-label="Link para o marcenaria inteligente"
+                          aria-label='Link para o marcenaria inteligente'
                         >
-                          <span className="flex gap-1 text-center text-lg text-second">
+                          <span className='text-second flex gap-1 text-center text-lg'>
                             {linksAndPaths.marcenariaInteligente.name}
                           </span>
                         </Link>
@@ -161,20 +167,20 @@ export default function NavMobile() {
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 260,
                       damping: 20,
-                      delay: 0.1 + 6 / 10
+                      delay: 0.1 + 6 / 10,
                     }}
-                    className="w-full p-[0.08rem] rounded-xl"
+                    className='w-full rounded-xl p-[0.08rem]'
                     onClick={() => setOpen(false)}
                   >
                     <Link
-                      href={linksAndPaths.experiencia.href}
-                      aria-label="Link para a experiencias"
+                      href={linksAndPaths.sobremim.href}
+                      aria-label='Link para a experiencias'
                     >
-                      <span className="flex gap-1 text-center text-lg text-second">
-                        {linksAndPaths.experiencia.name}
+                      <span className='text-second flex gap-1 text-center text-lg'>
+                        {linksAndPaths.sobremim.name}
                       </span>
                     </Link>
                   </motion.li>
@@ -183,37 +189,36 @@ export default function NavMobile() {
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                      type: "spring",
+                      type: 'spring',
                       stiffness: 260,
                       damping: 20,
-                      delay: 0.1 + 7 / 10
+                      delay: 0.1 + 7 / 10,
                     }}
-                    className="w-full p-[0.08rem] rounded-xl"
+                    className='w-full rounded-xl p-[0.08rem]'
                     onClick={() => setOpen(false)}
                   >
                     <a
                       href={linksAndPaths.curso.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Link para o Curso da leticia Martins"
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      aria-label='Link para o Curso da leticia Martins'
                     >
-                      <span className="flex gap-1 text-center text-lg text-second">
+                      <span className='text-second flex gap-1 text-center text-lg'>
                         {linksAndPaths.curso.name}
                       </span>
                     </a>
                   </motion.li>
 
-
                   {/* social Media */}
-                  <ul className="flex gap-4">
+                  <ul className='flex gap-4'>
                     <motion.li
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{
-                        type: "spring",
+                        type: 'spring',
                         stiffness: 260,
                         damping: 20,
-                        delay: 0.1 + 8 / 10
+                        delay: 0.1 + 8 / 10,
                       }}
                     >
                       <SocialLinkButton
@@ -225,10 +230,10 @@ export default function NavMobile() {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{
-                        type: "spring",
+                        type: 'spring',
                         stiffness: 260,
                         damping: 20,
-                        delay: 0.1 + 9 / 10
+                        delay: 0.1 + 9 / 10,
                       }}
                     >
                       <SocialLinkButton
@@ -240,10 +245,10 @@ export default function NavMobile() {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{
-                        type: "spring",
+                        type: 'spring',
                         stiffness: 260,
                         damping: 20,
-                        delay: 0.1 + 10 / 10
+                        delay: 0.1 + 10 / 10,
                       }}
                     >
                       <SocialLinkButton
@@ -253,11 +258,11 @@ export default function NavMobile() {
                     </motion.li>
                   </ul>
                 </ul>
-              </motion.div >
+              </motion.div>
             </div>
-          }
+          )}
         </AnimatePresence>
       </div>
-    </div >
-  );
-};
+    </div>
+  )
+}

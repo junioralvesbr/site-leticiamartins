@@ -5,7 +5,7 @@ import {
   FaUsersGear,
 } from 'react-icons/fa6'
 
-export default function Expertise() {
+export default function AboutMe() {
   const calculaExperiencia = () => {
     const anoAtual = new Date().getFullYear()
     return anoAtual - 2018
