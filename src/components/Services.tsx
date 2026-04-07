@@ -1,37 +1,37 @@
+import { linksAndPaths } from "@/data/linksAndPaths";
+import * as motion from "motion/react-client";
 import Image from "next/image";
-import * as motion from "motion/react-client"
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { TextAnimate } from "./ui/text-animate";
-import { linksAndPaths } from "@/data/linksAndPaths";
 
 const data = [
   {
     title: 'Organização Residencial',
     image: "/images/servicos/foto-1.jpg",
     alt: "Foto de organização residencial",
-    description: 'Quarto, Closets, Escritórios, Sala, Cozinha, Lavanderia',
+    description: 'Organização completa de ambientes como quartos, closets, cozinhas, lavanderias e despensas, trazendo mais praticidade para o seu dia a dia.',
     path: linksAndPaths.residencial.href
   },
   {
     title: 'Pós Mudança',
     image: "/images/servicos/foto-2.png",
     alt: "Foto de pós mudança residencial",
-    description: 'Mudança residencial',
+    description: 'Desembale e organize sua nova casa de forma estratégica, funcional e sem estresse.',
     path: linksAndPaths.posMudanca.href
   },
   {
     title: 'Organização Comercial',
     image: "/images/servicos/foto-3.png",
     alt: "Foto de organização empresarial",
-    description: 'Organização de empresas, lojas e escritórios',
+    description: 'Ambientes de trabalho mais organizados aumentam a produtividade e passam mais profissionalismo para seus clientes.',
     path: linksAndPaths.comercial.href
   },
   {
     title: 'Marcenaria Inteligente para Móveis Planejados',
     image: "/images/servicos/foto-4.png",
     alt: "Foto de consultoria em móveis planejados",
-    description: 'Consultoria em Móveis Planejados',
+    description: 'Otimize seu espaço, facilite sua rotina e tenha uma visão clara de tudo o que você possui.',
     path: linksAndPaths.marcenariaInteligente.href
   },
 ]
@@ -46,9 +46,9 @@ export default function Services() {
           by="character"
           delay={0.5}
           once={true}
-          className="text-4xl font-bold font-subTitles -tracking-tight text-first dark:text-white md:text-7xl md:leading-[5rem]"
+          className="text-4xl font-bold font-subTitles -tracking-tight text-first dark:text-white md:text-7xl md:leading-20"
         >
-          Nossos Serviços
+          Serviços de Organização
         </TextAnimate>
       </div>
 
