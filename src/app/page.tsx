@@ -15,7 +15,7 @@ const Footer = dynamic(() => import('@/components/Footer'))
 export const metadata: Metadata = {
   title: 'Personal Organizer em Maringá | Letícia Martins',
   description:
-    'Organização residencial e comercial em Maringá. Transforme seu ambiente com praticidade, leveza e sofisticação.',
+    'Letícia Martins é Personal Organizer em Maringá, especialista em organização residencial, comercial e pós-mudança. Transforme seu lar com praticidade, leveza e sofisticação.',
   alternates: {
     canonical: 'https://www.leticiamartins.com.br',
   },
