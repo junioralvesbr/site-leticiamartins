@@ -1,11 +1,16 @@
 import { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 
-import AboutMe from '@/components/AboutMe'
-import Benefits from '@/components/Benefits'
-import Footer from '@/components/Footer'
+// Components above the fold (keep static for LCP/FCP)
 import Hero from '@/components/Hero'
-import { MuralDesktop, MuralMobile } from '@/components/Mural'
-import Services from '@/components/Services'
+
+// Components below the fold (dynamic imports to delay JS execution)
+const Services = dynamic(() => import('@/components/Services'))
+const Benefits = dynamic(() => import('@/components/Benefits'))
+const AboutMe = dynamic(() => import('@/components/AboutMe'))
+const MuralDesktop = dynamic(() => import('@/components/Mural').then((mod) => mod.MuralDesktop))
+const MuralMobile = dynamic(() => import('@/components/Mural').then((mod) => mod.MuralMobile))
+const Footer = dynamic(() => import('@/components/Footer'))
 
 export const metadata: Metadata = {
   title: 'Personal Organizer em Maringá | Letícia Martins',
