@@ -73,7 +73,7 @@ export default function Home() {
           <div className='rounded-bl-12xl hidden bg-white sm:block'>
             <MuralDesktop />
           </div>
-          <div className='rounded-bl-12xl block bg-white sm:hidden'>
+          <div className='bg-white sm:hidden'>
             <MuralMobile />
           </div>
         </section>

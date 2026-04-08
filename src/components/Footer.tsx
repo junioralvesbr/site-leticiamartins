@@ -10,11 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className='bg-first relative overflow-hidden border-t border-white/10 px-8 py-20 lg:px-24 lg:pt-32'>
-      {/* Background Decoration (Subtle Glows inspired by Aceternity) */}
-      <div className='bg-second/10 pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full blur-[120px]' />
-      <div className='bg-fourth/10 pointer-events-none absolute -right-24 -bottom-24 h-96 w-96 rounded-full blur-[120px]' />
-
+    <footer className='bg-first relative overflow-hidden px-8 pb-10 lg:px-24 lg:pt-24'>
       <div className='relative mx-auto max-w-7xl'>
         {/* CTA Section */}
         <div className='mx-auto mb-24 flex max-w-4xl flex-col items-center text-center'>
@@ -35,7 +31,7 @@ export default function Footer() {
               href={linksAndPaths.whatsapp.href}
               target='_blank'
               rel='noopener noreferrer'
-              className='bg-second hover:bg-fourth relative inline-flex items-center gap-3 rounded-full px-10 py-5 text-xl font-bold text-white shadow-2xl transition-all md:px-14 md:py-6 md:text-2xl'
+              className='bg-second hover:bg-fourth relative inline-flex items-center gap-3 rounded-full px-5 py-5 text-xl font-bold text-white shadow-2xl transition-all md:px-14 md:py-6 md:text-2xl'
             >
               <FaWhatsapp className='h-8 w-8' />
               Falar no WhatsApp
