@@ -8,14 +8,18 @@ import Hero from '@/components/Hero'
 const Services = dynamic(() => import('@/components/Services'))
 const Benefits = dynamic(() => import('@/components/Benefits'))
 const AboutMe = dynamic(() => import('@/components/AboutMe'))
-const MuralDesktop = dynamic(() => import('@/components/Mural').then((mod) => mod.MuralDesktop))
-const MuralMobile = dynamic(() => import('@/components/Mural').then((mod) => mod.MuralMobile))
+const MuralDesktop = dynamic(() =>
+  import('@/components/Mural').then((mod) => mod.MuralDesktop)
+)
+const MuralMobile = dynamic(() =>
+  import('@/components/Mural').then((mod) => mod.MuralMobile)
+)
 const Footer = dynamic(() => import('@/components/Footer'))
 
 export const metadata: Metadata = {
   title: 'Personal Organizer em Maringá | Letícia Martins',
   description:
-    'Letícia Martins é Personal Organizer em Maringá, especialista em organização residencial, comercial e pós-mudança. Transforme seu lar com praticidade, leveza e sofisticação.',
+    'Letícia Martins é Personal Organizer em Maringá, especialista em organização residencial, comercial e pós-mudança. Transforme seu lar com praticidade, sofisticação.',
   alternates: {
     canonical: 'https://www.leticiamartins.com.br',
   },
