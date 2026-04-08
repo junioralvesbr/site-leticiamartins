@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const items = [
   {
-    title: '',
+    title: 'Organização de gavetas com dobras perfeitas',
     image: '/images/mural/mural-1.jpg',
     className: 'lg:top-10 lg:left-[40%] rotate-[-5deg]',
     finalPosition: { x: '-200%', y: 40 },
@@ -15,7 +15,7 @@ const items = [
     finalPositionMobile: { x: '-35%', y: -160 },
   },
   {
-    title: '',
+    title: 'Despensa organizada com potes herméticos',
     image: '/images/mural/mural-2.jpg',
     className: 'lg:top-40 lg:left-[25%] rotate-[-7deg]',
     finalPosition: { x: '-40%', y: 220 },
@@ -23,7 +23,7 @@ const items = [
     finalPositionMobile: { x: '-38%', y: 180 },
   },
   {
-    title: '',
+    title: 'Closet feminino harmonizado por cores',
     image: '/images/mural/mural-3.jpg',
     className: 'lg:top-32 lg:left-[55%] rotate-[10deg]',
     finalPosition: { x: '40%', y: 40 },
@@ -31,7 +31,7 @@ const items = [
     finalPositionMobile: { x: '42%', y: -180 },
   },
   {
-    title: '',
+    title: 'Organização de louceiro e cristaleira',
     image: '/images/mural/mural-4.jpg',
     className: 'lg:top-20 lg:right-[35%] rotate-[2deg]',
     finalPosition: { x: '180%', y: 300 },
@@ -39,13 +39,13 @@ const items = [
     finalPositionMobile: { x: '35%', y: 170 },
   },
   {
-    title: '',
+    title: 'Praticidade no dia a dia com organização',
     image: '/images/mural/mural-5.jpg',
     className: 'absolute top-24 left-[45%] rotate-[-7deg]',
     finalPosition: { x: '180%', y: -20 },
   },
   {
-    title: '',
+    title: 'Consultoria Personalizada Letícia Martins',
     image: '/images/mural/mural-6.jpg',
     className: 'absolute top-8 left-[30%] rotate-[4deg]',
     finalPosition: { x: '-60%', y: 0 },

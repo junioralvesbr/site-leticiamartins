@@ -45,19 +45,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/residencial/closet-1.jpg"
-            alt="Foto do closet organizada"
+            alt="Closet feminino organizado com cabides padronizados por Letícia Martins"
           />
           <GridImage
             src="/images/residencial/closet-2.jpg"
-            alt="Foto do closet organizada"
+            alt="Gavetas de closet organizadas com colmeias e dobras verticais"
           />
           <GridImage
             src="/images/residencial/closet-3.jpg"
-            alt="Foto do closet organizada"
+            alt="Prateleiras de closet com bolsas e acessórios bem dispostos"
           />
           <GridImage
             src="/images/residencial/closet-4.jpg"
-            alt="Foto do closet organizada"
+            alt="Closet masculino organizado com calças e camisas por cores"
           />
         </div>
       </div>
@@ -78,19 +78,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/residencial/cozinha-1.jpg"
-            alt="Foto da Cozinha organizada"
+            alt="Armário de cozinha organizado com pratos e copos acessíveis"
           />
           <GridImage
             src="/images/residencial/cozinha-2.jpg"
-            alt="Foto da Cozinha organizada"
+            alt="Despensa de alimentos organizada com potes herméticos e identificação"
           />
           <GridImage
             src="/images/residencial/cozinha-3.jpg"
-            alt="Foto da Cozinha organizada"
+            alt="Gaveta de talheres e utensílios de cozinha organizada com divisórias"
           />
           <GridImage
             src="/images/residencial/cozinha-4.jpg"
-            alt="Foto da Cozinha organizada"
+            alt="Organização de panelas e potes plásticos otimizando o espaço"
           />
         </div>
       </div>
@@ -113,19 +113,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/residencial/banheiro-1.jpg"
-            alt="Foto do Banheiro organizado"
+            alt="Gabinete de banheiro organizado com kits de higiene pessoal"
           />
           <GridImage
             src="/images/residencial/banheiro-2.jpg"
-            alt="Foto do Banheiro organizado"
+            alt="Armário de lavanderia organizado com produtos de limpeza em cestos"
           />
           <GridImage
             src="/images/residencial/banheiro-3.jpg"
-            alt="Foto do Banheiro organizado"
+            alt="Organização de toalhas e itens de banho em prateleiras"
           />
           <GridImage
             src="/images/residencial/banheiro-4.jpg"
-            alt="Foto do Banheiro organizado"
+            alt="Área de serviço otimizada e organizada por Personal Organizer"
           />
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function OrganizacaoResidencial() {
           text="Somos apaixonadas por organização e atuamos em todos os ambientes da casa. Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia."
           subText="Eu e minha equipe estamos prontas para transformar seu lar e facilitar sua rotina com leveza, praticidade e carinho em cada detalhe."
           capa="/images/servicos/foto-1.jpg"
-          alt="Capa da pagina residencial"
+          alt="Capa da página de Organização Residencial - Letícia Martins"
         />
       </header>
 

@@ -45,19 +45,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/posmudanca/posmudanca-1.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Equipe de Personal Organizers desencaixando mudança com cuidado"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-2.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Organização estratégica de mudança residencial em Maringá"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-3.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Processo de triagem e organização de itens após mudança"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-4.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Instalação e organização de pertences no novo lar"
           />
         </div>
       </div>
@@ -77,19 +77,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/posmudanca/posmudanca-5.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Otimização de espaço em armários novos de cozinha"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-6.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Sistemas de organização eficientes para closets após mudança"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-7.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Acomodação de roupas e enxoval em nova residência"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-8.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Finalização de serviço de pós-mudança com Letícia Martins"
           />
         </div>
       </div>
@@ -108,19 +108,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/posmudanca/posmudanca-9.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Casa nova totalmente organizada e funcional"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-10.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Experiência de morar em um lar organizado desde o primeiro dia"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-11.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Praticidade e bem-estar familiar após organização de mudança"
           />
           <GridImage
             src="/images/posmudanca/posmudanca-12.jpg"
-            alt="Fotos de serviços de pós mudança"
+            alt="Serviço exclusivo de Personal Organizer para pós-mudança"
           />
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function PosMudanca() {
           text="Organização de pós-mudança é muito mais do que desempacotar caixas, é pensar em cada detalhe para criar um lar funcional, acolhedor e harmonioso."
           subText="Nosso compromisso é ouvir você com atenção e criar um método personalizado, pensado no seu conforto e no bem-estar da sua familia."
           capa="/images/posmudanca/capa.jpg"
-          alt="Foto da pagina de pós mudanca"
+          alt="Imagem de capa da página de Pós-Mudança - Letícia Martins"
         />
       </header>
 

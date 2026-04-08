@@ -47,19 +47,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/marcenaria/marcenaria-inteligente-1.webp"
-            alt="fotos de móveis planejados para organização"
+            alt="Projeto de móvel planejado com divisórias inteligentes para organização"
           />
           <GridImage
             src="/images/marcenaria/marcenaria-inteligente-2.webp"
-            alt="fotos de móveis planejados para organização"
+            alt="Gavetas sob medida otimizadas para armazenamento funcional"
           />
           <GridImage
             src="/images/marcenaria/marcenaria-inteligente-3.webp"
-            alt="fotos de móveis planejados para organização"
+            alt="Prateleiras ajustáveis em marcenaria pensada para Personal Organizer"
           />
           <GridImage
             src="/images/marcenaria/marcenaria-inteligente-4.jpg"
-            alt="fotos de móveis planejados para organização"
+            alt="Soluções de armazenamento interno para armários planejados"
           />
         </div>
       </div>
@@ -75,7 +75,7 @@ export default function MarcenariaInteligente() {
           title="Marcenaria Inteligente"
           text="Elaborar a parte interna de um móvel requer, um bom planejamento, cuidado e atenção com as medidas. É necessário focar na distribuição adequada das gavetas, prateleiras e de toda parte interna, trazendo maior praticidade, aproveitamento dos espaços e ainda mais beleza para os seus móveis."
           capa="/images/marcenaria/marcenaria-inteligente-5.jpg"
-          alt="foto capa do site macenaria inteligente"
+          alt="Imagem de capa da consultoria de Marcenaria Inteligente"
         />
       </header>
 

@@ -46,19 +46,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/comercial/comercial-1.jpg"
-            alt="Almoxarifados e estoques organizados"
+            alt="Estoque comercial organizado para facilitar a logística interna"
           />
           <GridImage
             src="/images/comercial/comercial-2.jpg"
-            alt="Almoxarifados e estoques organizados"
+            alt="Almoxarifado de empresa com identificação e categorização de itens"
           />
           <GridImage
             src="/images/comercial/comercial-3.jpg"
-            alt="Almoxarifados e estoques organizados"
+            alt="Organização de estoque para aumento de produtividade empresarial"
           />
           <GridImage
             src="/images/comercial/comercial-4.jpg"
-            alt="Almoxarifados e estoques organizados"
+            alt="Soluções de armazenamento para ambientes comerciais em Maringá"
           />
         </div>
       </div>
@@ -76,19 +76,19 @@ const data = [
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <GridImage
             src="/images/comercial/comercial-5.jpg"
-            alt="Loja, atelie e escritórios organizados"
+            alt="Organização de ateliê com materiais facilmente acessíveis"
           />
           <GridImage
             src="/images/comercial/comercial-6.jpg"
-            alt="Loja, atelie e escritórios organizados"
+            alt="Escritório organizado para melhor fluxo de trabalho e foco"
           />
           <GridImage
             src="/images/comercial/comercial-7.jpg"
-            alt="Loja, atelie e escritórios organizados"
+            alt="Layout de loja organizado para melhor experiência do cliente"
           />
           <GridImage
             src="/images/comercial/comercial-8.jpg"
-            alt="Loja, atelie e escritórios organizados"
+            alt="Personal Organizer comercial transformando ambientes corporativos"
           />
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function Organizacaocomercial() {
           text="Organizar não é apenas arrumar coisas, é criar um ambiente que inspira criatividade, produtividade e sucesso. É estabelecer hábitos que transformam sua loja ou escritório em um espaço de eficiência, inovação e crescimento."
           subText="É investir em si mesmo e em seu negócio, para alcançar metas e superar desafios. Organize-se, organize seu negócio e veja o impacto que isso pode ter em sua vida e no seu negócio."
           capa="/images/comercial/capa.jpg"
-          alt="Imagem de capa da pagina comercial"
+          alt="Capa da página de Organização Comercial - Letícia Martins"
         />
       </header>
 

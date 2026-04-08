@@ -19,7 +19,7 @@ export default function Hero() {
         >
           <Image
             src='/images/leticia-martins.png'
-            alt='Leticia Martins'
+            alt='Foto de Leticia Martins - Personal Organizer profissional em Maringá'
             fill
             quality={100}
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'

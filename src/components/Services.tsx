@@ -9,7 +9,7 @@ const data = [
   {
     title: 'Organização Residencial',
     image: '/images/servicos/foto-1.jpg',
-    alt: 'Foto de organização residencial',
+    alt: 'Serviço de Organização Residencial completa em Maringá por Letícia Martins',
     description:
       'Organização completa de ambientes como quartos, closets, cozinhas, lavanderias e despensas, trazendo mais praticidade para o seu dia a dia.',
     path: linksAndPaths.residencial.href,
@@ -17,7 +17,7 @@ const data = [
   {
     title: 'Pós Mudança',
     image: '/images/servicos/foto-2.png',
-    alt: 'Foto de pós mudança residencial',
+    alt: 'Serviço de Pós Mudança profissional para organização de novo lar',
     description:
       'Desembale e organize sua nova casa de forma estratégica, funcional e sem estresse.',
     path: linksAndPaths.posMudanca.href,
@@ -25,7 +25,7 @@ const data = [
   {
     title: 'Organização Comercial',
     image: '/images/servicos/foto-3.png',
-    alt: 'Foto de organização empresarial',
+    alt: 'Organização Comercial e empresarial para escritórios e lojas por Personal Organizer',
     description:
       'Ambientes de trabalho mais organizados aumentam a produtividade e passam mais profissionalismo para seus clientes.',
     path: linksAndPaths.comercial.href,
@@ -33,7 +33,7 @@ const data = [
   {
     title: 'Marcenaria Inteligente para Móveis Planejados',
     image: '/images/servicos/foto-4.png',
-    alt: 'Foto de consultoria em móveis planejados',
+    alt: 'Consultoria de Marcenaria Inteligente e Projetos de Móveis Planejados Organizados',
     description:
       'Otimize seu espaço, facilite sua rotina e tenha uma visão clara de tudo o que você possui.',
     path: linksAndPaths.marcenariaInteligente.href,
