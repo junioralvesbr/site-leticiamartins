@@ -1,0 +1,25 @@
+# Letícia Martins - Personal Organizer em Maringá
+
+Site oficial de Letícia Martins, Personal Organizer em Maringá, PR. Especialista em criar ambientes funcionais, organizados e elegantes que trazem praticidade e bem-estar para o dia a dia.
+
+## Serviços Principais
+
+- **Organização Residencial**: Organização completa de closets, quartos, cozinhas, despensas e áreas de serviço.
+- **Pós-Mudança**: Desempacotamento e organização estratégica para uma adaptação rápida e sem estresse ao novo lar.
+- **Organização Comercial**: Otimização de espaços em escritórios, estoques, lojas e ateliês para maior produtividade.
+- **Marcenaria Inteligente**: Consultoria para o planejamento interno de móveis sob medida, garantindo o melhor aproveitamento de cada centímetro.
+
+## Páginas e Conteúdos
+
+- [Início](https://www.leticiamartins.com.br/) - Apresentação, portfólio (mural) e visão geral dos benefícios da organização.
+- [Residencial](https://www.leticiamartins.com.br/residencial) - Detalhes sobre a organização de closets, cozinhas e banheiros.
+- [Pós-Mudança](https://www.leticiamartins.com.br/posmudanca) - Como funciona o serviço de mudança sem estresse.
+- [Comercial](https://www.leticiamartins.com.br/comercial) - Soluções corporativas para estoque, almoxarifado e escritórios.
+- [Marcenaria Inteligente](https://www.leticiamartins.com.br/marcenariainteligente) - Planejamento de interiores de armários e gavetas.
+- [Curso Online](https://curso.leticiamartins.com.br/) - Mentoria e curso para quem deseja se tornar uma Personal Organizer.
+
+## Contato e Redes Sociais
+
+- **WhatsApp**: [Falar com Letícia](https://api.whatsapp.com/send?phone=5544998138138)
+- **Instagram**: [@leticiamartins.organizer](https://www.instagram.com/leticiamartins.organizer/)
+- **Facebook**: [/leticiamartinsorganizer](https://www.facebook.com/leticiamartinsorganizer/)

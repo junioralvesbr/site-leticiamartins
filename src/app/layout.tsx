@@ -109,6 +109,52 @@ export default function RootLayout({
           <WhatssAppIcon />
           <Analytics />
           <GoogleAnalytics gaId="G-MLEXRG2E0N" />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'ProfessionalService',
+                name: 'Letícia Martins - Personal Organizer',
+                image: 'https://www.leticiamartins.com.br/images/leticia-martins.png',
+                '@id': 'https://www.leticiamartins.com.br',
+                url: 'https://www.leticiamartins.com.br',
+                telephone: '+5544998138138',
+                priceRange: '$$',
+                address: {
+                  '@type': 'PostalAddress',
+                  addressLocality: 'Maringá',
+                  addressRegion: 'PR',
+                  addressCountry: 'BR',
+                },
+                geo: {
+                  '@type': 'GeoCoordinates',
+                  latitude: -23.4209,
+                  longitude: -51.9331,
+                },
+                openingHoursSpecification: [
+                  {
+                    '@type': 'OpeningHoursSpecification',
+                    dayOfWeek: [
+                      'Monday',
+                      'Tuesday',
+                      'Wednesday',
+                      'Thursday',
+                      'Friday',
+                    ],
+                    opens: '08:00',
+                    closes: '18:00',
+                  },
+                ],
+                sameAs: [
+                  'https://www.instagram.com/leticiamartins.organizer/',
+                  'https://www.facebook.com/leticiamartinsorganizer/',
+                ],
+                description:
+                  'Personal Organizer em Maringá especialista em organização residencial, comercial, pós-mudança e marcenaria inteligente.',
+              }),
+            }}
+          />
         </div>
       </body>
     </html>
