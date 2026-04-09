@@ -1,15 +1,15 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useRef, useState, useEffect } from "react";
 import {
+  animate,
   motion,
+  useAnimationControls,
   useMotionValue,
   useSpring,
   useTransform,
-  animate,
   useVelocity,
-  useAnimationControls,
 } from "motion/react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const DraggableCardBody = ({
   className,
@@ -18,6 +18,7 @@ export const DraggableCardBody = ({
   duration = 1,
   delay = 0.8,
   amount = 0.5,
+  isDraggable = true,
 }: {
   className?: string;
   children?: React.ReactNode;
@@ -25,6 +26,7 @@ export const DraggableCardBody = ({
   duration?: number;
   delay?: number;
   amount?: number;
+  isDraggable?: boolean;
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -115,7 +117,7 @@ export const DraggableCardBody = ({
   return (
     <motion.div
       ref={cardRef}
-      drag={false}
+      drag={isDraggable}
       dragConstraints={constraints}
       onDragStart={() => {
         document.body.style.cursor = "grabbing";
@@ -198,6 +200,6 @@ export const DraggableCardContainer = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div className={cn("[perspective:3000px]", className)}>{children}</div>
+    <div className={cn("perspective-[3000px]", className)}>{children}</div>
   );
 };

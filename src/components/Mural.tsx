@@ -7,45 +7,45 @@ import Image from 'next/image'
 
 const items = [
   {
-    title: 'Organização de gavetas com dobras perfeitas',
+    title: 'Entrevistas para TV',
     image: '/images/mural/mural-1.jpg',
     className: 'lg:top-10 lg:left-[40%] rotate-[-5deg]',
     finalPosition: { x: '-200%', y: 40 },
     // Mobile: Superior Esquerdo
-    finalPositionMobile: { x: '-35%', y: -160 },
+    finalPositionMobile: { x: '-35%', y: -250 },
   },
   {
-    title: 'Despensa organizada com potes herméticos',
+    title: 'Parcerias com empresas e serviços',
     image: '/images/mural/mural-2.jpg',
     className: 'lg:top-40 lg:left-[25%] rotate-[-7deg]',
     finalPosition: { x: '-40%', y: 220 },
     // Mobile: Inferior Esquerdo
-    finalPositionMobile: { x: '-38%', y: 180 },
+    finalPositionMobile: { x: '-38%', y: 250 },
   },
   {
-    title: 'Closet feminino harmonizado por cores',
+    title: 'Gravação de videos e conteúdo',
     image: '/images/mural/mural-3.jpg',
     className: 'lg:top-32 lg:left-[55%] rotate-[10deg]',
     finalPosition: { x: '40%', y: 40 },
     // Mobile: Superior Direito
-    finalPositionMobile: { x: '42%', y: -180 },
+    finalPositionMobile: { x: '42%', y: -280 },
   },
   {
-    title: 'Organização de louceiro e cristaleira',
+    title: 'Participação em eventos e feiras',
     image: '/images/mural/mural-4.jpg',
     className: 'lg:top-20 lg:right-[35%] rotate-[2deg]',
     finalPosition: { x: '180%', y: 300 },
     // Mobile: Inferior Direito
-    finalPositionMobile: { x: '35%', y: 170 },
+    finalPositionMobile: { x: '35%', y: 280 },
   },
   {
-    title: 'Praticidade no dia a dia com organização',
+    title: 'Gravação de cursos e palestras',
     image: '/images/mural/mural-5.jpg',
     className: 'absolute top-24 left-[45%] rotate-[-7deg]',
     finalPosition: { x: '180%', y: -20 },
   },
   {
-    title: 'Consultoria Personalizada Letícia Martins',
+    title: 'Consultoria em organização',
     image: '/images/mural/mural-6.jpg',
     className: 'absolute top-8 left-[30%] rotate-[4deg]',
     finalPosition: { x: '-60%', y: 0 },
@@ -54,7 +54,7 @@ const items = [
 
 export function MuralDesktop() {
   return (
-    <DraggableCardContainer className='relative flex min-h-screen w-full items-center justify-center overflow-clip'>
+    <DraggableCardContainer className='relative flex h-screen w-full items-center justify-center overflow-clip'>
       <p className='font-paragraph absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800'>
         Organize seu <span className='text-second/30'>LAR</span> para aproveitar
         os melhores momentos da <span className='text-second/30'>VIDA</span>.
@@ -83,7 +83,7 @@ export function MuralDesktop() {
 }
 export function MuralMobile() {
   return (
-    <DraggableCardContainer className='relative flex min-h-[600px] w-full items-center justify-center overflow-clip bg-neutral-50/20'>
+    <DraggableCardContainer className='relative flex min-h-[850px] w-full items-center justify-center overflow-clip bg-neutral-50/20'>
       {/* Central Text with better mobile sizing */}
       <p className='font-paragraph pointer-events-none absolute top-1/2 z-0 mx-auto max-w-[260px] -translate-y-1/2 text-center text-2xl leading-tight font-black text-neutral-400'>
         Organize seu <span className='text-second/30'>LAR</span> para aproveitar
@@ -97,6 +97,7 @@ export function MuralMobile() {
             key={index}
             className='absolute' // Center them initially to spread correctly
             finalPosition={item.finalPositionMobile}
+            isDraggable={false}
           >
             <Image
               src={item.image}
