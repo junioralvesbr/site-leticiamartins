@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
 import { motion } from "motion/react";
+import React from "react";
 
 export const MenuItem = ({
   setActive,
@@ -35,7 +35,7 @@ export const MenuItem = ({
           }}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%+1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={{
                   type: "spring",
@@ -46,7 +46,7 @@ export const MenuItem = ({
                   restSpeed: 0.001
                 }}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/20 dark:border-white/20 shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
@@ -73,7 +73,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:border-white/[0.2] shadow-input flex justify-center space-x-4 py-6"
+      className="relative rounded-full border border-transparent dark:border-white/20 shadow-input flex justify-center space-x-4 py-6"
     >
       {children}
     </nav>
